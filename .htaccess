@@ -1,0 +1,16 @@
+# Set the default homepage
+DirectoryIndex index.html
+
+# Redirect www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Deny access to .git and .env files
+<FilesMatch "^(\.git|\.env)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Custom error page
+ErrorDocument 404 /404.html

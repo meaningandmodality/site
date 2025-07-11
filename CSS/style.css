@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8fafc;
+    background: #b72d07;
     color: #222;
 }
 
@@ -64,10 +64,15 @@ main {
 
 .news ul, .pubs ul, .projects ul, .people-list {
     padding-left: 1.2em;
+    line-height: 10.8em;
 }
 
 .people-list li {
     margin-bottom: 1.5em;
+}
+
+.projects li {
+    line-height: 1.6em;
 }
 
 footer {
@@ -77,5 +82,5 @@ footer {
     font-size: 0.96em;
     padding: 1.2em 0;
     background: #eef2fb;
-    border-top: 1px solid #dde3ef;
+    border-top: 1px solid #0c3483;
 }
