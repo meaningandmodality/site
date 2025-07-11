@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <h1>Meaning & Modality Linguistics Laboratory</h1>
-        <h4>Director Kathryn Davidson</h4>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="research.html">Ongoing Work</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Inserting header from header.html stored in /partials. Use JavaScript -->    
+<body>
+  <div id="header"></div>
+  <script>
+  fetch("partials/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("header").innerHTML = data;
+    });
+    </script>
+</body>
+<!--end header retrieval step-->
     <main>
         <section class="intro">
             <h2>Welcome to the Lab!</h2>
