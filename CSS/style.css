@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #b72d07;
+    background: #ffffff;
     color: #222;
 }
 
 header {
-    background: #234073;
+    background: #A51C30;
     color: #fff;
     padding: 1.2em 0 0.7em 0;
     text-align: center;
@@ -64,7 +64,7 @@ main {
 
 .news ul, .pubs ul, .projects ul, .people-list {
     padding-left: 1.2em;
-    line-height: 10.8em;
+    line-height: 2.2em;
 }
 
 .people-list li {
