@@ -33,8 +33,15 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <p>Copyright &copy; 2025 Meaning & Modality Laboratory.</p>
-    </footer>
+    <body>
+        <div id="footer"></div>
+        <script>
+        fetch("partials/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+            </script>
+    </body>
 </body>
 </html>
