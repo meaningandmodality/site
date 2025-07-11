@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+}
+
+header {
+    background: #234073;
+    color: #fff;
+    padding: 1.2em 0 0.7em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 0.3em 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1em;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 12px rgba(20,40,80,0.06);
+}
+
+.intro, .news, .pubs, .team, .projects {
+    margin-bottom: 2em;
+}
+
+.intro h2, .pubs h2, .team h2, .projects h2 {
+    color: #234073;
+    margin-top: 0;
+}
+
+.news ul, .pubs ul, .projects ul, .people-list {
+    padding-left: 1.2em;
+}
+
+.people-list li {
+    margin-bottom: 1.5em;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+    color: #678;
+    font-size: 0.96em;
+    padding: 1.2em 0;
+    background: #eef2fb;
+    border-top: 1px solid #dde3ef;
+}
