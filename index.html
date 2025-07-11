@@ -6,42 +6,37 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-<!-- Inserting header from header.html stored in /partials. Use JavaScript -->    
-<body>
-  <div id="header"></div>
-  <script>
-  fetch("partials/header.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("header").innerHTML = data;
-    });
-    </script>
-</body>
-<!--end header retrieval step-->
-    <main>
-        <section class="intro">
+
+<!-- Inserting header from header.html stored in /partials. Use JavaScript -->
+<div id="header"></div>
+
+    <div id="main-content">
             <h2>Welcome to the Lab!</h2>
             <p>
                 Welcome to the <b>Meaning and Modality (M&M) Laboratory</b> at Harvard Linguistics! We are interested in understanding the incredible human capacity for language, especially the ability to convey abstract, infinite, specific meanings across the multiple modalities for natural language, including both speech and sign. Our work spans the subfields of formal semantics, pragmatics, syntax, language acquisition, logic and psycholinguistics in an effort to understand the relationship between linguistic meaning, language mode, language development, and human cognition, with special focus on cross-linguistic experimental semantic studies. 
             </p>
-        </section>
-        <section class="news">
+
             <h3>News & Announcements</h3>
             <ul>
                 <li>June 2025: Our new paper on multimodal inference accepted to ACL!</li>
                 <li>May 2025: Dr. Lee joins as postdoctoral fellow.</li>
             </ul>
-        </section>
-    </main>
-    <body>
-        <div id="footer"></div>
+    </div>
+
+    <div id="footer"></div>
         <script>
+        fetch("partials/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
         fetch("partials/footer.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
             });
-            </script>
-    </body>
+    </script>
+
 </body>
 </html>
