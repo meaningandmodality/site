@@ -11,32 +11,35 @@
 <div id="header"></div>
 
     <div id="main-content">
-            <h2>Welcome to the Lab!</h2>
-            <p>
-                Welcome to the <b>Meaning and Modality (M&M) Laboratory</b> at Harvard Linguistics! We are interested in understanding the incredible human capacity for language, especially the ability to convey abstract, infinite, specific meanings across the multiple modalities for natural language, including both speech and sign. Our work spans the subfields of formal semantics, pragmatics, syntax, language acquisition, logic and psycholinguistics in an effort to understand the relationship between linguistic meaning, language mode, language development, and human cognition, with special focus on cross-linguistic experimental semantic studies. 
-            </p>
-
-            <h3>News & Announcements</h3>
-            <ul>
-                <li>June 2025: Our new paper on multimodal inference accepted to ACL!</li>
-                <li>May 2025: Dr. Lee joins as postdoctoral fellow.</li>
-            </ul>
+        <!-- Content will be loaded here dynamically -->
     </div>
-
+    
     <div id="footer"></div>
         <script>
-        fetch("partials/header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
+                fetch("partials/header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header").innerHTML = data;
+                    });
 
-        fetch("partials/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-    </script>
+                fetch("partials/footer.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("footer").innerHTML = data;
+                    });
+            function loadPage(page) {
+                fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("main-content").innerHTML = data;
+                    window.scrollTo(0, 0); // scroll to top
+                });
+            } 
+            // Load the home page by default
+            window.onload = () => {
+                loadPage('home.html');
+            };   
+        </script>
 
 </body>
 </html>
