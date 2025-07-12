@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #ffffff;
     color: #222;
@@ -9,7 +9,7 @@ header {
     background: #A51C30;
     color: #fff;
     padding: 1.2em 0 0.7em 0;
-    text-align: center;
+    text-align: left;
 }
 
 header h1 {
