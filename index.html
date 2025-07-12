@@ -64,6 +64,26 @@
                     document.getElementById('main-content').innerHTML = html;
                 });
             }
+
+            //Function to load research from text file
+            function loadResearch() {
+                fetch('data/research.txt')
+                .then(res => res.text())
+                .then(text => {
+                    const lines = text.trim().split('\n');
+                    let html = '';
+
+                    lines.forEach(line => {
+                    if (line.trim()) {
+                        const [project, description, info] = line.split('|').map(p => p.trim());
+                        html += `<li><strong>${project}</strong> ${description}''} <a href="Documents/${info}">[${info.split('.').pop()}]</a></li>`;
+                        }
+                    });
+
+                    html += '</ul>';
+                    document.getElementById('main-content').innerHTML = html;
+                });
+            }
         </script>
 
 </body>
