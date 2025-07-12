@@ -42,28 +42,28 @@
         
             //Function to load publications from text file
             function loadPublications() {
-    fetch('data/publications.txt')
-      .then(res => res.text())
-      .then(text => {
-        const lines = text.trim().split('\n');
-        let html = '';
-        let currentYear = '';
+                fetch('data/publications.txt')
+                .then(res => res.text())
+                .then(text => {
+                    const lines = text.trim().split('\n');
+                    let html = '';
+                    let currentYear = '';
 
-        lines.forEach(line => {
-          if (/^\d{4}$/.test(line)) {
-            if (currentYear) html += '</ul>';
-            currentYear = line;
-            html += `<h3>${currentYear}</h3><ul>`;
-          } else if (line.trim()) {
-            const [authors, title, venue, file] = line.split('|').map(p => p.trim());
-            html += `<li><strong>${authors}</strong> ${title} ${venue ? venue : ''} <a href="Documents/${file}">[${file.split('.').pop()}]</a></li>`;
-          }
-        });
+                    lines.forEach(line => {
+                    if (/^\d{4}$/.test(line)) {
+                        if (currentYear) html += '</ul>';
+                        currentYear = line;
+                        html += `<h3>${currentYear}</h3><ul>`;
+                    } else if (line.trim()) {
+                        const [authors, title, venue, file] = line.split('|').map(p => p.trim());
+                        html += `<li><strong>${authors}</strong> ${title} ${venue ? venue : ''} <a href="Documents/${file}">[${file.split('.').pop()}]</a></li>`;
+                    }
+                    });
 
-        html += '</ul>';
-        document.getElementById('main-content').innerHTML = html;
-      });
-  }
+                    html += '</ul>';
+                    document.getElementById('main-content').innerHTML = html;
+                });
+            }
         </script>
 
 </body>
