@@ -1,14 +1,8 @@
-body {
-    margin: 0px;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #ffffff;
-    color: #222;
-}
-
+/*header and nav styles*/
 header {
     background: #A51C30;
     color: #fff;
-    padding: 1.2em 2em;
+    padding: 1.2em;
     text-align: left;
 }
 
@@ -16,6 +10,10 @@ header h1 {
     margin: 0;
     font-size: 1.8em;
     letter-spacing: 2px;
+}
+
+header h2 {
+    color: #fff;
 }
 
 header nav {
@@ -66,9 +64,13 @@ main {
 }
 
 body {
-  font-size: 1.05em;
-  line-height: 1.8;
-  font-weight: 400;
+    font-size: 1.05em;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 0px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
 }
 
 h1, h2, h3 {
@@ -95,6 +97,7 @@ a:focus, button:focus {
   outline-offset: 2px;
 }
 
+/*section styles*/
 .intro, .news, .pubs, .team, .projects {
     margin-bottom: 2em;
 }
@@ -106,12 +109,16 @@ a:focus, button:focus {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-
 .intro {
   background-color: #eef2fb;
   padding: 1em;
 }
 
+.pubs h3 {
+  margin-top: 2em;
+  font-size: 1.4em;
+  color: #234073;
+}
 
 .intro h2, .pubs h2, .team h2, .projects h2 {
     color: #234073;
@@ -141,6 +148,7 @@ footer {
     border-top: 1px solid #0c3483;
 }
 
+/*responsive design*/
 @media (max-width: 600px) {
   body {
     font-size: 1em;
@@ -157,6 +165,17 @@ footer {
   }
 }
 
+/*images*/
+.centered-image {
+  text-align: center;
+  margin: 2em 0;
+}
+.centered-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*accessibility: skip link*/
 .skip-link {
   position: absolute;
   left: -999px;
@@ -170,3 +189,37 @@ footer {
   border: 2px solid #000;
   z-index: 1000;
 }
+
+/*new blog style*/
+#news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.news-post {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+}
+
+.news-post img {
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.news-text h4 {
+  margin: 0 0 0.3em 0;
+  color: #234073;
+}
+
+.news-text .news-date {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 0.5em;
+}
+

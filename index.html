@@ -7,6 +7,9 @@
 </head>
 <body>
 
+  <!--skip link for accessibility-->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- Inserting header from header.html stored in /partials. Use JavaScript -->
 <div id="header"></div>
 
@@ -103,38 +106,51 @@ function loadStructuredContent(txtFile) {
       let currentClass = '';
 
       lines.forEach(line => {
-        const trimmed = line.trim().toLowerCase();
-        if (trimmed === 'welcome') {
+        const trimmed = line.trim();
+
+        // Detect and render year headings (e.g., 2025, 2024)
+        if (/^\d{4}$/.test(trimmed)) {
+          if (['pubs', 'projects', 'team'].includes(currentClass)) {
+            html += '</ul>';
+          }
+          html += `<h3>${trimmed}</h3><ul>`;
+          return; // Skip further processing for this line
+        }
+
+        const keyword = trimmed.toLowerCase();
+
+        if (keyword === 'welcome') {
           if (currentClass) html += '</div>';
           html += '<div class="intro"><h2>Welcome</h2>';
           currentClass = 'intro';
-        } else if (trimmed === 'publications') {
+        } else if (keyword === 'publications') {
           if (currentClass) html += '</div>';
           html += '<div class="pubs"><h2>Publications</h2><ul>';
           currentClass = 'pubs';
-        } else if (trimmed === 'team') {
+        } else if (keyword === 'team') {
           if (currentClass) html += '</div>';
           html += '<div class="team"><h2>Team</h2><ul class="people-list">';
           currentClass = 'team';
-        } else if (trimmed === 'research') {
+        } else if (keyword === 'ongoing projects') {
           if (currentClass) html += '</div>';
-          html += '<div class="projects"><h2>Research</h2><ul>';
+          html += '<div class="projects"><h2>Ongoing Projects</h2><ul>';
           currentClass = 'projects';
-        } else if (line.trim()) {
+        } else if (trimmed) {
           if (currentClass === 'pubs' || currentClass === 'projects') {
-            const [a, b, c, d] = line.split('|').map(p => p.trim());
+            const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
             html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
-            if (d) html += ` <a href="documents/${d}">[${d.split('.').pop()}]</a>`;
+            if (d) html += ` <a href="Documents/${d}">[${d.split('.').pop()}]</a>`;
             html += '</li>';
           } else if (currentClass === 'team') {
-            const [name, role, email] = line.split('|').map(p => p.trim());
+            const [name, role, email] = trimmed.split('|').map(p => p.trim());
             html += `<li><strong>${name}</strong> – ${role}<br><em>${email || ''}</em></li>`;
           } else {
-            html += `<p>${line}</p>`;
+            html += `<p>${trimmed}</p>`;
           }
         }
       });
 
+      // Close the final block
       if (currentClass) {
         if (['pubs', 'projects', 'team'].includes(currentClass)) {
           html += '</ul>';
@@ -186,6 +202,37 @@ window.onload = () => {
     });
   });
 };
+
+//news section
+function loadNews() {
+  fetch('data/news.txt')
+    .then(res => res.text())
+    .then(text => {
+      const lines = text.trim().split('\n');
+      let html = '';
+
+      lines.forEach(line => {
+        const parts = line.split('|').map(p => p.trim());
+        if (parts.length >= 5) {
+          const [title, date, description, image, altTag] = parts;
+          const altText = altTag.replace(/^alt=/i, '').trim();
+          html += `
+            <div class="news-post">
+              <img src="images/${image}" alt="${altText}">
+              <div class="news-text">
+                <h4>${title}</h4>
+                <p class="news-date">${date}</p>
+                <p>${description}</p>
+              </div>
+            </div>
+          `;
+        }
+      });
+
+      document.getElementById('news-list').innerHTML = html;
+    });
+}
+
         </script>
 
 </body>
