@@ -183,6 +183,15 @@ function handleRouting() {
   }
 }
 
+if (page === 'people') {
+  loadPeople();
+} else if (page === 'publications' || page === 'research') {
+  loadStructuredContent(`data/${page}.txt`);
+} else {
+  loadPage(`partials/${page}.html`);
+  if (page === 'home') setTimeout(loadNews, 150);
+}
+
 }
 
 // Handle back/forward browser buttons
@@ -230,6 +239,35 @@ function loadNews() {
       });
 
       document.getElementById('news-list').innerHTML = html;
+    });
+}
+
+//People section
+function loadPeople() {
+  fetch('data/people.txt')
+    .then(res => res.text())
+    .then(text => {
+      const lines = text.trim().split('\n');
+      let html = '<div class="people-grid">';
+
+      lines.forEach(line => {
+        const parts = line.split('|').map(p => p.trim());
+        if (parts.length === 5) {
+          const [name, role, description, image, altPart] = parts;
+          const altText = altPart.replace(/^alt=/i, '').trim();
+          html += `
+            <div class="person-card">
+              <img src="images/${image}" alt="${altText}">
+              <h4>${name}</h4>
+              <p class="role">${role}</p>
+              <p>${description}</p>
+            </div>
+          `;
+        }
+      });
+
+      html += '</div>';
+      document.getElementById('main-content').innerHTML = html;
     });
 }
 

@@ -223,3 +223,38 @@ footer {
   margin-bottom: 0.5em;
 }
 
+/*people section*/
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.person-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.person-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+.person-card h4 {
+  margin: 0.3em 0 0.2em;
+  font-size: 1.2em;
+  color: #234073;
+}
+
+.person-card .role {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5em;
+}
