@@ -5,6 +5,7 @@ Website for the Meaning &amp; Modality Linguistics Laboratory at Harvard Univers
 ## Folder Structure
 
 - `index.html` — main HTML file and site entry point
+-  `main.js` — all routing + loading logic
 - `CSS/style.css` — styles for layout and design
 - `partials/` — reusable HTML blocks (header, footer, home)
 - `data/` — content files editable by lab members
@@ -20,4 +21,4 @@ Lab members can edit content without touching code:
 - To update **publications**: edit `data/publications.txt`
 - To update **research**: edit `data/research.txt`
 
-Each `.txt` file uses a consistent format (see example inside the file).
+Each `.txt` file uses a consistent format (see example inside the file). Comment lines beginning with `#` are ignored.
