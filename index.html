@@ -161,13 +161,12 @@ function handleRouting() {
   if (page === 'publications' || page === 'research') {
     loadStructuredContent(`data/${page}.txt`);
   } else {
-    loadPage(`partials/${page}.html`);
-    if (page === 'home') {
-  loadPage(`partials/home.html`);
-  setTimeout(loadNews, 150);
+  loadPage(`partials/${page}.html`);
+  if (page === 'home') {
+    setTimeout(loadNews, 150);
+  }
 }
 
-  }
 }
 
 // Handle back/forward browser buttons
