@@ -1,0 +1,10 @@
+(for avi :)
+
+add pdfs and links to publications section, streamline this for other lab members
+add all people to people section
+add lab alumni
+add all news
+add harvard seal to header
+make people, news, pubs, sortable and collapsable
+add contacts section
+add how to get involved
