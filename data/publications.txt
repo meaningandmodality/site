@@ -13,8 +13,8 @@ Ankana Saha and Kathryn Davidson | Distinctions in anaphoricity: German strong d
 Natasha Thalluri and Kathryn Davidson | Towards a unified view of “co-sign gesture” depictions as demonstrations | Poster at Formal and Experimental Advances in Sign Language Theory (FEAST), Aug 6-8. | 
 Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson | Mandarin demonstratives as strong definites: An experimental investigation | Talk at Experiments in Linguistic Meaning (ELM 3), June 12-14 | 
 Hayley Ross, Najoung Kim, and Kathryn Davidson | Fake reefs are sometimes reefs and sometimes not, but are always compositional | Talk at Experiments in Linguistic Meaning (ELM 3), June 12-14. | 
-Hande Sevgi | Gesture type matters: Encoding path and manner in space | Poster at IMPRS (The International Max Planck Research School for Language Sciences) | Sevgi_IMPRS_2024.pdf
-Conference | Nijmegen, the Netherlands | June 5-7. | poster.pdf
+Hande Sevgi | Gesture type matters: Encoding path and manner in space | Poster at IMPRS (The International Max Planck Research School for Language Sciences) Conference Nijmegen, the Netherlands June 5-7. | Sevgi_IMPRS_2024.pdf
+# pdfs stop here
 Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson | Mandarin demonstratives as strong definites | Poster at Semantics and Linguistic Theory (SALT), Rochester, May 28-30. | poster.pdf
 Hande Sevgi | Two-handed classifiers in sign languages: An investigation in Turkish Sign Language | Talk at CLS 60, April 26-28. | slides.pdf
 Hayley Ross, Kathryn Davidson, and Najoung Kim | When is a fake concert still a concert? A study of adjective-noun composition in LLMs | Poster at New England Natural Language Processing (NENLP), April 26. | 
