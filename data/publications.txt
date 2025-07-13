@@ -1,4 +1,4 @@
-# Format: Author(s) | Title | Date and/or location | link filename 
+# Format: Author(s) | Title | Date and/or location | link, or filename 
 # Example:
 # Kathryn Davidson | 'And' or 'Or': General Use Coordination in ASL | Semantics & Pragmatics 6(4). 1-44. | free_publisher_download.pdf
 
@@ -8,7 +8,7 @@ Masashi Tamura, Nozomi Tomita, Kathryn Davidson | Negative possessive and existe
 Natasha Thalluri, Kathryn Davidson | Universality and variation in sign language comparatives | Poster at Theoretical Issues in Sign Language Research 15, Addis Ababa University, Jan 14-17. ​​​​ | poster.pdf
 
 2024
-Hayley Ross, Kathryn Davidson, and Najoung Kim | Is artificial intelligence still intelligence? LLMs generalize to novel adjective-noun pairs, but don’t mimic the full human distribution | Paper at GenBench Workshop at EMNLP, November 16. |
+Hayley Ross, Kathryn Davidson, and Najoung Kim | Is artificial intelligence still intelligence? LLMs generalize to novel adjective-noun pairs, but don’t mimic the full human distribution | Paper at GenBench Workshop at EMNLP, November 16. | rossetal2024.pdf
 Ankana Saha and Kathryn Davidson | Distinctions in anaphoricity: German strong definites vs | demonstratives. Poster at Experimental Pragmatics Conference in Italy (XPRAG.it), Sept 26-27. | poster.pdf
 Natasha Thalluri and Kathryn Davidson | Towards a unified view of “co-sign gesture” depictions as demonstrations | Poster at Formal and Experimental Advances in Sign Language Theory (FEAST), Aug 6-8. | 
 Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson | Mandarin demonstratives as strong definites: An experimental investigation | Talk at Experiments in Linguistic Meaning (ELM 3), June 12-14 | 

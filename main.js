@@ -89,7 +89,12 @@ function loadStructuredContent(txtFile) {
           if (currentClass === 'pubs' || currentClass === 'projects') {
             const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
             html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
-            if (d) html += ` <a href="Documents/${d}">[${d.split('.').pop()}]</a>`;
+            if (d) {
+            const isURL = d.startsWith('http://') || d.startsWith('https://');
+            const label = d.split('.').pop(); // shows [pdf] or [link]
+            const href = isURL ? d : `documents/${d}`;
+            html += ` <a href="${href}" target="_blank">[${label}]</a>`;
+            }
             html += '</li>';
           } else if (currentClass === 'team') {
             const [name, role, email] = trimmed.split('|').map(p => p.trim());

@@ -149,6 +149,13 @@ footer {
     border-top: 1px solid #0c3483;
 }
 
+figcaption {
+    font-size: 0.9em;
+    color: #000000;
+    margin-top: 0;
+    text-align: center;
+}
+
 /*responsive design*/
 @media (max-width: 600px) {
   body {
