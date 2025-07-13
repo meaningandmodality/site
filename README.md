@@ -16,7 +16,7 @@ Website for the Meaning & Modality Linguistics Laboratory at Harvard University!
 
 Lab members can edit content without touching code through `.txt` files in the folder called **data**:
 
-- To update **people**: edit `data/people.txt
+- To update **people**: edit `data/people.txt`
 - To update **news** which lives on **home**: edit `data/news.txt`
 - To update **publications**: edit `data/publications.txt`
 - To update **research**: edit `data/research.txt`
