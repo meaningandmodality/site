@@ -1,6 +1,6 @@
 # meaning-language
 
-Website for the Meaning &amp; Modality Linguistics Laboratory at Harvard University!
+Website for the Meaning & Modality Linguistics Laboratory at Harvard University!
 
 ## Folder Structure
 
@@ -14,11 +14,13 @@ Website for the Meaning &amp; Modality Linguistics Laboratory at Harvard Univers
 
 ## Updating the site
 
-Lab members can edit content without touching code:
+Lab members can edit content without touching code through `.txt` files in the folder called **data**:
 
-- To update **people**: edit `data/people.txt`
-- To update **news**: edit `data/news.txt`
+- To update **people**: edit `data/people.txt
+- To update **news** which lives on **home**: edit `data/news.txt`
 - To update **publications**: edit `data/publications.txt`
 - To update **research**: edit `data/research.txt`
 
 Each `.txt` file uses a consistent format (see example inside the file). Comment lines beginning with `#` are ignored.
+
+The opening welcome message on **home** is editable in HTML through `partials/home.html`.
