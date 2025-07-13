@@ -85,7 +85,7 @@ function loadNews() {
         if (parts.length >= 3) {
           const [title, date, des, file] = parts;
           html += `<li><strong>${title}</strong> (${date}) – ${des}`;
-          if (file) html += ` <a href="Documents/${file}">[${file.split('.').pop()}]</a>`;
+          if (file) html += ` <a href="documents/${file}">[${file.split('.').pop()}]</a>`;
           html += '</li>';
         }
       });
@@ -124,7 +124,7 @@ function loadStructuredContent(txtFile) {
           if (currentClass === 'pubs' || currentClass === 'projects') {
             const [a, b, c, d] = line.split('|').map(p => p.trim());
             html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
-            if (d) html += ` <a href="Documents/${d}">[${d.split('.').pop()}]</a>`;
+            if (d) html += ` <a href="documents/${d}">[${d.split('.').pop()}]</a>`;
             html += '</li>';
           } else if (currentClass === 'team') {
             const [name, role, email] = line.split('|').map(p => p.trim());
@@ -163,9 +163,10 @@ function handleRouting() {
   } else {
     loadPage(`partials/${page}.html`);
     if (page === 'home') {
-      // Slight delay to ensure the container exists before loading news
-      setTimeout(loadNews, 150);
-    }
+  loadPage(`partials/home.html`);
+  setTimeout(loadNews, 150);
+}
+
   }
 }
 

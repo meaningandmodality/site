@@ -9,25 +9,3 @@
         <ul id="news-list">
             <!--News will be inserted here--> 
         </ul>
-  <script>
-                        //Function to load news from text file
-            function loadNews() {
-                fetch('data/news.txt')
-                .then(res => res.text())
-                .then(text => {
-                    const lines = text.trim().split('\n');
-                    let html = '';
-
-                    lines.forEach(line => {
-                    if (line.trim()) {
-                        const [title, date, des, file] = line.split('|').map(p => p.trim());
-                        html += `<li>${date}</li>
-                        <li><strong>${title}</strong> ${des}''} <a href="documents/${file}">[${info.split('.').pop()}]</a></li>`;
-                        }
-                    });
-
-                    html += '</ul>';
-                    document.getElementById('main-content').innerHTML = html;
-                });
-            }
-                    </script>                  
