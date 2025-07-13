@@ -27,19 +27,7 @@
                     .then(data => {
                         document.getElementById("footer").innerHTML = data;
                     });
-            function loadPage(page) {
-                fetch(page)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("main-content").innerHTML = data;
-                    window.scrollTo(0, 0); // scroll to top
-                });
-            } 
-            // Load the home page by default
-            window.onload = () => {
-                loadPage('home.html');
-            };   
-        
+
             //Function to load publications from text file
             function loadPublications() {
                 fetch('data/publications.txt')
@@ -84,6 +72,106 @@
                     document.getElementById('main-content').innerHTML = html;
                 });
             }
+
+            function loadNews() {
+                fetch('data/news.txt')
+                    .then(res => res.text())
+                    .then(text => {
+                    const lines = text.trim().split('\n');
+                    let html = '';
+
+                lines.forEach(line => {
+                    if (line.trim()) {
+                    const [title, date, des, file] = line.split('|').map(p => p.trim());
+                    html += `<li><strong>${title}</strong> (${date}) – ${des}`;
+                    if (file) html += ` <a href="Documents/${file}">[${file.split('.').pop()}]</a>`;
+                    html += '</li>';
+                    }
+                    });
+
+                document.getElementById('news-list').innerHTML = html;
+                });
+            }
+                // Smart router: detect URL and load appropriate txt file
+function loadStructuredContent(txtFile) {
+  fetch(txtFile)
+    .then(res => res.text())
+    .then(text => {
+      const lines = text.trim().split('\n');
+      let html = '';
+      let currentClass = '';
+
+      lines.forEach(line => {
+        const trimmed = line.trim().toLowerCase();
+
+        if (trimmed === 'welcome') {
+          if (currentClass) html += '</div>';
+          html += '<div class="intro"><h2>Welcome</h2>';
+          currentClass = 'intro';
+        } else if (trimmed === 'publications') {
+          if (currentClass) html += '</div>';
+          html += '<div class="pubs"><h2>Publications</h2><ul>';
+          currentClass = 'pubs';
+        } else if (trimmed === 'team') {
+          if (currentClass) html += '</div>';
+          html += '<div class="team"><h2>Team</h2><ul class="people-list">';
+          currentClass = 'team';
+        } else if (trimmed === 'research') {
+          if (currentClass) html += '</div>';
+          html += '<div class="projects"><h2>Research</h2><ul>';
+          currentClass = 'projects';
+        } else if (line.trim()) {
+          if (currentClass === 'pubs' || currentClass === 'projects') {
+            const [a, b, c, d] = line.split('|').map(p => p.trim());
+            html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
+            if (d) html += ` <a href="Documents/${d}">[${d.split('.').pop()}]</a>`;
+            html += '</li>';
+          } else if (currentClass === 'team') {
+            const [name, role, email] = line.split('|').map(p => p.trim());
+            html += `<li><strong>${name}</strong> – ${role}<br><em>${email || ''}</em></li>`;
+          } else {
+            html += `<p>${line}</p>`;
+          }
+        }
+      });
+
+      if (currentClass) html += '</div>';
+      document.getElementById("main-content").innerHTML = html;
+    });
+}
+
+function handleRouting() {
+  const params = new URLSearchParams(window.location.search);
+  const page = params.get('page') || 'home';
+
+  if (page === 'publications' || page === 'research') {
+    loadStructuredContent(`data/${page}.txt`);
+  } else {
+    loadPage(`partials/${page}.html`);
+    if (page === 'home') {
+      // Slight delay to ensure the container exists before loading news
+      setTimeout(loadNews, 150);
+    }
+  }
+}
+
+// Handle back/forward browser buttons
+window.onpopstate = handleRouting;
+
+// Initial page load
+window.onload = () => {
+  handleRouting();
+
+  // Optional: turn nav links into soft navigators
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const url = this.getAttribute('href');
+      history.pushState({}, '', url); // update the address bar
+      handleRouting(); // load the content
+    });
+  });
+};
         </script>
 
 </body>
