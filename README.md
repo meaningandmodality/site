@@ -1,11 +1,11 @@
 # meaning-language
 
-Website for the Meaning &amp; Modality Linguistics Laboratory at Harvard University
+Website for the Meaning &amp; Modality Linguistics Laboratory at Harvard University!
 
 ## Folder Structure
 
 - `index.html` — main HTML file and site entry point
--  `main.js` — all routing + loading logic
+- `main.js` — all routing + loading logic
 - `CSS/style.css` — styles for layout and design
 - `partials/` — reusable HTML blocks (header, footer, home)
 - `data/` — content files editable by lab members
