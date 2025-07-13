@@ -1,3 +1,5 @@
+#Format: Title | Description | More information
+
 Ongoing Projects
 The anaphoric potential of demonstrative descriptions | in this cross-linguistic collaborative project, Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson investigate the contrast in acceptability of definite expressions and demonstratives in anaphoric contexts in English, Bangla, Turkish, and Mandarin to understand the core building blocks of definiteness in Language. | More information
 Adjective-noun composition in humans and large language models | In this project, Hayley Ross works on compositionality through the lens of experimental semantics, specifically focusing on adjective-noun composition with so-called privative adjectives like fake or counterfeit in human languages and language models. |More information

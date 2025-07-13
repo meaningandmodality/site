@@ -19,6 +19,14 @@
     
     <div id="footer"></div>
         <script>
+
+                      lines.forEach(line => {
+              if (line.startsWith('#') || !line.trim()) return;
+
+              const parts = line.split('|').map(p => p.trim());
+              // continue parsing as usual
+            });
+
                 fetch("partials/header.html")
                     .then(response => response.text())
                     .then(data => {

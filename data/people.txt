@@ -1,3 +1,7 @@
+# Format: Name | Role | Description | image filename | alt=Description for screen readers
+# Example:
+# Jill Jones | PI | Leads the lab | jill.jpg | alt=Photo of Jill smiling
+
 People
 Daria Bikina | Graduate student, Harvard Linguistics | Daria (Dasha) is a graduate student in the Linguistics Department. Her research interests are in experimental semantics and syntax-semantics interface. She is currently working on the interpretation of DPs in Russian and its interaction with information structure and aspect. Coming from a linguistic fieldwork background, Daria is particularly interested in methodology of linguistic experimental research. | daria.jpg | alt=Daria smiles, wearing a purple coat and a winter hat
 Irene Canudas | Postdoctoral fellow | Irene is a postdoctoral researcher investigating the intricate connection between language and cognition. Her primary focus lies in dissecting the fundamental conceptual elements that play a crucial role in scaffolding language acquisition. Her recent projects include work on understanding of logical structure and quantification in infancy, as well as children’s understanding of alternative possibilities. Currently, her research revolves around exploring how events are represented in the absence of language. | irene.png | alt= Irene, a woman with glasses and brown hair, smiling

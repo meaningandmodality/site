@@ -1,3 +1,7 @@
+# Format: Author(s) | Title | Date and/or location | link filename 
+# Example:
+# Kathryn Davidson | 'And' or 'Or': General Use Coordination in ASL | Semantics & Pragmatics 6(4). 1-44. | free_publisher_download.pdf
+
 Publications
 2025
 Masashi Tamura, Nozomi Tomita, Kathryn Davidson | Negative possessive and existential sentences in Japanese Sign Language (JSL) | Poster at Theoretical Issues in Sign Language Research 15, Addis Ababa University, Jan 14-17. ​​​​ | poster.pdf
