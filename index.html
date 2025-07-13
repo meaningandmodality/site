@@ -140,6 +140,14 @@ function loadStructuredContent(txtFile) {
     });
 }
 
+function loadPage(htmlFile) {
+  fetch(htmlFile)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("main-content").innerHTML = data;
+    });
+}
+
 function handleRouting() {
   const params = new URLSearchParams(window.location.search);
   const page = params.get('page') || 'home';

@@ -1,6 +1,1 @@
-Welcome
-Welcome to the Lab!
-Welcome to the Meaning and Modality (M&M) Laboratory at Harvard Linguistics! We are interested in understanding the incredible human capacity for language, especially the ability to convey abstract, infinite, specific meanings across the multiple modalities for natural language, including both speech and sign. Our work spans the subfields of formal semantics, pragmatics, syntax, language acquisition, logic and psycholinguistics in an effort to understand the relationship between linguistic meaning, language mode, language development, and human cognition, with special focus on cross-linguistic experimental semantic studies.
-
-News
 Hayley at EMNPL | November 18, 2024 | Our 5th year PhD student Hayley Ross presented her paper "Is artificial intelligence still intelligence? LLMs generalize to novel adjective-noun pairs, but don’t mimic the full human distribution", co-authored with Kate Davidson and Boston University's Najoung Kim, at the GenBench workshop of the EMNLP conference in Miami, where her paper won the best paper award of the workshop! Huge congrats, Hayley!|/images/ross-awardceremony1.jpg 
