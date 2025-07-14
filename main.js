@@ -11,6 +11,18 @@ fetch("partials/footer.html")
     document.getElementById("footer").innerHTML = data;
   });
 
+  // Sticky nav after scroll
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('main-nav');
+  const headerHeight = document.querySelector('header')?.offsetHeight || 100;
+
+  if (window.scrollY > headerHeight) {
+    nav.classList.add('fixed');
+  } else {
+    nav.classList.remove('fixed');
+  }
+});
+
 // === SMART ROUTER ===
 function handleRouting() {
   const params = new URLSearchParams(window.location.search);
