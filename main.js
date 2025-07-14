@@ -69,54 +69,69 @@ function loadStructuredContent(txtFile) {
       const lines = text.trim().split('\n');
       let html = '';
       let currentClass = '';
+      let subheadingPrinted = false;
 
       lines.forEach(line => {
-        if (line.startsWith('#') || !line.trim()) return;
         const trimmed = line.trim();
         const keyword = trimmed.toLowerCase();
 
-        if (/^\d{4}$/.test(trimmed)) {
-          if (['pubs', 'projects', 'team'].includes(currentClass)) html += '</ul>';
-          html += `<h3>${trimmed}</h3><ul>`;
-          return;
-        }
+        if (!trimmed || trimmed.startsWith('#')) return;
 
+        // Main section starters
         if (keyword === 'welcome') {
           if (currentClass) html += '</div>';
           html += '<div class="intro"><h2>Welcome</h2>';
           currentClass = 'intro';
+          subheadingPrinted = false;
         } else if (keyword === 'publications') {
           if (currentClass) html += '</div>';
           html += '<div class="pubs"><h2>Publications</h2><ul>';
           currentClass = 'pubs';
+          subheadingPrinted = false;
         } else if (keyword === 'team') {
           if (currentClass) html += '</div>';
           html += '<div class="team"><h2>Team</h2><ul class="people-list">';
           currentClass = 'team';
+          subheadingPrinted = false;
         } else if (keyword === 'ongoing projects') {
           if (currentClass) html += '</div>';
           html += '<div class="projects"><h2>Ongoing Projects</h2><ul>';
           currentClass = 'projects';
-        } if (keyword === 'contact information') {
+          subheadingPrinted = false;
+        } else if (keyword === 'contact information') {
+          if (currentClass) html += '</div>';
           html += '<div class="contact"><h2>Contact Information</h2>';
           currentClass = 'contact';
-        } else if (trimmed) {
-          if (currentClass === 'pubs' || currentClass === 'projects') {
-            const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
-            html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
-            if (d) {
-            const isURL = d.startsWith('http://') || d.startsWith('https://');
-            const label = d.split('.').pop(); // shows [pdf] or [link]
-            const href = isURL ? d : `documents/${d}`;
-            html += ` <a href="${href}" target="_blank">[${label}]</a>`;
-            }
-            html += '</li>';
-          } else if (currentClass === 'team') {
-            const [name, role, email] = trimmed.split('|').map(p => p.trim());
-            html += `<li><strong>${name}</strong> – ${role}<br><em>${email || ''}</em></li>`;
-          } else {
-            html += `<p>${trimmed}</p>`;
-          }
+          subheadingPrinted = false;
+        } else if (/^\d{4}$/.test(trimmed)) {
+          if (currentClass === 'pubs' || currentClass === 'projects') html += '</ul>';
+          html += `<h3>${trimmed}</h3><ul>`;
+          subheadingPrinted = false;
+        }
+
+        // Subheading that shouldn't duplicate main heading
+        else if (
+          trimmed &&
+          !trimmed.includes('|') &&
+          !subheadingPrinted &&
+          trimmed.toLowerCase() !== currentClass &&
+          trimmed.toLowerCase() !== 'ongoing projects'
+        ) {
+          html += `<h3>${trimmed}</h3>`;
+          subheadingPrinted = true;
+        }
+
+        // Content rows
+        else if (currentClass === 'pubs' || currentClass === 'projects') {
+          const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
+          html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
+          if (d) html += ` <a href="Documents/${d}">[${d.split('.').pop()}]</a>`;
+          html += '</li>';
+        } else if (currentClass === 'team') {
+          const [name, role, email] = trimmed.split('|').map(p => p.trim());
+          html += `<li><strong>${name}</strong> – ${role}<br><em>${email || ''}</em></li>`;
+        } else {
+          html += `<p>${trimmed}</p>`;
         }
       });
 
