@@ -30,7 +30,7 @@ function handleRouting() {
 
   if (page === 'people') {
     loadPeople();
-  } else if (page === 'publications' || page === 'research') {
+  } else if (['publications', 'research', 'contact'].includes(page)) {
     loadStructuredContent(`data/${page}.txt`);
   } else {
     loadPage(`partials/${page}.html`);
@@ -97,6 +97,9 @@ function loadStructuredContent(txtFile) {
           if (currentClass) html += '</div>';
           html += '<div class="projects"><h2>Ongoing Projects</h2><ul>';
           currentClass = 'projects';
+        } if (keyword === 'contact') {
+          html += '<div class="contact"><h2>Contact</h2>';
+          currentClass = 'contact';
         } else if (trimmed) {
           if (currentClass === 'pubs' || currentClass === 'projects') {
             const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
