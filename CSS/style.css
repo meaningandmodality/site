@@ -265,7 +265,7 @@ figcaption {
 
 .person-card .role {
   font-weight: 600;
-  color: #555;
+  color: #646464;
   margin-bottom: 0.5em;
   font-size: 0.9em;
 }
@@ -280,5 +280,15 @@ figcaption {
   background: #eef2fb;
   transform: translateY(-2px);
   transition: 0.2s ease;
+}
+
+.toggle-hint {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 0.4em;
+}
+
+.person-card {
+  cursor: pointer;
 }
 

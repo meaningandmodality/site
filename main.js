@@ -154,18 +154,23 @@ function loadPeople() {
       const lines = text.trim().split('\n');
       let html = '<div class="people-grid">';
 
-      lines.forEach(line => {
+      lines.forEach((line, index) => {
         if (line.startsWith('#') || !line.trim()) return;
+
         const parts = line.split('|').map(p => p.trim());
         if (parts.length === 5) {
           const [name, role, description, image, altPart] = parts;
           const altText = altPart.replace(/^alt=/i, '').trim();
+          const isLong = description.length > 120;
+          const short = isLong ? description.slice(0, 120) + '…' : description;
+
           html += `
-            <div class="person-card">
+            <div class="person-card" onclick="toggleDescription(${index}, ${isLong})">
               <img src="images/${image}" alt="${altText}">
               <h4>${name}</h4>
               <p class="role">${role}</p>
-              <p>${description}</p>
+              <p id="desc-${index}" class="description" data-full="${description}">${short}</p>
+              ${isLong ? `<p id="hint-${index}" class="toggle-hint">(Click to expand)</p>` : ''}
             </div>
           `;
         }
@@ -174,4 +179,22 @@ function loadPeople() {
       html += '</div>';
       document.getElementById('main-content').innerHTML = html;
     });
+}
+
+// JS function to toggle full/short description
+function toggleDescription(index, isLong) {
+  if (!isLong) return;
+
+  const desc = document.getElementById(`desc-${index}`);
+  const hint = document.getElementById(`hint-${index}`);
+  const full = desc.getAttribute('data-full');
+  const isShort = desc.textContent.endsWith('…');
+
+  if (isShort) {
+    desc.textContent = full;
+    if (hint) hint.textContent = '(Click to collapse)';
+  } else {
+    desc.textContent = full.length > 120 ? full.slice(0, 120) + '…' : full;
+    if (hint) hint.textContent = '(Click to expand)';
+  }
 }
