@@ -116,6 +116,13 @@ function loadStructuredContent(txtFile) {
 
 // === NEWS ===
 function loadNews() {
+  const userLocale = navigator.language || 'en-US';
+
+  function parseUSDate(dateStr) {
+    const [month, day, year] = dateStr.split('/');
+    return new Date(`${year}-${month}-${day}`);
+  }
+
   fetch('data/news.txt')
     .then(res => res.text())
     .then(text => {
@@ -129,12 +136,22 @@ function loadNews() {
         if (parts.length >= 5) {
           const [title, date, description, image, altTag] = parts;
           const altText = altTag.replace(/^alt=/i, '').trim();
+
+          const rawDate = parseUSDate(date);
+          const formattedDate = isNaN(rawDate)
+            ? 'Date unavailable'
+            : new Intl.DateTimeFormat(userLocale, {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+              }).format(rawDate);
+
           html += `
             <div class="news-post">
               <img src="images/${image}" alt="${altText}">
               <div class="news-text">
                 <h4>${title}</h4>
-                <p class="news-date">${date}</p>
+                <p class="news-date">${formattedDate}</p>
                 <p>${description}</p>
               </div>
             </div>
