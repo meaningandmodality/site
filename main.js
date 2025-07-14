@@ -97,8 +97,8 @@ function loadStructuredContent(txtFile) {
           if (currentClass) html += '</div>';
           html += '<div class="projects"><h2>Ongoing Projects</h2><ul>';
           currentClass = 'projects';
-        } if (keyword === 'contact') {
-          html += '<div class="contact"><h2>Contact</h2>';
+        } if (keyword === 'contact information') {
+          html += '<div class="contact"><h2>Contact Information</h2>';
           currentClass = 'contact';
         } else if (trimmed) {
           if (currentClass === 'pubs' || currentClass === 'projects') {
