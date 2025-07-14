@@ -64,6 +64,16 @@ nav#main-nav a.active {
   border-bottom: 2px solid #fff;
 }
 
+@media (max-width: 600px) {
+  nav#main-nav ul {
+    gap: 1em;  /* tighter spacing on small screens */
+  }
+
+  nav#main-nav a {
+    font-size: 0.95em;  /* optional: slightly smaller text */
+  }
+}
+
 /* Sticky Nav */
 nav#main-nav.fixed {
   position: fixed;
@@ -80,7 +90,7 @@ nav#main-nav.fixed {
 #main-content {
   max-width: 700px;
   margin: 2em auto;
-  padding: 0 1em;
+  padding: 1em 1em 0.1em;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 12px rgba(20,40,80,0.06);
@@ -89,7 +99,7 @@ nav#main-nav.fixed {
 main {
     max-width: 700px;
     margin: 2em auto;
-    padding: 0 1em;
+    padding: 0 1em 1em;
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 12px rgba(20,40,80,0.06);
@@ -186,6 +196,7 @@ a:focus, button:focus {
 
 /*people section*/
 .people-grid {
+  padding: 0 1em 2.1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5em;
