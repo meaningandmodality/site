@@ -14,12 +14,15 @@ fetch("partials/footer.html")
   // Sticky nav after scroll
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('main-nav');
+  const spacer = document.querySelector('.nav-spacer');
   const headerHeight = document.querySelector('header')?.offsetHeight || 100;
 
   if (window.scrollY > headerHeight) {
     nav.classList.add('fixed');
+    if (spacer) spacer.style.display = 'block';  // prevent layout jump
   } else {
     nav.classList.remove('fixed');
+    if (spacer) spacer.style.display = 'none';
   }
 });
 
@@ -28,6 +31,8 @@ function handleRouting() {
   const params = new URLSearchParams(window.location.search);
   const page = params.get('page') || 'home';
 
+  updatePageTitle(page);
+  
   if (page === 'people') {
     loadPeople();
   } else if (['publications', 'research', 'contact'].includes(page)) {
@@ -36,6 +41,18 @@ function handleRouting() {
     loadPage(`partials/${page}.html`);
     if (page === 'home') setTimeout(loadNews, 150);
   }
+}
+
+function updatePageTitle(page) {
+  const titles = {
+    home: 'Home | Meaning & Modality Lab',
+    people: 'People | Meaning & Modality Lab',
+    publications: 'Publications | Meaning & Modality Lab',
+    research: 'Research | Meaning & Modality Lab',
+    contact: 'Contact | Meaning & Modality Lab',
+  };
+
+  document.title = titles[page] || 'Meaning & Modality Lab';
 }
 
 window.onpopstate = handleRouting;

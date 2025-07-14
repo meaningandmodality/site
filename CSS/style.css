@@ -74,6 +74,12 @@ nav#main-nav a.active {
   }
 }
 
+.nav-spacer {
+  height: 4em;     /* match fixed nav height */
+  display: none;   /* hidden by default */
+}
+
+
 /* Sticky Nav */
 nav#main-nav.fixed {
   position: fixed;
