@@ -125,7 +125,7 @@ function loadStructuredContent(txtFile) {
         else if (currentClass === 'pubs' || currentClass === 'projects') {
           const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
           html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
-          if (d) html += ` <a href="Documents/${d}">[${d.split('.').pop()}]</a>`;
+          if (d) html += ` <a href="documents/${d}">[${d.split('.').pop()}]</a>`;
           html += '</li>';
         } else if (currentClass === 'team') {
           const [name, role, email] = trimmed.split('|').map(p => p.trim());
