@@ -155,7 +155,8 @@ a:focus, button:focus {
 }
 
 .projects li {
-  line-height: 1.6em;
+  line-height: 2.2em;
+  margin-top: 1.2em;
 }
 
 /*new blog style*/
