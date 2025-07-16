@@ -27,8 +27,8 @@ The opening welcome message on **home** is editable in HTML through `partials/ho
 
 ## Adding images, links, and pdfs
 
-- Add images by dragging your file (.jpeg, .svg, .jpg, .png) into the folder called **images**. Then, type the exact filename that you see in **images** to call your file
-- Add pdfs by dragging your file (.pdf) into the folder called **documents**. Then, type the exact filename that you see in **documents** to call your file
+- Add images by dragging your file (.jpeg, .svg, .jpg, .png) into the folder called **images**. Then, type the exact filename that you see in **images** to call your file in `.txt` files where the format allows images
+- Add pdfs by dragging your file (.pdf) into the folder called **documents**. Then, type the exact filename that you see in **documents** to call your file in `.txt` files where the format allows pdfs
 - Add links by pasting the entire link in `.txt` files where the format allows a link
 
 Please retitle your files to a simple and informative name before adding them to the folders! This makes it easy for everyone!

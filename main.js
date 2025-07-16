@@ -35,13 +35,16 @@ function handleRouting() {
   
   if (page === 'people') {
     loadPeople();
-  } else if (['publications', 'research', 'contact'].includes(page)) {
+  } if (page === 'research') { //testing this!!
+    loadResearch();
+  } else if (['publications', 'contact'].includes(page)) {
     loadStructuredContent(`data/${page}.txt`);
   } else {
     loadPage(`partials/${page}.html`);
     if (page === 'home') setTimeout(loadNews, 150);
   }
 }
+
 
 function updatePageTitle(page) {
   const titles = {
@@ -110,12 +113,16 @@ function loadStructuredContent(txtFile) {
           html += '<div class="team"><h2>Team</h2><ul class="people-list">';
           currentClass = 'team';
           subheadingPrinted = false;
-        } else if (keyword === 'ongoing projects') {
-          if (currentClass) html += '</div>';
-          html += '<div class="projects"><h2>Ongoing Projects</h2><ul>';
-          currentClass = 'projects';
-          subheadingPrinted = false;
-        } else if (keyword === 'contact information') {
+        } 
+        
+        //else if (keyword === 'ongoing projects') {
+        //  if (currentClass) html += '</div>';
+        //  html += '<div class="projects"><h2>Ongoing Projects</h2><ul>';
+        //  currentClass = 'projects';
+        //  subheadingPrinted = false;
+        //} 
+        
+        else if (keyword === 'contact information') {
           if (currentClass) html += '</div>';
           html += '<div class="contact"><h2>Contact Information</h2>';
           currentClass = 'contact';
@@ -260,5 +267,53 @@ function toggleDescription(index, isLong) {
   } else {
     desc.textContent = full.length > 120 ? full.slice(0, 120) + '…' : full;
     if (hint) hint.textContent = '(Click to expand)';
+  }
+}
+
+// === RESEARCH === (testing this!!)
+function loadResarch() {
+  fetch('data/research.txt')
+    .then(res => res.text())
+    .then(text => {
+      const lines = text.trim().split('\n');
+      let html = '<div class="project-grid">';
+
+      lines.forEach((line, index) => {
+        if (line.startsWith('#') || !line.trim()) return;
+
+        const parts = line.split('|').map(p => p.trim());
+        if (parts.length === 3) {
+          const [title, mini, long] = parts;
+
+          html += `
+            <div class="project-card" onclick="toggleDescription(${index})">
+              <h4>${title}</h4>
+              <p id="desc-${index}" class="description" data-full="${long}">${mini}</p>
+              <p id="hint-${index}" class="toggle-hint">(More information)</p>
+            </div>
+          `;
+        }
+      });
+
+      html += '</div>';
+      document.getElementById('main-content').innerHTML = html;
+    });
+}
+
+// JS function to toggle full/short description
+function toggleDescription(index, mini, long) {
+  if (!long) return;
+
+  const desc = document.getElementById(`desc-${index}`);
+  const hint = document.getElementById(`hint-${index}`);
+  const full = desc.getAttribute('data-full');
+  const isShort = desc.textContent.endsWith('…');
+
+  if (mini) {
+    desc.textContent = full;
+    if (hint) hint.textContent = '(Less information)';
+  } else {
+    desc.textContent = full.length > 120 ? full.slice(0, 120) + '…' : full;
+    if (hint) hint.textContent = '(More information)';
   }
 }

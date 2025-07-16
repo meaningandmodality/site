@@ -263,6 +263,46 @@ a:focus, button:focus {
   cursor: pointer;
 }
 
+/*research section*/
+.project-grid {
+  padding: 0 1em 2.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.project-card {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  font-size: 0.95em;
+}
+
+.project-card p {
+  font-size: 0.85em;
+  color: #333;
+  margin: 0.5em 0 0;
+}
+
+.project-card:hover {
+  background: #eef2fb;
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
+.toggle-hint {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 0.4em;
+}
+
+.project-card {
+  cursor: pointer;
+}
+
 /*responsive design*/
 @media (max-width: 600px) {
   body {
