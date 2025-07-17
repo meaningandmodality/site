@@ -271,7 +271,7 @@ function toggleDescription(index, isLong) {
 }
 
 // === RESEARCH === (testing this!!)
-function loadResarch() {
+function loadResearch() {
   fetch('data/research.txt')
     .then(res => res.text())
     .then(text => {
@@ -288,7 +288,10 @@ function loadResarch() {
           html += `
             <div class="project-card" onclick="toggleDescription(${index})">
               <h4>${title}</h4>
-              <p id="desc-${index}" class="description" data-full="${long}">${mini}</p>
+              <p class="description">
+                ${mini}
+                <span id="long-${index}" class="long-text" style="display: none;"> ${long}</span>
+              </p>
               <p id="hint-${index}" class="toggle-hint">(More information)</p>
             </div>
           `;
@@ -301,19 +304,15 @@ function loadResarch() {
 }
 
 // JS function to toggle full/short description
-function toggleDescription(index, mini, long) {
-  if (!long) return;
-
-  const desc = document.getElementById(`desc-${index}`);
+function toggleDescription(index) {
+  const full = document.getElementById(`long-${index}`);
   const hint = document.getElementById(`hint-${index}`);
-  const full = desc.getAttribute('data-full');
-  const isShort = desc.textContent.endsWith('…');
 
-  if (mini) {
-    desc.textContent = full;
+  if (full.style.display === 'none') {
+    full.style.display = 'inline';
     if (hint) hint.textContent = '(Less information)';
   } else {
-    desc.textContent = full.length > 120 ? full.slice(0, 120) + '…' : full;
+    full.style.display = 'none';
     if (hint) hint.textContent = '(More information)';
   }
 }
