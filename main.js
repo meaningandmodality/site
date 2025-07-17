@@ -122,9 +122,9 @@ function loadStructuredContent(txtFile) {
         //  subheadingPrinted = false;
         //} 
         
-        else if (keyword === 'contact information') {
+        else if (keyword === 'how to get invovled') {
           if (currentClass) html += '</div>';
-          html += '<div class="contact"><h2>Contact Information</h2>';
+          html += '<div class="contact"><h2>How to Get Involved</h2>';
           currentClass = 'contact';
           subheadingPrinted = false;
         } else if (/^\d{4}$/.test(trimmed)) {
