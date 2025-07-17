@@ -35,7 +35,7 @@ function handleRouting() {
   
   if (page === 'people') {
     loadPeople();
-  } if (page === 'research') { //testing this!!
+  } else if (page === 'research') { //testing this!!
     loadResearch();
   } else if (['publications', 'contact'].includes(page)) {
     loadStructuredContent(`data/${page}.txt`);
