@@ -223,7 +223,7 @@ function loadPeople() {
     .then(res => res.text())
     .then(text => {
       const lines = text.trim().split('\n');
-      let html = '<div class="people-grid">';
+      let html = '<h2>Our Team</h2><div class="people-grid">';
 
       lines.forEach((line, index) => {
         if (line.startsWith('#') || !line.trim()) return;
@@ -276,7 +276,7 @@ function loadResearch() {
     .then(res => res.text())
     .then(text => {
       const lines = text.trim().split('\n');
-      let html = '<div class="project-grid">';
+      let html = '<h2>Ongoing Projects</h2><div class="project-grid">';
 
       lines.forEach((line, index) => {
         if (line.startsWith('#') || !line.trim()) return;
