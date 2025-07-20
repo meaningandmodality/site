@@ -4,6 +4,6 @@ add pdfs and links to publications section
 add lab alumni
 add all news
 make people, news, pubs, sortable and collapsable
-add how to get involved
+fix how to get involved
 add more accessibility features
 give kate a link to the lab research page for her advising site to link to (last!)
