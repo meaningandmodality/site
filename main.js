@@ -253,15 +253,13 @@ function loadPeople() {
 }
 
 // JS function to toggle full/short description
-function toggleDescription(index, isLong) {
-  if (!isLong) return;
-
+function toggleDescription(index) {
   const desc = document.getElementById(`desc-${index}`);
   const hint = document.getElementById(`hint-${index}`);
   const full = desc.getAttribute('data-full');
-  const isShort = desc.textContent.endsWith('…');
+  const isTruncated = desc.textContent.endsWith('…');
 
-  if (isShort) {
+  if (isTruncated) {
     desc.textContent = full;
     if (hint) hint.textContent = '(Click to collapse)';
   } else {
