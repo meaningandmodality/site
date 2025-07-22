@@ -260,10 +260,6 @@ function togglePersonDescription(index) {
   const hint = document.getElementById(`hint-${index}`);
   const full = desc.getAttribute('data-full');
   const short = full.length > 120 ? full.slice(0, 120) + '…' : full;
-  const card = document.querySelector(`.person-card[onclick*="${index}"]`);
-  if (card) {
-    card.setAttribute('aria-expanded', isShowingFull ? 'false' : 'true');
-  }
 
 
   const isShowingFull = desc.textContent === full;
@@ -274,6 +270,11 @@ function togglePersonDescription(index) {
   } else {
     desc.textContent = full;
     if (hint) hint.textContent = '(Click to collapse)';
+  }
+
+  const card = document.querySelector(`.person-card[onclick*="${index}"]`);
+  if (card) {
+    card.setAttribute('aria-expanded', isShowingFull ? 'false' : 'true');
   }
 }
 
@@ -317,9 +318,6 @@ function toggleDescription(index) {
   const full = document.getElementById(`long-${index}`);
   const hint = document.getElementById(`hint-${index}`);
   const card = document.querySelector(`.project-card[onclick*="${index}"]`);
-  if (card) {
-    card.setAttribute('aria-expanded', isShowingFull ? 'false' : 'true');
-  }
 
 
   if (full.style.display === 'none') {
@@ -328,5 +326,10 @@ function toggleDescription(index) {
   } else {
     full.style.display = 'none';
     if (hint) hint.textContent = '(More information)';
+  }
+
+  if (card) {
+    const isExpanded = full.style.display === 'inline';
+    card.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
   }
 }
