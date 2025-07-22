@@ -236,7 +236,9 @@ function loadPeople() {
           const short = isLong ? description.slice(0, 120) + '…' : description;
 
           html += `
-            <div class="person-card" onclick="toggleDescription(${index}, ${isLong})">
+            <div class="person-card" tabindex="0" role="button" aria-expanded="false"
+              onclick="togglePersonDescription(${index})"
+              onkeydown="if(event.key==='Enter'||event.key===' ') togglePersonDescription(${index})">
               <img src="images/${image}" alt="${altText}">
               <h4>${name}</h4>
               <p class="role">${role}</p>
@@ -253,18 +255,25 @@ function loadPeople() {
 }
 
 // JS function to toggle full/short description
-function toggleDescription(index) {
+function togglePersonDescription(index) {
   const desc = document.getElementById(`desc-${index}`);
   const hint = document.getElementById(`hint-${index}`);
   const full = desc.getAttribute('data-full');
-  const isTruncated = desc.textContent.endsWith('…');
+  const short = full.length > 120 ? full.slice(0, 120) + '…' : full;
+  const card = document.querySelector(`.person-card[onclick*="${index}"]`);
+  if (card) {
+    card.setAttribute('aria-expanded', isShowingFull ? 'false' : 'true');
+  }
 
-  if (isTruncated) {
+
+  const isShowingFull = desc.textContent === full;
+
+  if (isShowingFull) {
+    desc.textContent = short;
+    if (hint) hint.textContent = '(Click to expand)';
+  } else {
     desc.textContent = full;
     if (hint) hint.textContent = '(Click to collapse)';
-  } else {
-    desc.textContent = full.length > 120 ? full.slice(0, 120) + '…' : full;
-    if (hint) hint.textContent = '(Click to expand)';
   }
 }
 
@@ -284,7 +293,9 @@ function loadResearch() {
           const [title, mini, long] = parts;
 
           html += `
-            <div class="project-card" onclick="toggleDescription(${index})">
+            <div class="project-card" tabindex="0" role="button" aria-expanded="false"
+              onclick="toggleDescription(${index})"
+              onkeydown="if(event.key==='Enter'||event.key===' ') toggleDescription(${index})">
               <h4>${title}</h4>
               <p class="description">
                 ${mini}
@@ -305,6 +316,11 @@ function loadResearch() {
 function toggleDescription(index) {
   const full = document.getElementById(`long-${index}`);
   const hint = document.getElementById(`hint-${index}`);
+  const card = document.querySelector(`.project-card[onclick*="${index}"]`);
+  if (card) {
+    card.setAttribute('aria-expanded', isShowingFull ? 'false' : 'true');
+  }
+
 
   if (full.style.display === 'none') {
     full.style.display = 'inline';
