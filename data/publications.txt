@@ -1,6 +1,10 @@
-# Format: Author(s) | Title | Date and/or location | link, or filename 
-# Example:
-# Kathryn Davidson | 'And' or 'Or': General Use Coordination in ASL | Semantics & Pragmatics 6(4). 1-44. | free_publisher_download.pdf
+# Format: Author(s) | Title | Date and/or location | [optional label]filename | [optional label]url 
+# the default labels are [pdf] followed by [link]
+# entries MUST have 5 sections each. leave a section blank to skip it.
+# Examples:
+# Jane Doe | Semantics in Context | SALT 31 | [poster]talk.pdf | [slides]https://slides.com/presentation
+# John Smith | Iconicity and Structure | Glossa | | https://journal.org/view/123
+# The second example has no pdf, and uses the default link label [link]
 
 Publications
 2025
@@ -21,14 +25,14 @@ Hande Sevgi | Two-handed classifiers in sign languages: An investigation in Turk
 Hayley Ross, Kathryn Davidson, and Najoung Kim | When is a fake concert still a concert? A study of adjective-noun composition in LLMs | Poster at New England Natural Language Processing (NENLP), April 26. | 
 Yuhan Zhang and Kathryn Davidson | Interpreting referential noun phrases in belief reports – the de re/de dicto competition | To appear in Glossa Psycholinguistics. | zhangEtAl_24_Interpreting.4.pdf
 Natasha Thalluri and Kathryn Davidson | Degrees and depiction-gradability in sign languages | Proceedings of Sinn und Bedeutung (SuB) 28. | thalluri_davidson_2024.pdf
-Anastasia Tsilia and Kathryn Davidson | Effects of iconicity and monotonicity on licensing complement anaphora | Proceedings of Sinn und Bedeutung (SuB) 28. | tsilia_davidson_2024.pdf
-Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, and Brent Strickland | Non-signing childrens assessment of telicity in sign language | Cognition, v249. | free_publisher_download.pdf
-Kathryn Davidson. | Compositionality and Iconicity. | |
-Kathryn Davidson. | Formal semantics and pragmatics in sign languages. | |
-Yağmur Sağ | Fake mass nouns and associative plurality | Talk at NELS 54, MIT, Jan 26-27. | ​
+Anastasia Tsilia and Kathryn Davidson | Effects of iconicity and monotonicity on licensing complement anaphora | Proceedings of Sinn und Bedeutung (SuB) 28. | tsilia_davidson_2024.pdf |
+Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, and Brent Strickland | Non-signing childrens assessment of telicity in sign language | Cognition, v249 | |https://www.sciencedirect.com/science/article/pii/S0010027724000970
+Kathryn Davidson. | Formal semantics and pragmatics in sign languages | | |
+Yağmur Sağ | Fake mass nouns and associative plurality | Talk at NELS 54, MIT, Jan 26-27 | ​|
+# 3 above
 
 2023
-Ankana Saha, Yağmur Sağ and Kathryn Davidson | Focus on demonstratives: Experiments in English and Turkish, in proceedings of Semantics And Linguistic Theory (SALT) 33 | [Paper] | poster.pdf
+Ankana Saha, Yağmur Sağ and Kathryn Davidson | Focus on demonstratives: Experiments in English and Turkish, in proceedings of Semantics And Linguistic Theory (SALT) 33 | saha_sag_davidson_2023.pdf
 Masoud Jasbi, Natalia Bermudez, and Kathryn Davidson. | Default biases in the interpretation of English negation, conjunction, and disjunction, | in the proceedings of Experiments in Linguistic Meaning 2, 129-141. |
 Hayley Ross, Gennaro Chierchia, and Kathryn Davidson | Quantifying weak and strong crossover for wh-crossover and proper names | Proceedings of the 27th Sinn und Bedeutung conference. | proceedings_paper.pdf
 Kathryn Davidson | Semiotic distinctions in compositional semantics | Proceedings of the 58th Chicago Linguistic Society. | proceedings_paper.pdf

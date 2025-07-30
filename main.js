@@ -146,12 +146,21 @@ function loadStructuredContent(txtFile) {
         }
 
         // Content rows
-        else if (currentClass === 'pubs' || currentClass === 'projects') {
-          const [a, b, c, d] = trimmed.split('|').map(p => p.trim());
+      else if (currentClass === 'pubs' || currentClass === 'projects') {
+          const [a, b, c, d, e] = trimmed.split('|').map(p => p.trim());
           html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
-          if (d) html += ` <a href="documents/${d}">[${d.split('.').pop()}]</a>`;
+
+          if (d) {
+            const label = d.endsWith('.pdf') ? 'pdf' : d.split('.').pop();
+            html += ` <a href="documents/${d}">[${label}]</a>`;
+          }
+
+          if (e && e.startsWith('http')) {
+            html += ` <a href="${e}" target="_blank" rel="noopener">[link]</a>`;
+          }
+
           html += '</li>';
-        } else if (currentClass === 'team') {
+    } else if (currentClass === 'team') {
           const [name, role, email] = trimmed.split('|').map(p => p.trim());
           html += `<li><strong>${name}</strong> – ${role}<br><em>${email || ''}</em></li>`;
         } else {
@@ -332,4 +341,57 @@ function toggleDescription(index) {
     const isExpanded = full.style.display === 'inline';
     card.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
   }
+}
+
+// === PUBLICATIONS with custom link labels ===
+function loadPublications() {
+  fetch('data/publications.txt')
+    .then(res => res.text())
+    .then(text => {
+      const lines = text.trim().split('\n');
+      let html = '';
+      let currentYear = '';
+
+      lines.forEach(line => {
+        if (line.startsWith('#') || !line.trim()) return;
+
+        if (/^\d{4}$/.test(line.trim())) {
+          if (currentYear) html += '</ul>';
+          currentYear = line.trim();
+          html += `<h3>${currentYear}</h3><ul>`;
+        } else {
+          const parts = line.split('|').map(p => p.trim());
+          const [authors, title, venue, file, link] = parts;
+
+          html += `<li><strong>${authors}</strong> ${title} ${venue || ''}`;
+
+          if (file) {
+            const match = file.match(/^\[(.+?)\](.+)$/); // e.g. [poster]file.pdf
+            if (match) {
+              const label = match[1];
+              const filename = match[2];
+              html += ` <a href="documents/${filename}">[${label}]</a>`;
+            } else {
+              html += ` <a href="documents/${file}">[${file.split('.').pop()}]</a>`;
+            }
+          }
+
+          if (link && link.startsWith('http')) {
+            const match = link.match(/^\[(.+?)\](https?:\/\/.+)$/); // e.g. [DOI]http://link
+            if (match) {
+              const label = match[1];
+              const url = match[2];
+              html += ` <a href="${url}" target="_blank" rel="noopener">[${label}]</a>`;
+            } else {
+              html += ` <a href="${link}" target="_blank" rel="noopener">[link]</a>`;
+            }
+          }
+
+          html += '</li>';
+        }
+      });
+
+      html += '</ul>';
+      document.getElementById('main-content').innerHTML = html;
+    });
 }
