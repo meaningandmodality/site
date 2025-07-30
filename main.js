@@ -146,20 +146,20 @@ function loadStructuredContent(txtFile) {
         }
 
         // Content rows
-      else if (currentClass === 'pubs' || currentClass === 'projects') {
+    else if (currentClass === 'pubs' || currentClass === 'projects') {
           const [a, b, c, d, e] = trimmed.split('|').map(p => p.trim());
-          html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
+        html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
 
-          if (d) {
-            const label = d.endsWith('.pdf') ? 'pdf' : d.split('.').pop();
-            html += ` <a href="documents/${d}">[${label}]</a>`;
-          }
+        if (d) {
+          const label = d.endsWith('.pdf') ? 'pdf' : d.split('.').pop();
+          html += ` <a href="documents/${d}">[${label}]</a>`;
+        }
 
-          if (e && e.startsWith('http')) {
-            html += ` <a href="${e}" target="_blank" rel="noopener">[link]</a>`;
-          }
+        if (e && e.startsWith('http')) {
+          html += ` <a href="${e}" target="_blank" rel="noopener">[link]</a>`;
+        }
 
-          html += '</li>';
+        html += '</li>';
     } else if (currentClass === 'team') {
           const [name, role, email] = trimmed.split('|').map(p => p.trim());
           html += `<li><strong>${name}</strong> – ${role}<br><em>${email || ''}</em></li>`;

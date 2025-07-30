@@ -1,4 +1,4 @@
-# Format: Author(s) | Title | Date and/or location | [optional label]filename | [optional label]url 
+# Format: Author(s) | Title | Date and/or location | filename.pdf | http://url 
 # the default labels are [pdf] followed by [link]
 # entries MUST have 5 sections each. leave a section blank to skip it.
 # Examples:
@@ -13,39 +13,41 @@ Natasha Thalluri, Kathryn Davidson | Universality and variation in sign language
 # 2 above add slides
 
 2024
-Hayley Ross, Kathryn Davidson, and Najoung Kim | Is artificial intelligence still intelligence? LLMs generalize to novel adjective-noun pairs, but don’t mimic the full human distribution | Paper at GenBench Workshop at EMNLP, November 16. | [paper]rossetal2024.pdf
-Ankana Saha and Kathryn Davidson | Distinctions in anaphoricity: German strong definites vs | demonstratives. Poster at Experimental Pragmatics Conference in Italy (XPRAG.it), Sept 26-27. | [poster]saha_davidson-xprag_2024_demonstratives_poster.pdf
+Hayley Ross, Kathryn Davidson, and Najoung Kim | Is artificial intelligence still intelligence? LLMs generalize to novel adjective-noun pairs, but don’t mimic the full human distribution | Paper at GenBench Workshop at EMNLP, November 16. | rossetal2024.pdf
+Ankana Saha and Kathryn Davidson | Distinctions in anaphoricity: German strong definites vs | demonstratives. Poster at Experimental Pragmatics Conference in Italy (XPRAG.it), Sept 26-27. | saha_davidson-xprag_2024_demonstratives_poster.pdf
 Natasha Thalluri and Kathryn Davidson | Towards a unified view of “co-sign gesture” depictions as demonstrations | Poster at Formal and Experimental Advances in Sign Language Theory (FEAST), Aug 6-8. | 
 Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson | Mandarin demonstratives as strong definites: An experimental investigation | Talk at Experiments in Linguistic Meaning (ELM 3), June 12-14 | 
 Hayley Ross, Najoung Kim, and Kathryn Davidson | Fake reefs are sometimes reefs and sometimes not, but are always compositional | Talk at Experiments in Linguistic Meaning (ELM 3), June 12-14. | 
-Hande Sevgi | Gesture type matters: Encoding path and manner in space | Poster at IMPRS (The International Max Planck Research School for Language Sciences) Conference Nijmegen, the Netherlands June 5-7. | [poster]Sevgi_IMPRS_2024.pdf
-Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson | Mandarin demonstratives as strong definites | Poster at Semantics and Linguistic Theory (SALT), Rochester, May 28-30. | [poster]salt_34_demonstratives_poster.pdf
+Hande Sevgi | Gesture type matters: Encoding path and manner in space | Poster at IMPRS (The International Max Planck Research School for Language Sciences) Conference Nijmegen, the Netherlands June 5-7. | Sevgi_IMPRS_2024.pdf
+Ankana Saha, Yağmur Sağ, Jian Cui, and Kathryn Davidson | Mandarin demonstratives as strong definites | Poster at Semantics and Linguistic Theory (SALT), Rochester, May 28-30. | salt_34_demonstratives_poster.pdf
 Hande Sevgi | Two-handed classifiers in sign languages: An investigation in Turkish Sign Language | Talk at CLS 60, April 26-28. | 
 # above add slides
 Hayley Ross, Kathryn Davidson, and Najoung Kim | When is a fake concert still a concert? A study of adjective-noun composition in LLMs | Poster at New England Natural Language Processing (NENLP), April 26. | 
-Yuhan Zhang and Kathryn Davidson | Interpreting referential noun phrases in belief reports – the de re/de dicto competition | To appear in Glossa Psycholinguistics. | [paper]zhangEtAl_24_Interpreting.4.pdf
-Natasha Thalluri and Kathryn Davidson | Degrees and depiction-gradability in sign languages | Proceedings of Sinn und Bedeutung (SuB) 28. | [paper]thalluri_davidson_2024.pdf
-Anastasia Tsilia and Kathryn Davidson | Effects of iconicity and monotonicity on licensing complement anaphora | Proceedings of Sinn und Bedeutung (SuB) 28. | [paper]tsilia_davidson_2024.pdf |
-Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, and Brent Strickland | Non-signing childrens assessment of telicity in sign language | Cognition, v249 | |[free publisher download]https://www.sciencedirect.com/science/article/pii/S0010027724000970
+Yuhan Zhang and Kathryn Davidson | Interpreting referential noun phrases in belief reports – the de re/de dicto competition | To appear in Glossa Psycholinguistics. | zhangEtAl_24_Interpreting.4.pdf
+Natasha Thalluri and Kathryn Davidson | Degrees and depiction-gradability in sign languages | Proceedings of Sinn und Bedeutung (SuB) 28. | thalluri_davidson_2024.pdf
+Anastasia Tsilia and Kathryn Davidson | Effects of iconicity and monotonicity on licensing complement anaphora | Proceedings of Sinn und Bedeutung (SuB) 28. | tsilia_davidson_2024.pdf |
+Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, and Brent Strickland | Non-signing childrens assessment of telicity in sign language | Cognition, v249 | |https://www.sciencedirect.com/science/article/pii/S0010027724000970
 Kathryn Davidson. | Formal semantics and pragmatics in sign languages | | |
 Yağmur Sağ | Fake mass nouns and associative plurality | Talk at NELS 54, MIT, Jan 26-27 | ​|
 # 3 above
 
 2023
 Ankana Saha, Yağmur Sağ and Kathryn Davidson | Focus on demonstratives: Experiments in English and Turkish, in proceedings of Semantics And Linguistic Theory (SALT) 33 | saha_sag_davidson_2023.pdf
-Masoud Jasbi, Natalia Bermudez, and Kathryn Davidson. | Default biases in the interpretation of English negation, conjunction, and disjunction, | in the proceedings of Experiments in Linguistic Meaning 2, 129-141. |
-Hayley Ross, Gennaro Chierchia, and Kathryn Davidson | Quantifying weak and strong crossover for wh-crossover and proper names | Proceedings of the 27th Sinn und Bedeutung conference. | proceedings_paper.pdf
-Kathryn Davidson | Semiotic distinctions in compositional semantics | Proceedings of the 58th Chicago Linguistic Society. | proceedings_paper.pdf
+# somehow add paper and poster? 
+Masoud Jasbi, Natalia Bermudez, and Kathryn Davidson. | Default biases in the interpretation of English negation, conjunction, and disjunction, | in the proceedings of Experiments in Linguistic Meaning 2, 129-141. | jasbibermudezdavidson_elm.pdf
+Hayley Ross, Gennaro Chierchia, and Kathryn Davidson | Quantifying weak and strong crossover for wh-crossover and proper names | Proceedings of the 27th Sinn und Bedeutung conference. | ross_et_al_sub_crossover_proceedings.pdf
+Kathryn Davidson | Semiotic distinctions in compositional semantics | Proceedings of the 58th Chicago Linguistic Society. | davidson2023-clsproceedings-semiotic.pdf
 Hande Sevgi and Kadir Gökgöz | Age of acquisition effects in zero-anaphora comprehension in Turkish Sign Language | Poster at Boston University Conference of Language Development (BUCLD) 48, November 2-5. | 
 Yağmur Sağ | Cardinality and (In)definiteness | Talk at Sinn und Bedeutung (SuB) 28, September 5-8. | 
-Kathryn Davidson and Hao Lin | Polar questions via contraries in Chinese Sign Language | Poster/Short talk at Formal and Experimental Advances in Sign Language Theory (FEAST), June 27-29. [Slides] | abstract.pdf
+Kathryn Davidson and Hao Lin | Polar questions via contraries in Chinese Sign Language | Poster/Short talk at Formal and Experimental Advances in Sign Language Theory (FEAST), June 27-29. [Slides] | davidson_lin_csl-feast.pdf
 Ankana Saha | Reference to kinds: the perspective from Bangla | Talk at the West Coast Conference on Formal Linguistics (WCCFL) 41, May 5-7. | 
-Masoud Jasbi, Natalia Bermudez, Yuhan Zhang, Réka Siro, Kathryn Davidson | Crosslinguistic Interpretation of Logical Connectives: Negation, Conjunction, and Disjunction in English, Hungarian, Mandarin Chinese, and Spanish | Poster at Human Sentence Processing (HSP) Conference, March 9-11. | poster.pdf
-Hande Sevgi and Kadir Gökgöz | Classifiers, Argument Expression, and Age of Acquisition Effects in Turkish Sign Language | Sign language and Linguistics 26(1).| https://doi.org/10.1075/sll.21006.sev.
+Masoud Jasbi, Natalia Bermudez, Yuhan Zhang, Réka Siro, Kathryn Davidson | Crosslinguistic Interpretation of Logical Connectives: Negation, Conjunction, and Disjunction in English, Hungarian, Mandarin Chinese, and Spanish | Poster at Human Sentence Processing (HSP) Conference, March 9-11. | jasbi_etal_2023_crosslinguistic_logical_connectives_1.pdf
+Hande Sevgi and Kadir Gökgöz | Classifiers, Argument Expression, and Age of Acquisition Effects in Turkish Sign Language | Sign language and Linguistics 26(1).| | https://doi.org/10.1075/sll.21006.sev
 
 2022
-Annemarie Kocab, Kathryn Davidson, and Jesse Snedeker | The emergence of natural language quantification | Cognitive Science 46(2). [publisher download] | ms.pdf
-Kathryn Davidson and Deanna Gagne | “More is up” for domain restriction in ASL | Semantics and Pragmatics. | free_publisher_download.pdf
+Annemarie Kocab, Kathryn Davidson, and Jesse Snedeker | The emergence of natural language quantification | Cognitive Science 46(2). | 220103_quantifiers.pdf | https://doi.org/10.1111/cogs.13097
+Kathryn Davidson and Deanna Gagne | “More is up” for domain restriction in ASL | Semantics and Pragmatics. | | https://doi.org/10.3765/sp.15.1
+#updated up to here
 Caitlin H | Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson and Roman Feiman | Negative polarity or negative concord? Some children think ’any’ means ’no’. Poster at Boston University Conference on Language Development (BUCLD), Nov. 3-6. | poster.pdf
 Nozomi Tomita | A pointing sign like fillers: One JSL user's discourse journey over time | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1. | 
 Kathryn Davidson, Annemarie Kocab, and Dorothy Ahn | Embracing optionality: pragmatic constraints on loci | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1. [abstract] | poster.pdf
