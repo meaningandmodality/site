@@ -127,34 +127,36 @@ Carina Kauf & Kathryn Davidson | Introducing demonstration complements in spoken
 Gregory Scontras, Kathryn Davidson, Amy Rose Deal, & Sarah E | Murray | Who has more? The influence of linguistic form on quantity judgments. Proceedings of the Linguistic Society of America. | paper.pdf
 Kathryn Davidson, Annemarie Kocab, Andrea D | Sims, & Laura Wagner | Telicity Encoding in American Sign Language: Testing the Event Visibility Hypothesis. Talk at LSA, Austin, TX. January 5-8.| 
 
+#left off inserting pdfs and links here (below is finished, i went from the bottom)
 2016
-Kathryn Davidson & Ivano Caponigro| Embedding polar interrogative clauses in American Sign Language | In Roland Pfau, Markus Steinbach & Annika Herrmann, A Matter of Complexity: Subordination in Sign Languages, Sign Languages and Deaf Communities, Mouton de Gruyer. | paper.pdf
+Kathryn Davidson & Ivano Caponigro| Embedding polar interrogative clauses in American Sign Language | In Roland Pfau, Markus Steinbach & Annika Herrmann, A Matter of Complexity: Subordination in Sign Languages, Sign Languages and Deaf Communities, Mouton de Gruyer. | 2014_EmbeddedPolarQinASL.pdf
 Teodora Mihoc | More evidence of heterogeneity in the class of comparative and superlative numeral modifiers | Talk at the Language and Cognition group meeting, Harvard University. November 29. | 
 Corina Goodwin, Kathryn Davidson, & Diane Lillo-Martin | English Article Use in Bimodal Bilingual Children with Cochlear Implants: Effects of Language Transfer and Early Language Exposure | Talk at BUCLD 41, Boston University. Nov. 4-6 | 
-Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, & Brent Strickland | Is Telicity in Sign Languages Visible to Children? Poster at BUCLD 41, Boston University | Nov. 4-6. | 
+Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, & Brent Strickland | Is Telicity in Sign Languages Visible to Children? Poster at BUCLD 41, Boston University | Nov. 4-6. | bucld2016-telicity-sign.pdf
 Kathryn Davidson | Quotation, Classifier Predicates, and a Formal Semantics for Event Demonstrations | Invited talk at the University of Toronto. Oct. 21, | 
 Kathryn Davidson | The contribution of sign languages toward a new unified picture of conjunction and disjunction | Invited talk at MIT Workshop on Exhaustivity, MIT, Sept 10. | 
 Dorothy Ahn | Weak, strong, and deictic: Three kinds of definites | Poster at Sinn und Bedeutung 21, University of Edinburgh. Sept. 4-6. |
 Kathryn Davidson | Experimental approaches to studying meaning in speech, sign, and gesture | Talk at the Invited Symposium on Experimental Semantics and Pragmatics, 42nd Meeting Society for Philosophy and Psychology, University of Texas at Austin. June 1-4.| 
 Kathryn Davidson & Ronice Müller de Quadros (UFSC, Harvard University) | Blending speech with depicting signs: syntactic, semantic, and semiotic insights into language | Talk at SignFest, Boston University. April 30.|
-Allison Durkin, Deanna Gagne, & Kathryn Davidson | English speakers and American Sign Language (ASL) signers extend the MORE IS UP to subset/superset relationships for quantification, |presentation at International Society for Gesture Studies, Paris, July 18-22 | poster.pdf
+Allison Durkin, Deanna Gagne, & Kathryn Davidson | English speakers and American Sign Language (ASL) signers extend the MORE IS UP to subset/superset relationships for quantification, |presentation at International Society for Gesture Studies, Paris, July 18-22 | isgs_poster_12.pdf
 
 2015
-Kathryn Davidson | Quotation, Demonstration, and Iconicity | Linguistics & Philosophy 38(6), 477-520. | publisher_download.pdf
-Kathryn Davidson & Rachel I. Mayberry | Do adults show an effect of delayed first language acquisition when calculating scalar implicatures? | Language acquisition 22(4): 329-354. | publisher_download.pdf
+Kathryn Davidson | Quotation, Demonstration, and Iconicity | Linguistics & Philosophy 38(6), 477-520. | | https://link.springer.com/article/10.1007/s10988-015-9180-1
+Kathryn Davidson & Rachel I. Mayberry | Do adults show an effect of delayed first language acquisition when calculating scalar implicatures? | Language acquisition 22(4): 329-354. | | https://www.tandfonline.com/doi/abs/10.1080/10489223.2014.962140
 
 2014
-Kathryn Davidson, Diane Lillo-Martin, & Deborah Chen Pichler| Spoken English language development among native signing children with cochlear implants | The Journal of Deaf Studies and Deaf Education 19.2: 238-250. | free_publisher_download.pdf
-Kathryn Davidson & Deanna Gagne | Vertical representation of quantifier domains | Sinn und Bedeutung 18. 110-127. | paper.pdf
-Kathryn Davidson| Scalar implicatures in a signed language | Sign Language & Linguistics 17(1). 1-19. | paper.pdf
+Kathryn Davidson, Diane Lillo-Martin, & Deborah Chen Pichler| Spoken English language development among native signing children with cochlear implants | The Journal of Deaf Studies and Deaf Education 19.2: 238-250. | | https://academic.oup.com/jdsde/article-abstract/19/2/238/377174?redirectedFrom=fulltext
+# need paper below
+Kathryn Davidson & Deanna Gagne | Vertical representation of quantifier domains | Sinn und Bedeutung 18. 110-127. | 
+Kathryn Davidson| Scalar implicatures in a signed language | Sign Language & Linguistics 17(1). 1-19. | davidson-2014-scalarimpasl.pdf
 
 2013
-Kathryn Davidson | 'And' or 'Or': General Use Coordination in ASL | Semantics & Pragmatics 6(4). 1-44. | free_publisher_download.pdf
+Kathryn Davidson | 'And' or 'Or': General Use Coordination in ASL | Semantics & Pragmatics 6(4). 1-44. | | https://semprag.org/index.php/sp/article/view/sp.6.4
 
 2012
-Kathryn Davidson, Kortney Eng, & David Barner | Does learning to count involve a semantic induction? | Cognition. 123(1): 162-173. | publisher_download.pdf
+Kathryn Davidson, Kortney Eng, & David Barner | Does learning to count involve a semantic induction? | Cognition. 123(1): 162-173. | | https://www.sciencedirect.com/science/article/abs/pii/S0010027711003106
 
 2011
-Ivano Caponigro & Kathryn Davidson | Ask, and tell as well: Question–Answer Clauses in American Sign Language | Natural Language Semantics. 19(4). 323-371. | publisher_download.pdf
+Ivano Caponigro & Kathryn Davidson | Ask, and tell as well: Question–Answer Clauses in American Sign Language | Natural Language Semantics. 19(4). 323-371. | | https://link.springer.com/article/10.1007/s11050-011-9071-0
 
 
