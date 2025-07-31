@@ -1,10 +1,10 @@
-# Format: Author(s) | Title | Date and/or location | filename.pdf | http://url 
+# Format: Author(s) | Title | Date and/or location | filename.pdf | http://url | optional second filename2.pdf
 # the default labels are [pdf] followed by [link]
-# entries MUST have 5 sections each. leave a section blank to skip it.
+# entries MUST have information in the right sections so that the program can parse it correctly. leave a section blank to skip it but make sure to insert | dividers for the blank section.
 # Examples:
-# Jane Doe | Semantics in Context | SALT 31 | [poster]talk.pdf | [slides]https://slides.com/presentation
-# John Smith | Iconicity and Structure | Glossa | | https://journal.org/view/123
-# The second example has no pdf, and uses the default link label [link]
+# Jane Doe | Semantics in Context | SALT 31 | talk.pdf | https://slides.com/presentation
+# John Smith | Iconicity and Structure | Glossa | pdffile1.pdf | | pdffile2.pdf
+# The second example has no link, but 2 pdfs
 
 Publications
 2025
@@ -116,16 +116,16 @@ Anna Alsop, Laine Stranahan, and Kathryn Davidson | Testing Contrastive Inferenc
 2017
 Muye Zhang, Maria Piñango, & Kathryn Davidson | The development of metonymic processing as the growth of context construal ability | Poster at BUCLD 42, Boston University. November 3-5. | 
  Kathryn Davidson.| Building a single proposition from imagistic and categorical components | Invited commentary on Goldin-Meadow and Brentari, “Gesture, sign and language: The coming of age of sign language and gesture studies”. Behavioral and Brain Sciences 40. | paper.pdf
-Dorothy Ahn & Kathryn Davidson | Where pointing matters: English and Korean demonstratives | Poster at NELS 48, Reykjavík, Iceland. October 27-29, | poster.pdf
+Dorothy Ahn & Kathryn Davidson | Where pointing matters: English and Korean demonstratives | Poster at NELS 48, Reykjavík, Iceland. October 27-29, | nels48-poster-pointing.pdf |
 Kathryn Davidson & Annemarie Kocab | Event structure and verbal morphology in American Sign Language | Talk at the Language and Cognition group meeting, Harvard University. September 5. | 
 Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, & Brent Strickland | Children’s Detection of Iconic Telicity in Sign Language | Poster at 14th International Congress for the Study of Child Language, Lyon. July 17-21. | 
 Teodora Mihoc & Kathryn Davidson | Testing a PPI analysis of superlative modified numerals | Talk at XPrag, Cologne. June 21-23.|
-Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, & Karen Emmorey | Depicting Signs in Bimodal Bilingual Code-Blending | Talk at FEAST Reykjavík. June 21-22. | 
-Dorothy Ahn | Semantics of definite descriptions: A micro-typology | Talk at GLOW in Asia XI, Singapore. February 20-22. | 
+Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, & Karen Emmorey | Depicting Signs in Bimodal Bilingual Code-Blending | Talk at FEAST Reykjavík. June 21-22. | feast_presentation-iceland_fnl.pdf
+Dorothy Ahn | Semantics of definite descriptions: A micro-typology | Talk at GLOW in Asia XI, Singapore. February 20-22. | ahn.pdf
 Kathryn Davidson | Combining continuous and discrete representations in speech, sign, and gesture | Talk at the Cognition, Brain, & Behavior Research Seminar, Harvard University. January 26. | 
-Carina Kauf & Kathryn Davidson | Introducing demonstration complements in spoken/written languages | Talk at LSA, Austin, TX. January 5-8.|
-Gregory Scontras, Kathryn Davidson, Amy Rose Deal, & Sarah E | Murray | Who has more? The influence of linguistic form on quantity judgments. Proceedings of the Linguistic Society of America. | paper.pdf
-Kathryn Davidson, Annemarie Kocab, Andrea D | Sims, & Laura Wagner | Telicity Encoding in American Sign Language: Testing the Event Visibility Hypothesis. Talk at LSA, Austin, TX. January 5-8.| 
+Carina Kauf & Kathryn Davidson | Introducing demonstration complements in spoken/written languages | Talk at LSA, Austin, TX. January 5-8.| poster_console_2.pdf | | abstract_console.pdf
+Gregory Scontras, Kathryn Davidson, Amy Rose Deal, & Sarah E | Murray | Who has more? The influence of linguistic form on quantity judgments. Proceedings of the Linguistic Society of America. | | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/4097
+Kathryn Davidson, Annemarie Kocab, Andrea D | Sims, & Laura Wagner | Telicity Encoding in American Sign Language: Testing the Event Visibility Hypothesis. Talk at LSA, Austin, TX. January 5-8.|| https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/4386
 
 #left off inserting pdfs and links here (below is finished, i went from the bottom)
 2016

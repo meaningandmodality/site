@@ -147,7 +147,7 @@ function loadStructuredContent(txtFile) {
 
         // Content rows
     else if (currentClass === 'pubs' || currentClass === 'projects') {
-          const [a, b, c, d, e] = trimmed.split('|').map(p => p.trim());
+          const [a, b, c, d, e, f] = trimmed.split('|').map(p => p.trim());
         html += `<li><strong>${a}</strong> ${b} ${c || ''}`;
 
         if (d) {
@@ -157,6 +157,11 @@ function loadStructuredContent(txtFile) {
 
         if (e && e.startsWith('http')) {
           html += ` <a href="${e}" target="_blank" rel="noopener">[link]</a>`;
+        }
+
+        if (f) {
+          const label = f.endsWith('.pdf') ? 'pdf' : f.split('.').pop();
+          html += ` <a href="documents/${f}">[${label}]</a>`;
         }
 
         html += '</li>';
