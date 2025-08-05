@@ -11,3 +11,4 @@ improve aria setup for better keyboard accessibility
 add graduates and former members in a reorganization of people section
 add simpler explaination versions of lab content for ESL readers (target audience- Deaf community with English as second language)
 make pdfs open in new tab
+add links to news tab
