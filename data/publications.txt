@@ -159,4 +159,8 @@ Kathryn Davidson, Kortney Eng, & David Barner | Does learning to count involve a
 2011
 Ivano Caponigro & Kathryn Davidson | Ask, and tell as well: Question–Answer Clauses in American Sign Language | Natural Language Semantics. 19(4). 323-371. | | https://link.springer.com/article/10.1007/s11050-011-9071-0
 
-
+Talks
+2025
+# Jane Doe | Demonstratives and deixis | Colloquium, XYZ University, Feb 14 | [slides]doe_demo2025.pdf | https://xyz.edu/talk
+# 2024
+# John Smith | Gesture and anaphora | Linguistics Seminar, ABC Univ., May 3 | [poster]smith_poster2024.pdf

@@ -1,4 +1,4 @@
-# Format: Title | Date MM/DD/YYYY | Description | image filename | alt=Image alt text
+# Format: Title | Date MM/DD/YYYY | Description | image filename (or - for no image) | alt=Image alt text | news_link=https://link.example
 # Example:
 # Lab Launch | August 2025 | The website is now live! | launch.jpg | alt=Screenshot of the lab homepage
 # News shows up in the same order as this file (line 6 is the top of the site)

@@ -32,13 +32,21 @@ function handleRouting() {
   const page = params.get('page') || 'home';
 
   updatePageTitle(page);
+
+  document.querySelectorAll('nav a').forEach(a => {
+    const isActive = (new URL(a.href)).searchParams.get('page') === page;
+    a.classList.toggle('active', isActive);
+    if (isActive) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+  });
   
   if (page === 'people') {
     loadPeople();
   } else if (page === 'research') { //testing this!!
     loadResearch();
-  } else if (['publications', 'contact'].includes(page)) {
-    loadStructuredContent(`data/${page}.txt`);
+  } else if (page === 'publications') {
+    loadPublications(); // <-- use the tabbed parser
+  } else if (page === 'contact') {
+    loadStructuredContent('data/contact.txt');
   } else {
     loadPage(`partials/${page}.html`);
     if (page === 'home') setTimeout(loadNews, 150);
@@ -122,7 +130,7 @@ function loadStructuredContent(txtFile) {
         //  subheadingPrinted = false;
         //} 
         
-        else if (keyword === 'how to get invovled') {
+        else if (keyword === 'how to get involved') {
           if (currentClass) html += '</div>';
           html += '<div class="contact"><h2>How to Get Involved</h2>';
           currentClass = 'contact';
@@ -202,8 +210,16 @@ function loadNews() {
 
         const parts = line.split('|').map(p => p.trim());
         if (parts.length >= 5) {
-          const [title, date, description, image, altTag] = parts;
-          const altText = altTag.replace(/^alt=/i, '').trim();
+          const [title, date, description, image='', altTag='', maybeLink=''] = parts;
+          const linkUrl = (maybeLink || '').startsWith('news_link=') ? maybeLink.replace(/^news_link=/i, '').trim() : '';
+          const altText = (altTag || '').replace(/^alt=/i, '').trim() || '';
+
+          const hasImage = image && image.trim() && image.trim() !== '-';
+          const media = hasImage
+            ? `<img class="news-thumb" src="images/${image.trim()}" alt="${altText}">`
+            : `<div class="news-thumb placeholder" aria-hidden="true"></div>`;
+
+          const linkHtml = linkUrl ? `<p><a href="${linkUrl}" target="_blank" rel="noopener">Read more →</a></p>` : '';
 
           const rawDate = parseUSDate(date);
           const formattedDate = isNaN(rawDate)
@@ -216,11 +232,12 @@ function loadNews() {
 
           html += `
             <div class="news-post">
-              <img src="images/${image}" alt="${altText}">
+              ${media}
               <div class="news-text">
                 <h4>${title}</h4>
                 <p class="news-date">${formattedDate}</p>
                 <p>${description}</p>
+                ${linkHtml}
               </div>
             </div>
           `;
@@ -237,34 +254,77 @@ function loadPeople() {
     .then(res => res.text())
     .then(text => {
       const lines = text.trim().split('\n');
-      let html = '<h2>Our Team</h2><div class="people-grid">';
+      const buckets = { current: [], alumni: [], collab: [] };
 
       lines.forEach((line, index) => {
         if (line.startsWith('#') || !line.trim()) return;
-
         const parts = line.split('|').map(p => p.trim());
-        if (parts.length === 5) {
-          const [name, role, description, image, altPart] = parts;
-          const altText = altPart.replace(/^alt=/i, '').trim();
-          const isLong = description.length > 120;
-          const short = isLong ? description.slice(0, 120) + '…' : description;
+        // Group | Name | Role | Description | Image | alt=... | [optional] site=...
+        const [group, name, role, description, image, altPart, maybeSite] = parts;
+        const altText = (altPart || '').replace(/^alt=/i, '').trim() || `${name} headshot`;
+        const site = (maybeSite || '').startsWith('site=') ? maybeSite.replace(/^site=/i, '').trim() : '';
 
-          html += `
-            <div class="person-card" tabindex="0" role="button" aria-expanded="false"
-              onclick="togglePersonDescription(${index})"
-              onkeydown="if(event.key==='Enter'||event.key===' ') togglePersonDescription(${index})">
-              <img src="images/${image}" alt="${altText}">
-              <h4>${name}</h4>
-              <p class="role">${role}</p>
-              <p id="desc-${index}" class="description" data-full="${description}">${short}</p>
-              ${isLong ? `<p id="hint-${index}" class="toggle-hint">(Click to expand)</p>` : ''}
-            </div>
-          `;
-        }
+        const isLong = description.length > 120;
+        const short = isLong ? description.slice(0, 120) + '…' : description;
+
+        const titleHtml = site
+          ? `<a href="${site}" target="_blank" rel="noopener">${name}</a>`
+          : name;
+
+        const card = `
+          <div class="person-card" tabindex="0" role="button" aria-expanded="false"
+            onclick="togglePersonDescription(${index})"
+            onkeydown="if(event.key==='Enter'||event.key===' ') togglePersonDescription(${index})">
+            <img src="images/${image}" alt="${altText}">
+            <h4>${titleHtml}</h4>
+            <p class="role">${role}</p>
+            <p id="desc-${index}" class="description" data-full="${description}">${short}</p>
+            ${isLong ? `<p id="hint-${index}" class="toggle-hint">(Click to expand)</p>` : ''}
+          </div>
+        `;
+
+        if ((group || '').toLowerCase() === 'alumni') buckets.alumni.push(card);
+        else if ((group || '').toLowerCase() === 'collab') buckets.collab.push(card);
+        else buckets.current.push(card); // default
       });
 
-      html += '</div>';
+      const tabs = `
+        <div class="tabs" role="tablist" aria-label="People sections">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="current">Current</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="alumni">Alumni</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="collab">Collaborators</button>
+        </div>
+      `;
+
+      const makePanel = (name, cards) => `
+        <div class="tab-panel ${name === 'current' ? 'active' : ''}" role="tabpanel" data-panel="${name}">
+          <div class="people-grid">${cards.join('')}</div>
+        </div>
+      `;
+
+      const html = `
+        <h2>Our People</h2>
+        ${tabs}
+        ${makePanel('current', buckets.current)}
+        ${makePanel('alumni', buckets.alumni)}
+        ${makePanel('collab', buckets.collab)}
+      `;
+
       document.getElementById('main-content').innerHTML = html;
+
+      // tab wiring
+      document.querySelectorAll('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.tab').forEach(b => {
+            b.classList.toggle('active', b === btn);
+            b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+          });
+          const target = btn.getAttribute('data-tab');
+          document.querySelectorAll('.tab-panel').forEach(p => {
+            p.classList.toggle('active', p.getAttribute('data-panel') === target);
+          });
+        });
+      });
     });
 }
 
@@ -351,52 +411,139 @@ function toggleDescription(index) {
 // === PUBLICATIONS with custom link labels ===
 function loadPublications() {
   fetch('data/publications.txt')
-    .then(res => res.text())
-    .then(text => {
-      const lines = text.trim().split('\n');
-      let html = '';
-      let currentYear = '';
+    .then(r => r.text())
+    .then(raw => {
+      // -------- helpers --------
+      const trim  = s => (s || '').trim();
+      const scrub = s => trim(
+        s.replace(/\uFEFF/g, '')
+         .replace(/[\u200B-\u200D\u2060]/g, '')
+         .replace(/\u00A0/g, ' ')
+      );
+      const toKey = s => scrub(s).replace(/[^A-Za-z]/g, '').toUpperCase(); // "== Talks ==" -> "TALKS"
+      const isYear = s => /^\d{4}$/.test(s);
+      const isBlankOrComment = s => !s || s.startsWith('#');
 
-      lines.forEach(line => {
-        if (line.startsWith('#') || !line.trim()) return;
+      const isURL = t => /^https?:\/\//i.test(t);
+      const labeledURL = t => t.match(/^\[(.+?)\](https?:\/\/.+)$/i);
+      const labeledFile = t => t.match(/^\[(.+?)\](.+)$/);
+      const isFile = t => /\.(pdf|pptx?|docx?|zip|png|jpe?g)$/i.test(t);
 
-        if (/^\d{4}$/.test(line.trim())) {
-          if (currentYear) html += '</ul>';
-          currentYear = line.trim();
-          html += `<h3>${currentYear}</h3><ul>`;
+      // -------- parse into two sections --------
+      const lines = raw.split('\n');
+      let section = 'pubs'; // 'pubs' or 'talks'
+      let year = '';
+      const buckets = { pubs: {}, talks: {} }; // e.g., buckets.pubs['2025'] = [liHTML, ...]
+
+      const push = (sec, yr, li) => {
+        if (!buckets[sec][yr]) buckets[sec][yr] = [];
+        buckets[sec][yr].push(li);
+      };
+
+      for (let line0 of lines) {
+        const line = scrub(line0);
+        if (isBlankOrComment(line)) continue;
+
+        const key = toKey(line);
+        if (key === 'PUBLICATIONS') { section = 'pubs'; year = ''; continue; }
+        if (key === 'TALKS')        { section = 'talks'; year = ''; continue; }
+
+        if (isYear(line)) { year = line; continue; }
+
+        // ----- tolerant entry parsing -----
+        let authors = '', title = '', venue = '', extra = [];
+        if (line.includes('|')) {
+          const parts = line.split('|').map(trim);
+          authors = parts[0] || '';
+          title   = parts[1] || '';
+          venue   = parts[2] || '';
+          extra   = parts.slice(3).filter(Boolean);
         } else {
-          const parts = line.split('|').map(p => p.trim());
-          const [authors, title, venue, file, link] = parts;
-
-          html += `<li><strong>${authors}</strong> ${title} ${venue || ''}`;
-
-          if (file) {
-            const match = file.match(/^\[(.+?)\](.+)$/); // e.g. [poster]file.pdf
-            if (match) {
-              const label = match[1];
-              const filename = match[2];
-              html += ` <a href="documents/${filename}">[${label}]</a>`;
-            } else {
-              html += ` <a href="documents/${file}">[${file.split('.').pop()}]</a>`;
-            }
-          }
-
-          if (link && link.startsWith('http')) {
-            const match = link.match(/^\[(.+?)\](https?:\/\/.+)$/); // e.g. [DOI]http://link
-            if (match) {
-              const label = match[1];
-              const url = match[2];
-              html += ` <a href="${url}" target="_blank" rel="noopener">[${label}]</a>`;
-            } else {
-              html += ` <a href="${link}" target="_blank" rel="noopener">[link]</a>`;
-            }
-          }
-
-          html += '</li>';
+          title = line; // no pipes: treat as free-text title
         }
-      });
 
-      html += '</ul>';
-      document.getElementById('main-content').innerHTML = html;
+        const files = [];
+        const links = [];
+        for (const tok0 of extra) {
+          const tok = trim(tok0);
+          if (!tok) continue;
+          let m;
+          if ((m = labeledURL(tok))) { links.push({label: m[1], url: m[2]}); continue; }
+          if (isURL(tok))            { links.push({label: 'link', url: tok}); continue; }
+          if ((m = labeledFile(tok))){ files.push({label: m[1], path: m[2]}); continue; }
+          if (isFile(tok))           { files.push({label: tok.split('.').pop().toLowerCase(), path: tok}); continue; }
+          venue = venue ? `${venue} ${tok}` : tok; // fold unknown back into venue
+        }
+
+        let li = '<li>';
+        if (authors) li += `<strong>${authors}</strong> `;
+        if (title)   li += `${title}`;
+        if (venue)   li += ` | ${venue}`;
+        for (const f of files) li += ` <a href="documents/${f.path}" target="_blank" rel="noopener">[${f.label}]</a>`;
+        for (const l of links) li += ` <a href="${l.url}" target="_blank" rel="noopener">[${l.label}]</a>`;
+        li += '</li>';
+
+        const yr = year || 'Misc';
+        push(section, yr, li);
+      }
+
+      // -------- render tabs + panels --------
+      const params = new URLSearchParams(window.location.search);
+      const wantTab = (params.get('tab') || '').toLowerCase();
+      const activeTab = (wantTab === 'talks') ? 'talks' : 'pubs';
+
+      const renderSection = (secName, secKey) => {
+        const years = Object.keys(buckets[secKey]).sort((a,b) => b.localeCompare(a)); // newest first
+        if (years.length === 0) return `<p>No ${secName.toLowerCase()} yet.</p>`;
+        let html = '';
+        for (const y of years) {
+          html += `<h3>${y}</h3><ul>${buckets[secKey][y].join('')}</ul>`;
+        }
+        return html;
+      };
+
+      const tabs = `
+        <div class="tabs" role="tablist" aria-label="Publications / Talks">
+          <button class="tab ${activeTab==='pubs'?'active':''}" role="tab" aria-selected="${activeTab==='pubs'}" data-tab="pubs">Publications</button>
+          <button class="tab ${activeTab==='talks'?'active':''}" role="tab" aria-selected="${activeTab==='talks'}" data-tab="talks">Talks</button>
+        </div>
+      `;
+
+      const panelPubs  = `<div class="tab-panel ${activeTab==='pubs'?'active':''}" role="tabpanel" data-panel="pubs"><div class="pubs">${renderSection('Publications','pubs')}</div></div>`;
+      const panelTalks = `<div class="tab-panel ${activeTab==='talks'?'active':''}" role="tabpanel" data-panel="talks"><div class="pubs">${renderSection('Talks','talks')}</div></div>`;
+
+      const outer = `
+        <h2>Publications & Talks</h2>
+        ${tabs}
+        ${panelPubs}
+        ${panelTalks}
+      `;
+      const mount = document.getElementById('main-content');
+      mount.innerHTML = outer;
+
+      // wire up tabs + update URL ?tab=
+      document.querySelectorAll('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.getAttribute('data-tab');
+
+          document.querySelectorAll('.tab').forEach(b => {
+            const on = b === btn;
+            b.classList.toggle('active', on);
+            b.setAttribute('aria-selected', on ? 'true':'false');
+          });
+          document.querySelectorAll('.tab-panel').forEach(p => {
+            p.classList.toggle('active', p.getAttribute('data-panel') === target);
+          });
+
+          const q = new URLSearchParams(window.location.search);
+          q.set('tab', target);
+          history.replaceState(null, '', `${location.pathname}?${q.toString()}`);
+        });
+      });
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('main-content').innerHTML =
+        '<p>Could not load Publications & Talks right now.</p>';
     });
 }

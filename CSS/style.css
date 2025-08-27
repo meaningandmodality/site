@@ -94,9 +94,12 @@ nav#main-nav.fixed {
 
 /* Main Content */
 #main-content {
-  max-width: 700px;
+  max-width: 1050px;   /* was probably ~800px; bump as you like (e.g., 1200) */
+  margin: 2rem auto;   /* keep centered */
+  padding: 1.5rem;     /* comfy inner padding */
+  /* max-width: 700px;
   margin: 2em auto;
-  padding: 1em 1em 0.1em;
+  padding: 1em 1em 0.1em; */
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 12px rgba(20,40,80,0.06);
@@ -361,4 +364,59 @@ footer {
     padding: 1.2em 0;
     background: #eef2fb;
     border-top: 1px solid #0c3483;
+}
+
+/* Tabs (shared with People) */
+.tabs {
+  display: flex; gap: .5rem; margin: 1rem 0 0.5rem;
+}
+.tab {
+  background: #f1f5ff; border: 1px solid #c7d2fe; padding: .5rem .8rem; border-radius: 999px;
+  cursor: pointer; font-weight: 600;
+}
+.tab.active { background: #234073; color: #fff; border-color: #234073; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Publications/Talks list spacing */
+/* .pubs ul { list-style: none; padding-left: 0; margin-left: 0; }
+.pubs li { margin: .5rem 0; }
+
+.pubs h2 { margin-top: 1rem; }
+.pubs h3 { margin: 1rem 0 0.4rem; font-weight: 700; } */
+
+/* News list: keep left column width even without an image */
+.news-post {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5rem;
+}
+
+.news-thumb {
+  flex: 0 0 180px;      /* fixed column */
+  width: 180px;
+  height: 120px;        /* choose a height you like */
+  border-radius: 4px;
+  object-fit: cover;    /* crops tall/wide images nicely */
+  background: #f3f5fb;  /* base bg so loads don’t jump */
+}
+
+.news-thumb.placeholder {
+  /* border: 1px dashed #f8faff;   subtle placeholder */
+  background: #ffffff;
+}
+
+.news-text h4 {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .news-post { flex-direction: column; }
+  .news-thumb {
+    width: 100%;
+    height: 200px;   /* taller thumb on mobile */
+    flex-basis: auto;
+  }
 }
