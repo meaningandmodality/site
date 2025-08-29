@@ -1,5 +1,5 @@
 # Format: Group | Name | Role | Description | Image | alt=Alt text | [optional] site=https://...
-# Group is one of current/alumni/collab
+# Group is one of current/alumni
 # Example:
 # Jill Jones | PI | Jill leads the lab | jill.jpg | alt=Jill, a woman with glasses, smiles | site=https://jill.example
 

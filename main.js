@@ -244,7 +244,7 @@ function loadPeople() {
     .then(res => res.text())
     .then(text => {
       const lines = text.trim().split('\n');
-      const buckets = { current: [], alumni: [], collab: [] };
+      const buckets = { current: [], alumni: []};
 
       lines.forEach((line, index) => {
         if (line.startsWith('#') || !line.trim()) return;
@@ -274,15 +274,13 @@ function loadPeople() {
         `;
 
         if ((group || '').toLowerCase() === 'alumni') buckets.alumni.push(card);
-        else if ((group || '').toLowerCase() === 'collab') buckets.collab.push(card);
         else buckets.current.push(card); // default
       });
 
       const tabs = `
         <div class="tabs" role="tablist" aria-label="People sections">
           <button class="tab active" role="tab" aria-selected="true" data-tab="current">Current</button>
-          <button class="tab" role="tab" aria-selected="false" data-tab="alumni">Alumni</button>
-          <button class="tab" role="tab" aria-selected="false" data-tab="collab">Collaborators</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="alumni">Alumni and Friends</button>
         </div>
       `;
 
@@ -297,8 +295,14 @@ function loadPeople() {
         ${tabs}
         ${makePanel('current', buckets.current)}
         ${makePanel('alumni', buckets.alumni)}
-        ${makePanel('collab', buckets.collab)}
       `;
+      // const html = `
+      //   <h2>Our People</h2>
+      //   ${tabs}
+      //   ${makePanel('current', buckets.current)}
+      //   ${makePanel('alumni', buckets.alumni)}
+      //   ${makePanel('collab', buckets.collab)}
+      // `;
 
       document.getElementById('main-content').innerHTML = html;
 
