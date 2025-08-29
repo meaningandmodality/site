@@ -8,8 +8,8 @@
 
 Publications
 2025
-Masashi Tamura, Nozomi Tomita, Kathryn Davidson | Negative possessive and existential sentences in Japanese Sign Language (JSL) | Poster at Theoretical Issues in Sign Language Research 15, Addis Ababa University, Jan 14-17. ​​​​ |
-Natasha Thalluri, Kathryn Davidson | Universality and variation in sign language comparatives | Poster at Theoretical Issues in Sign Language Research 15, Addis Ababa University, Jan 14-17. ​​​​ | 
+Masashi Tamura, Nozomi Tomita, Kathryn Davidson | Negative possessive and existential sentences in Japanese Sign Language (JSL) | Poster at Theoretical Issues in Sign Language Research 15, Addis Ababa University, Jan 14-17 ​​​ |
+Natasha Thalluri, Kathryn Davidson | Universality and variation in sign language comparatives | Poster at Theoretical Issues in Sign Language Research 15, Addis Ababa University, Jan 14-17 ​​​​ | 
 # 2 above add slides
 
 2024
@@ -27,14 +27,14 @@ Yuhan Zhang and Kathryn Davidson | Interpreting referential noun phrases in beli
 Natasha Thalluri and Kathryn Davidson | Degrees and depiction-gradability in sign languages | Proceedings of Sinn und Bedeutung (SuB) 28. | thalluri_davidson_2024.pdf
 Anastasia Tsilia and Kathryn Davidson | Effects of iconicity and monotonicity on licensing complement anaphora | Proceedings of Sinn und Bedeutung (SuB) 28. | tsilia_davidson_2024.pdf |
 Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, and Brent Strickland | Non-signing childrens assessment of telicity in sign language | Cognition, v249 | |https://www.sciencedirect.com/science/article/pii/S0010027724000970
-Kathryn Davidson. | Formal semantics and pragmatics in sign languages | | |
+Kathryn Davidson | Formal semantics and pragmatics in sign languages | | |
 Yağmur Sağ | Fake mass nouns and associative plurality | Talk at NELS 54, MIT, Jan 26-27 | ​|
 # 3 above
 
 2023
 Ankana Saha, Yağmur Sağ and Kathryn Davidson | Focus on demonstratives: Experiments in English and Turkish, in proceedings of Semantics And Linguistic Theory (SALT) 33 | saha_sag_davidson_2023.pdf
 # somehow add paper and poster? 
-Masoud Jasbi, Natalia Bermudez, and Kathryn Davidson. | Default biases in the interpretation of English negation, conjunction, and disjunction, | in the proceedings of Experiments in Linguistic Meaning 2, 129-141. | jasbibermudezdavidson_elm.pdf
+Masoud Jasbi, Natalia Bermudez, and Kathryn Davidson | Default biases in the interpretation of English negation, conjunction, and disjunction, | in the proceedings of Experiments in Linguistic Meaning 2, 129-141. | jasbibermudezdavidson_elm.pdf
 Hayley Ross, Gennaro Chierchia, and Kathryn Davidson | Quantifying weak and strong crossover for wh-crossover and proper names | Proceedings of the 27th Sinn und Bedeutung conference. | ross_et_al_sub_crossover_proceedings.pdf
 Kathryn Davidson | Semiotic distinctions in compositional semantics | Proceedings of the 58th Chicago Linguistic Society. | davidson2023-clsproceedings-semiotic.pdf
 Hande Sevgi and Kadir Gökgöz | Age of acquisition effects in zero-anaphora comprehension in Turkish Sign Language | Poster at Boston University Conference of Language Development (BUCLD) 48, November 2-5. | 
@@ -66,7 +66,7 @@ Tess Monks and Kathryn Davidson | Demonstrative Shift and Proximal Markedness | 
 Tess Monks and Kathryn Davidson | Demonstrative Shift and Proximal Markedness | Talk at Formal Diachronic Semantics (FODS) 6, Sept 6-7. | slides.pdf
 Giuseppe Ricciardi and Joshua Martin | Epistemic modality and the true nature of eavesdropping judgments | Poster at the 47th Meeting of the Society for Philosophy and Psychology (SPP), June 28-July 2 | poster.pdf
 Hande Sevgi | Syntax on its own is not enough: Sign language classifiers | Poster at the 57th meeting of the Chicago Linguistic Society, May 6-8. | 
-Ethan Wilcox, Roger Levy and Kathryn Davidson. | Which Presuppositions are Subject to Contextual Felicity Constraints? | Semantics and Linguistic Theory (SALT) 31, May 7-9. |
+Ethan Wilcox, Roger Levy and Kathryn Davidson | Which Presuppositions are Subject to Contextual Felicity Constraints? | Semantics and Linguistic Theory (SALT) 31, May 7-9. |
 Hande Sevgi | One root to build them all: Classifier constructions in sign languages | Poster at the 39th meeting of the West Coast Conference on Formal Linguistics (WCCFL), April 8-11. | 
 Yuhan Zhang,  Giuseppe Ricciardi,  and Kathryn Davidson | How many response options in a TVJT? It  depends | Short talk  at  the  34th  annual CUNY Conference on Human Sentence Processing, March 4-6. | slides.pdf
 Joshua Martin | D-linking and the semantics of wh-in-situ | Poster at the LSA Annual Meeting, Jan 7-10. | 
@@ -85,7 +85,7 @@ Kate Henninger and Kathryn Davidson | Manual and Nonmanual Negation in American 
 2019
 Kathryn Davidson, Annemarie Kocab, Andrea D | Sims, & Laura Wagner | The relationship between verbal form and event structure in sign languages. Glossa: A Journal of General Linguistics, 4(1), 123. | free_publisher_download.pdf
 Kathryn Davidson | Alternatives: The view from sign language loci | Invited talk at the Amsterdam Colloquium, Dec. 18-20. | 
-Kathryn Davidson. | Is "experimental" a gradable predicate? | Invited talk at NELS, MIT, October 25-27. |
+Kathryn Davidson | Is "experimental" a gradable predicate? | Invited talk at NELS, MIT, October 25-27. |
 Dorothy Ahn | ASL IX to locus as a modifier | Talk at NELS, MIT, October 25-27. | 
 Kathryn Davidson | Negation in Flux: a negative concord stage in child English | Talk at the Meaning in Flux workshop, Yale, Oct. 10-12. | 
 Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, & Karen Emmorey | Code-blending with Depicting Signs | Linguistic Approaches to Bilingualism. [publisher download] | pdf.pdf
@@ -103,7 +103,7 @@ Christina Zlogar, Anna Alsop, & Kathryn Davidson | Description and depiction in 
 
 2018
 Aurore Gonzalez | Countability Distinctions without Linguistic Cues | Proceedings of ConSOLE XXVI. | paper.pdf
-Kathryn Davidson. | What belongs in the “logical core” of a language? | Theoretical Linguistics 44(3-4), 227-237. |
+Kathryn Davidson | What belongs in the “logical core” of a language? | Theoretical Linguistics 44(3-4), 227-237. |
 Aurore Gonzalez, Kate Henninger, & Kathryn Davidson | Answering negative questions in American Sign Language | Talk at RALFe, Paris, France. December 6-7 |
 Aurore Gonzalez, Kate Henninger, & Kathryn Davidson | Answering negative questions in American Sign Language | Talk at NELS 49, Ithaca, NY. October 5-7, | proceedingspaper.pdf
 Kathryn Davidson, Annemarie Kocab, Laura Wagner, & Andrea D Sims | Verbal form and event structure in sign languages. | Poster at Semantics And Linguistic Theory (SALT), MIT. May 18-20, | davidsonkocabwagnersims_2.pdf | | davidsonkocabwagnersims-salt2018
@@ -115,7 +115,7 @@ Anna Alsop, Laine Stranahan, and Kathryn Davidson | Testing Contrastive Inferenc
 
 2017
 Muye Zhang, Maria Piñango, & Kathryn Davidson | The development of metonymic processing as the growth of context construal ability | Poster at BUCLD 42, Boston University. November 3-5. | 
- Kathryn Davidson.| Building a single proposition from imagistic and categorical components | Invited commentary on Goldin-Meadow and Brentari, “Gesture, sign and language: The coming of age of sign language and gesture studies”. Behavioral and Brain Sciences 40. | paper.pdf
+ Kathryn Davidson | Building a single proposition from imagistic and categorical components | Invited commentary on Goldin-Meadow and Brentari, “Gesture, sign and language: The coming of age of sign language and gesture studies”. Behavioral and Brain Sciences 40. | paper.pdf
 Dorothy Ahn & Kathryn Davidson | Where pointing matters: English and Korean demonstratives | Poster at NELS 48, Reykjavík, Iceland. October 27-29, | nels48-poster-pointing.pdf |
 Kathryn Davidson & Annemarie Kocab | Event structure and verbal morphology in American Sign Language | Talk at the Language and Cognition group meeting, Harvard University. September 5. | 
 Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, & Brent Strickland | Children’s Detection of Iconic Telicity in Sign Language | Poster at 14th International Congress for the Study of Child Language, Lyon. July 17-21. | 
@@ -158,9 +158,3 @@ Kathryn Davidson, Kortney Eng, & David Barner | Does learning to count involve a
 
 2011
 Ivano Caponigro & Kathryn Davidson | Ask, and tell as well: Question–Answer Clauses in American Sign Language | Natural Language Semantics. 19(4). 323-371. | | https://link.springer.com/article/10.1007/s11050-011-9071-0
-
-Talks
-2025
-# Jane Doe | Demonstratives and deixis | Colloquium, XYZ University, Feb 14 | [slides]doe_demo2025.pdf | https://xyz.edu/talk
-# 2024
-# John Smith | Gesture and anaphora | Linguistics Seminar, ABC Univ., May 3 | [poster]smith_poster2024.pdf
