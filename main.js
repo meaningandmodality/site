@@ -26,6 +26,57 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Bold lab-member names inside already-rendered HTML,
+// operating only on TEXT NODES to avoid attributes/tags.
+function boldNamesInHTML(html, names) {
+  if (!html || !names?.length) return html;
+
+  // 1) sort longest-first to avoid partial shadowing
+  const sorted = [...names].sort((a, b) => b.length - a.length);
+
+  // Escapes for building a regex from names
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // 2) single alternation pattern with word-ish boundaries
+  // Using \b works well for ASCII; for broader alphabets consider \p{L}\p{N} with the 'u' flag.
+  const pattern = new RegExp(`\\b(?:${sorted.map(escRe).join('|')})\\b`, 'g');
+
+  const container = document.createElement('div');
+  container.innerHTML = html;
+
+  const walk = (node) => {
+    // Skip anything already bolded
+    if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'STRONG') return;
+
+    if (node.nodeType === Node.TEXT_NODE) {
+      const text = node.nodeValue;
+      let last = 0;
+      const frag = document.createDocumentFragment();
+
+      text.replace(pattern, (match, offset) => {
+        if (offset > last) frag.appendChild(document.createTextNode(text.slice(last, offset)));
+        const strong = document.createElement('strong');
+        strong.textContent = match;
+        frag.appendChild(strong);
+        last = offset + match.length;
+      });
+
+      // no matches → leave as-is
+      if (last === 0) return;
+
+      if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+      node.parentNode.replaceChild(frag, node);
+      return;
+    }
+
+    // Recurse
+    Array.from(node.childNodes).forEach(walk);
+  };
+
+  walk(container);
+  return container.innerHTML;
+}
+
 // === SMART ROUTER ===
 function handleRouting() {
   const params = new URLSearchParams(window.location.search);
@@ -229,28 +280,35 @@ function loadNews() {
     fetch('data/people.txt', { cache: 'no-cache' }).then(r => r.text()),
     fetch('data/news.txt', { cache: 'no-cache' }).then(r => r.text())
   ]).then(([peopleText, newsText]) => {
-    // Build names from people.txt
+    // Build names + aliases from people.txt
     const names = [];
     peopleText.split(/\r?\n/).forEach(line => {
       const t = line.trim();
       if (!t || t.startsWith('#')) return;
       if (/^people$/i.test(t)) return;
+
       const parts = t.split('|').map(x => x.trim());
       if (parts.length >= 2) {
-        const name = parts[1];
-        if (name) names.push(name);
+        const baseName = parts[1];
+        if (baseName) names.push(baseName);
+
+        // look for alias=... in the remaining columns
+        for (let i = 2; i < parts.length; i++) {
+          const p = parts[i] || '';
+          if (/^alias=/i.test(p)) {
+            const aliases = p.replace(/^alias=/i, '')
+              .split(',')
+              .map(s => s.trim())
+              .filter(Boolean);
+            names.push(...aliases);
+          }
+        }
       }
     });
+
+    // longer names first to avoid partial overlaps
     names.sort((a, b) => b.length - a.length);
 
-    function boldLabMembers(text) {
-      let out = text;
-      for (const n of names) {
-        const pat = new RegExp(`(^|[^\\w])(${escRe(n)})(?=$|[^\\w])`, 'g');
-        out = out.replace(pat, (_, pre, match) => `${pre}<strong>${match}</strong>`);
-      }
-      return out;
-    }
 
     // Parse news
     const lines = newsText.trim().split('\n');
@@ -287,17 +345,21 @@ function loadNews() {
           ? `<p><a href="${escapeHtml(linkUrl)}" target="_blank" rel="noopener">Read more →</a></p>`
           : '';
 
-        // Markdown + bold lab members
-        const titleHtml = boldLabMembers(renderMarkdownSafe(rawTitle));
-        const descHtml  = boldLabMembers(renderMarkdownSafe(rawDesc));
+        // Render markdown safely
+        const titleHtml = renderMarkdownSafe(rawTitle);
+        const descHtml  = renderMarkdownSafe(rawDesc);
+
+        // Apply robust bolding that avoids partial overlaps/double-wrapping
+        const titleOut = boldNamesInHTML(titleHtml, names);
+        const descOut  = boldNamesInHTML(descHtml, names);
 
         html += `
           <div class="news-post">
             ${media}
             <div class="news-text">
-              <h4 class="news-title">${titleHtml}</h4>
+              <h4 class="news-title">${titleOut}</h4>
               <p class="news-date">${formattedDate}</p>
-              ${descHtml}
+              ${descOut}
               ${linkHtml}
             </div>
           </div>
@@ -452,7 +514,7 @@ function loadPeople() {
 
       const tabs = `
         <div class="tabs" role="tablist" aria-label="People sections">
-          <button class="tab active" role="tab" aria-selected="true" data-tab="current">Current</button>
+          <button class="tab active" role="tab" aria-selected="true" data-tab="current">Current Lab Members</button>
           <button class="tab" role="tab" aria-selected="false" data-tab="alumni">Alumni and Friends</button>
         </div>
       `;

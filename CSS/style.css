@@ -219,7 +219,14 @@ a:focus, button:focus {
   padding: 1em;
   text-align: center;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  font-size: 0.95em;
+  font-size: 0.7em;
+}
+
+.person-card .role {
+  font-weight: 600;
+  color: #646464;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
 }
 
 .person-card img {
@@ -238,13 +245,6 @@ a:focus, button:focus {
   color: #234073; 
   line-height: 1.2;
   text-wrap: balance;                  
-}
-
-.person-card .role {
-  font-weight: 600;
-  color: #646464;
-  margin-bottom: 0.5em;
-  font-size: 0.9em;
 }
 
 .person-card p {
@@ -400,7 +400,7 @@ footer {
 }
 
 .news-thumb.placeholder {
-  /* border: 1px dashed #f8faff;   subtle placeholder */
+  /* border: 1px dashed #f8faff;  /* subtle placeholder */
   background: #ffffff;
 }
 
@@ -509,31 +509,17 @@ footer {
 }
 
 .person-card h4 a:hover {
-  color: #111173;          /* darker blue on hover */
+  color: #732b11;          /* darker blue on hover */
 }
 
 /* slate-ish */
 .person-card .role {
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 600;
   color: #4a5568;                       
   line-height: 1.35;
   text-wrap: balance;
 }
-
-/* .person-card .description {
-  font-size: .9rem;
-  color: #4b5563;
-  line-height: 1.35;
-} */
-
-/* If you want to keep descriptions short in the grid: clamp to 3 lines */
-/* .person-card .description {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-} */
 
 /* Make cards visually consistent even when some have no image */
 .person-card img {
@@ -547,16 +533,12 @@ footer {
 /* Turn the dissertation link into a compact tag/button */
 .person-card .dissertation a {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 2px 5px;
   border-radius: 999px;
   border: 1px solid #cbd5e1;
-  font-size: .85rem;
+  font-size: .75rem;
   text-decoration: none;
 }
 .person-card .dissertation a:hover {
   background: #f1f5f9;
 }
-
-/* Make all cards equal height and push link/description together */
-/* .person-card .description,
-.person-card .dissertation { margin-top: auto; } */
