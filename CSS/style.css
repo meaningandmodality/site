@@ -233,8 +233,11 @@ a:focus, button:focus {
 
 .person-card h4 {
   margin: 0.3em 0 0.2em;
-  font-size: 1.1em;
-  color: #234073;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #234073; 
+  line-height: 1.2;
+  text-wrap: balance;                  
 }
 
 .person-card .role {
@@ -497,4 +500,63 @@ footer {
   text-decoration: underline;
 }
 
+/* People cards */
 
+/* Linked names (site= provided) */
+.person-card h4 a {
+  color: #234073;          
+  text-decoration: underline;
+}
+
+.person-card h4 a:hover {
+  color: #111173;          /* darker blue on hover */
+}
+
+/* slate-ish */
+.person-card .role {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #4a5568;                       
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+/* .person-card .description {
+  font-size: .9rem;
+  color: #4b5563;
+  line-height: 1.35;
+} */
+
+/* If you want to keep descriptions short in the grid: clamp to 3 lines */
+/* .person-card .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */
+
+/* Make cards visually consistent even when some have no image */
+.person-card img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 6px;
+}
+
+/* Turn the dissertation link into a compact tag/button */
+.person-card .dissertation a {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  font-size: .85rem;
+  text-decoration: none;
+}
+.person-card .dissertation a:hover {
+  background: #f1f5f9;
+}
+
+/* Make all cards equal height and push link/description together */
+/* .person-card .description,
+.person-card .dissertation { margin-top: auto; } */

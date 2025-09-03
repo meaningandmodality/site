@@ -185,58 +185,130 @@ function loadNews() {
   const userLocale = navigator.language || 'en-US';
 
   function parseUSDate(dateStr) {
-    const [month, day, year] = dateStr.split('/');
+    const [month, day, year] = (dateStr || '').split('/');
     return new Date(`${year}-${month}-${day}`);
   }
 
-  fetch('data/news.txt')
-    .then(res => res.text())
-    .then(text => {
-      const lines = text.trim().split('\n');
-      let html = '';
+  const escapeHtml = (s) =>
+    String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
 
-      lines.forEach(line => {
-        if (line.startsWith('#') || !line.trim()) return;
+  function renderMarkdownSafe(md) {
+    if (!md) return '';
+    let html = escapeHtml(md);
 
-        const parts = line.split('|').map(p => p.trim());
-        if (parts.length >= 5) {
-          const [title, date, description, image='', altTag='', maybeLink=''] = parts;
-          const linkUrl = (maybeLink || '').startsWith('news_link=') ? maybeLink.replace(/^news_link=/i, '').trim() : '';
-          const altText = (altTag || '').replace(/^alt=/i, '').trim() || '';
+    // Links
+    html = html.replace(
+      /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+      (_m, label, url) => `<a href="${url}" target="_blank" rel="noopener">${label}</a>`
+    );
 
-          const hasImage = image && image.trim() && image.trim() !== '-';
-          const media = hasImage
-            ? `<img class="news-thumb" src="images/${image.trim()}" alt="${altText}">`
-            : `<div class="news-thumb placeholder" aria-hidden="true"></div>`;
+    // Bold
+    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 
-          const linkHtml = linkUrl ? `<p><a href="${linkUrl}" target="_blank" rel="noopener">Read more →</a></p>` : '';
+    // Italic
+    html = html.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
 
-          const rawDate = parseUSDate(date);
-          const formattedDate = isNaN(rawDate)
-            ? 'Date unavailable'
-            : new Intl.DateTimeFormat(userLocale, {
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric'
-              }).format(rawDate);
+    // Paragraphs + line breaks
+    const paragraphs = html
+      .split(/\n{2,}/)
+      .map(block => block.replace(/\n/g, '<br>'))
+      .map(block => `<p>${block}</p>`)
+      .join('');
 
-          html += `
-            <div class="news-post">
-              ${media}
-              <div class="news-text">
-                <h4>${title}</h4>
-                <p class="news-date">${formattedDate}</p>
-                <p>${description}</p>
-                ${linkHtml}
-              </div>
-            </div>
-          `;
-        }
-      });
+    return paragraphs;
+  }
 
-      document.getElementById('news-list').innerHTML = html;
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  Promise.all([
+    fetch('data/people.txt', { cache: 'no-cache' }).then(r => r.text()),
+    fetch('data/news.txt', { cache: 'no-cache' }).then(r => r.text())
+  ]).then(([peopleText, newsText]) => {
+    // Build names from people.txt
+    const names = [];
+    peopleText.split(/\r?\n/).forEach(line => {
+      const t = line.trim();
+      if (!t || t.startsWith('#')) return;
+      if (/^people$/i.test(t)) return;
+      const parts = t.split('|').map(x => x.trim());
+      if (parts.length >= 2) {
+        const name = parts[1];
+        if (name) names.push(name);
+      }
     });
+    names.sort((a, b) => b.length - a.length);
+
+    function boldLabMembers(text) {
+      let out = text;
+      for (const n of names) {
+        const pat = new RegExp(`(^|[^\\w])(${escRe(n)})(?=$|[^\\w])`, 'g');
+        out = out.replace(pat, (_, pre, match) => `${pre}<strong>${match}</strong>`);
+      }
+      return out;
+    }
+
+    // Parse news
+    const lines = newsText.trim().split('\n');
+    let html = '';
+
+    lines.forEach(line => {
+      if (!line || line.trim().startsWith('#')) return;
+
+      const parts = line.split('|').map(p => p.trim());
+      if (parts.length >= 5) {
+        const [rawTitle, rawDateStr, rawDesc, image = '', altTag = '', maybeLink = ''] = parts;
+
+        const linkUrl = (maybeLink || '').startsWith('news_link=')
+          ? maybeLink.replace(/^news_link=/i, '').trim()
+          : '';
+
+        const altText = (altTag || '').replace(/^alt=/i, '').trim() || '';
+
+        const hasImage = image && image !== '-';
+        const media = hasImage
+          ? `<img class="news-thumb" src="images/${image}" alt="${escapeHtml(altText)}">`
+          : `<div class="news-thumb placeholder" aria-hidden="true"></div>`;
+
+        const dateObj = parseUSDate(rawDateStr);
+        const formattedDate = isNaN(dateObj)
+          ? 'Date unavailable'
+          : new Intl.DateTimeFormat(userLocale, {
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            }).format(dateObj);
+
+        const linkHtml = linkUrl
+          ? `<p><a href="${escapeHtml(linkUrl)}" target="_blank" rel="noopener">Read more →</a></p>`
+          : '';
+
+        // Markdown + bold lab members
+        const titleHtml = boldLabMembers(renderMarkdownSafe(rawTitle));
+        const descHtml  = boldLabMembers(renderMarkdownSafe(rawDesc));
+
+        html += `
+          <div class="news-post">
+            ${media}
+            <div class="news-text">
+              <h4 class="news-title">${titleHtml}</h4>
+              <p class="news-date">${formattedDate}</p>
+              ${descHtml}
+              ${linkHtml}
+            </div>
+          </div>
+        `;
+      }
+    });
+
+    document.getElementById('news-list').innerHTML = html;
+  });
 }
+
 
 // === PEOPLE ===
 function loadPeople() {
@@ -244,37 +316,138 @@ function loadPeople() {
     .then(res => res.text())
     .then(text => {
       const lines = text.trim().split('\n');
-      const buckets = { current: [], alumni: []};
+      const buckets = { current: [], alumni: [] };
+
+      const escapeHtml = s => String(s)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;')
+        .replace(/'/g,'&#39;');
+
+      const DOC_BASE = 'documents/';
+
+      function resolveDocHref(val) {
+        if (!val) return '';
+        const v = val.trim();
+
+        // 1) Absolute URLs or site-absolute paths: return as-is
+        if (/^https?:\/\//i.test(v)) return v;
+        if (v.startsWith('/')) return v;
+
+        // 2) Strip any leading "./" or "/" first
+        let clean = v.replace(/^\.?\/*/, '');
+
+        // 3) If it already starts with our base, don't add it again
+        if (clean.toLowerCase().startsWith(DOC_BASE.toLowerCase())) {
+          return clean; // e.g., "documents/Yuhan-dissertation_2024.pdf"
+        }
+
+        // 4) Otherwise, treat as a filename under documents/
+        return DOC_BASE + clean; // e.g., "Yuhan-..." -> "documents/Yuhan-..."
+      }
+
 
       lines.forEach((line, index) => {
-        if (line.startsWith('#') || !line.trim()) return;
-        const parts = line.split('|').map(p => p.trim());
-        // Group | Name | Role | Description | Image | alt=... | [optional] site=...
-        const [group, name, role, description, image, altPart, maybeSite] = parts;
-        const altText = (altPart || '').replace(/^alt=/i, '').trim() || `${name} headshot`;
-        const site = (maybeSite || '').startsWith('site=') ? maybeSite.replace(/^site=/i, '').trim() : '';
+        // skip comments / blank lines
+        if (!line || line.trim().startsWith('#')) return;
 
-        const isLong = description.length > 120;
-        const short = isLong ? description.slice(0, 120) + '…' : description;
+        // Split and trim, but don't assume all columns exist
+        const parts = line.split('|').map(p => p.trim());
+
+        // Expected base columns (any may be missing)
+        const group = (parts[0] || '').toLowerCase();
+        const name = parts[1] || '';
+        const role = parts[2] || '';
+        const description = parts[3] || '';
+
+        // Remaining fields may include: image filename, alt=..., site=..., doc=...
+        // Accept them in any order. First non key=value after index 3 is treated as image.
+        let image = '';
+        let altText = '';
+        let site = '';
+        let dissertation = ''; // NEW
+
+        for (let i = 4; i < parts.length; i++) {
+          const p = parts[i];
+          if (/^alt=/i.test(p)) {
+            altText = p.replace(/^alt=/i, '').trim();
+          } else if (/^site=/i.test(p)) {
+            site = p.replace(/^site=/i, '').trim();
+          } else if (/^doc=/i.test(p)) {               // NEW
+            dissertation = p.replace(/^doc=/i, '').trim();
+          } else if (!image && p) {
+            // treat as image filename if it looks like one; otherwise ignore quietly
+            image = p;
+          }
+        }
+
+        // Default alt text only if we actually have an image to label
+        if (!altText && image) {
+          altText = name ? `${name} headshot` : 'Headshot';
+        }
+
+        // Description handling
+        const isLong = description && description.length > 120;
+        const short = isLong ? description.slice(0, 120) + '…' : (description || '');
+
+        // Click/keyboard handlers only when there’s something to expand
+        const interactiveAttrs = isLong
+          ? `tabindex="0" role="button" aria-expanded="false"
+             onclick="togglePersonDescription(${index})"
+             onkeydown="if(event.key==='Enter'||event.key===' ') togglePersonDescription(${index})"`
+          : '';
 
         const titleHtml = site
           ? `<a href="${site}" target="_blank" rel="noopener">${name}</a>`
           : name;
 
+        // Render image tag only if we have an image filename
+        const imageHtml = image
+          ? `<img src="images/${image}" alt="${altText}" loading="lazy" decoding="async">`
+          : '';
+
+        // Render description block only if there’s any description text
+        const descriptionHtml = description
+          ? `<p id="desc-${index}" class="description" data-full="${description}">${short}</p>`
+          : '';
+
+        // Render hint only when expandable
+        const hintHtml = isLong
+          ? `<p id="hint-${index}" class="toggle-hint">(Click to expand)</p>`
+          : '';
+
+        const roleHtml = role
+          ? `<p class="role">${
+              role.split(';')
+                  .map(s => s.trim())
+                  .filter(Boolean)
+                  .map(escapeHtml)
+                  .join('<br>')
+            }</p>`
+          : '';
+
+        // NEW: dissertation link only for alumni rows; supports URL or local file
+        const dissertationHref = resolveDocHref(dissertation);
+        const dissertationHtml =
+          group === 'alumni' && dissertationHref
+            ? `<p class="dissertation"><a href="${escapeHtml(dissertationHref)}" target="_blank" rel="noopener">Dissertation</a></p>`
+            : '';
+
+
         const card = `
-          <div class="person-card" tabindex="0" role="button" aria-expanded="false"
-            onclick="togglePersonDescription(${index})"
-            onkeydown="if(event.key==='Enter'||event.key===' ') togglePersonDescription(${index})">
-            <img src="images/${image}" alt="${altText}">
-            <h4>${titleHtml}</h4>
-            <p class="role">${role}</p>
-            <p id="desc-${index}" class="description" data-full="${description}">${short}</p>
-            ${isLong ? `<p id="hint-${index}" class="toggle-hint">(Click to expand)</p>` : ''}
+          <div class="person-card" ${interactiveAttrs}>
+            ${imageHtml}
+            <h4>${titleHtml || 'Unnamed'}</h4>
+            ${roleHtml}
+            ${descriptionHtml}
+            ${dissertationHtml}
+            ${hintHtml}
           </div>
         `;
 
-        if ((group || '').toLowerCase() === 'alumni') buckets.alumni.push(card);
-        else buckets.current.push(card); // default
+        if (group === 'alumni') buckets.alumni.push(card);
+        else buckets.current.push(card); // default bucket
       });
 
       const tabs = `
@@ -296,13 +469,6 @@ function loadPeople() {
         ${makePanel('current', buckets.current)}
         ${makePanel('alumni', buckets.alumni)}
       `;
-      // const html = `
-      //   <h2>Our People</h2>
-      //   ${tabs}
-      //   ${makePanel('current', buckets.current)}
-      //   ${makePanel('alumni', buckets.alumni)}
-      //   ${makePanel('collab', buckets.collab)}
-      // `;
 
       document.getElementById('main-content').innerHTML = html;
 
@@ -310,8 +476,9 @@ function loadPeople() {
       document.querySelectorAll('.tab').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.tab').forEach(b => {
-            b.classList.toggle('active', b === btn);
-            b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+            const on = b === btn;
+            b.classList.toggle('active', on);
+            b.setAttribute('aria-selected', on ? 'true' : 'false');
           });
           const target = btn.getAttribute('data-tab');
           document.querySelectorAll('.tab-panel').forEach(p => {
@@ -321,6 +488,7 @@ function loadPeople() {
       });
     });
 }
+
 
 // JS function to toggle full/short description
 function togglePersonDescription(index) {
@@ -417,7 +585,7 @@ function loadResearch() {
             const shortHTML = mdLinks(item.mini || '');
             const longHTML  = item.long ? mdLinks(item.long) : '';
             const pubsHTML  = item.pubs
-              ? `<div class="project-pubs"><strong>Select publications:</strong> ${mdLinks(item.pubs)}</div>`
+              ? `<div class="project-pubs"><strong>Select works:</strong> ${mdLinks(item.pubs)}</div>`
               : '';
 
             return `
@@ -511,31 +679,42 @@ function loadPublications() {
     fetch('data/publications.txt', { cache: 'no-cache' }).then(r => r.text())
   ])
   .then(([peopleText, pubsText]) => {
-    // --- helpers ---
+    // --- helpers (unchanged) ---
     const isComment = s => /^\s*#/.test(s);
     const escapeHtml = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const isYear = s => /^\d{4}\s*$/.test(s);
     const isSection = s => /^=+/.test(s);
+    const isHeader = s => /^>>\s*(.+)$/.test(s);   // NEW: custom header marker
 
-    // Build name list from people.txt (column 2 is Name)
+    // author splitting
+    function formatAuthors(raw) {
+      if (!raw) return '';
+      // split on commas, "&", or "and" (with spaces), collapsing extras
+      const parts = raw
+        .replace(/\bet\s+al\.?$/i, '').trim()            // (optional) drop trailing "et al."
+        .split(/\s*,\s*|\s*&\s*|\s+\band\b\s+/i)
+        .map(s => s.trim())
+        .filter(Boolean);
+      if (parts.length <= 1) return parts[0] || '';
+      if (parts.length === 2) return `${parts[0]} & ${parts[1]}`;
+      return `${parts.slice(0, -1).join(', ')}, & ${parts[parts.length - 1]}`;
+    }
+
+    // Build lab names
     const names = [];
     peopleText.split(/\r?\n/).forEach(line => {
       const t = line.trim();
       if (!t || isComment(t)) return;
-      if (/^people$/i.test(t)) return; // possible header "People"
+      if (/^people$/i.test(t)) return;
       const parts = t.split('|').map(x => x.trim());
-      // Expect: group | Name | Role | ...
       if (parts.length >= 2) {
         const name = parts[1];
         if (name) names.push(name);
       }
     });
-
-    // Sort names by length desc to avoid partial shadowing (e.g., "Kate" within "Kathryn")
     names.sort((a, b) => b.length - a.length);
 
-    // Bold any name occurrences in an author string (after HTML escaping)
     function boldLabMembers(authorsEscaped) {
       let out = authorsEscaped;
       for (const n of names) {
@@ -545,10 +724,20 @@ function loadPublications() {
       return out;
     }
 
-    // Parse publications
-    const byYear = Object.create(null);
-    const yearOrder = [];
-    let currentYear = '';
+    // --- parsing groups by either custom header or year ---
+    const byGroup = Object.create(null);  // key -> entries[]
+    const groupOrder = [];                // display order
+    const groupLabel = Object.create(null); // key -> <h3> label text
+    let currentKey = '';
+
+    function ensureGroup(key, label) {
+      if (!byGroup[key]) {
+        byGroup[key] = [];
+        groupOrder.push(key);
+        groupLabel[key] = label;
+      }
+      currentKey = key;
+    }
 
     function parseEntry(line) {
       const parts = line.split('|').map(s => s.trim());
@@ -569,38 +758,50 @@ function loadPublications() {
     pubsText.split(/\r?\n/).forEach(raw => {
       const line = raw.trim();
       if (!line || isComment(line) || isSection(line)) return;
-      if (isYear(line)) {
-        currentYear = line.match(/\d{4}/)[0];
-        if (!byYear[currentYear]) { byYear[currentYear] = []; yearOrder.push(currentYear); }
+
+      if (isHeader(line)) {
+        const label = line.match(/^>>\s*(.+)$/)[1];
+        ensureGroup(`h:${groupOrder.length+1}`, label);
         return;
       }
-      if (!currentYear) return; // skip items not under a year (no "Other")
-      byYear[currentYear].push(parseEntry(line));
+
+      if (isYear(line)) {
+        const yr = line.match(/\d{4}/)[0];
+        ensureGroup(`y:${yr}`, yr);
+        return;
+      }
+
+      if (!currentKey) return; // ignore entries before the first header/year
+      byGroup[currentKey].push(parseEntry(line));
     });
 
-    // Build HTML (Harvard-like bullets, quotes, italic venue)
+    // --- rendering (mostly same, but iterate groups) ---
     const labelFor = f => {
       const lc = f.toLowerCase();
+      if (lc.includes('abstract')) return '[abstract]';
       if (lc.includes('poster')) return '[poster]';
+      if (lc.includes('presentation'))  return '[slides]';
       if (lc.includes('slides')) return '[slides]';
       if (lc.includes('paper'))  return '[paper]';
       return '[pdf]';
     };
 
     let html = `<h2>Publications &amp; Talks</h2>`;
-    yearOrder.forEach(yr => {
-      const items = byYear[yr];
+
+    const ensurePeriod = s => s ? (/[.?!]\s*$/.test(s) ? s : s + '.') : '';
+
+    groupOrder.forEach(key => {
+      const items = byGroup[key];
       if (!items || !items.length) return;
 
-      html += `<section class="pubs-year"><h3>${yr}</h3><ul class="pubs-list">`;
-      
-      // helper: add trailing period only if missing
-      const ensurePeriod = s =>
-        s ? (/[.?!]\s*$/.test(s) ? s : s + '.') : '';
+      html += `<section class="pubs-year"><h3>${escapeHtml(groupLabel[key])}</h3><ul class="pubs-list">`;
 
       items.forEach(it => {
-        const authorsEsc = escapeHtml(it.authors);
+        //normalize first, then escape + bold
+        const normalizedAuthors = formatAuthors(it.authors);
+        const authorsEsc = escapeHtml(normalizedAuthors);
         const boldedAuthors = boldLabMembers(authorsEsc);
+
 
         const links = [];
         (it.files || []).forEach(f => {
@@ -609,7 +810,6 @@ function loadPublications() {
         });
         if (it.extLink) links.push(`<a href="${it.extLink}" target="_blank" rel="noopener">[link]</a>`);
 
-        // Normalize punctuation for each field
         const authorsPart = boldedAuthors ? `${boldedAuthors}.` : '';
         const titlePart   = it.title ? ` “${ensurePeriod(escapeHtml(it.title))}”` : '';
         const wherePart   = it.where ? ` ${ensurePeriod(escapeHtml(it.where))}` : '';

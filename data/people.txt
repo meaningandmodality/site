@@ -1,20 +1,19 @@
 # Format: Group | Name | Role | Description | Image | alt=Alt text | [optional] site=https://...
 # Group is one of current/alumni
 # Example:
-# Jill Jones | PI | Jill leads the lab | jill.jpg | alt=Jill, a woman with glasses, smiles | site=https://jill.example
+# Jill Jones | PI | Jill leads the lab | jill.jpg | alt=Jill, a woman with glasses, smiles | site=https://jill.example | doc=https://link-to-dissertation.site
+# Use ";" for line breaks for roles
 
 # People
+current | Kathryn Davidson | Director of the Meaning & Modality Lab,; Professor of Linguistics | Kate is a Professor in the Department of Linguistics at Harvard University. Her research investigates the unique capacity that we have to understand an infinite number of sentences that we've never heard before (semantics), how we incorporate contextual information into these meanings (pragmatics), and how we ever learn to do this (development). Kate is especially interested in what we can learn about linguistic meaning from visual language, both in full natural languages like American Sign Language and in co-speech gestures to spoken languages like English. Her background is in math and theoretical linguistics, and in her research she makes balanced use of theory for hypothesis creation with psycholinguistic experimental methods for gathering and analyzing data. Kate received her Ph.D. in Linguistics from the University of California, San Diego, and her B.A. in Mathematics and Linguistics from the University of Pennsylvania. Prior to joining Harvard, she was a Postdoctoral Associate in Cognitive Science at Yale University, and before that a Postdoctoral Fellow in Linguistics at the University of Connecticut. | kate.jpeg | alt=White woman with brown hair smiling | site=https://kathryndavidson.scholars.harvard.edu/
 
-# People
-current | Kathryn Davidson | Director of the Meaning and Modality Laboratory, Professor of Linguistics | Kathryn Davidson is a Professor in the Department of Linguistics at Harvard University. Her research investigates the unique capacity that we have to understand an infinite number of sentences that we've never heard before (semantics), how we incorporate contextual information into these meanings (pragmatics), and how we ever learn to do this (development). Kate is especially interested in what we can learn about linguistic meaning from visual language, both in full natural languages like American Sign Language and in co-speech gestures to spoken languages like English. Her background is in math and theoretical linguistics, and in her research she makes balanced use of theory for hypothesis creation with psycholinguistic experimental methods for gathering and analyzing data. Kate received her Ph.D. in Linguistics from the University of California, San Diego, and her B.A. in Mathematics and Linguistics from the University of Pennsylvania. Prior to joining Harvard, she was a Postdoctoral Associate in Cognitive Science at Yale University, and before that a Postdoctoral Fellow in Linguistics at the University of Connecticut. | kate.jpeg | alt=White woman with brown hair on a bridge across a river
+current | Ankana Saha | Graduate student, Harvard Linguistics,; Meaning & Modality Lab manager | Ankana is a final-year doctoral candidate in Linguistics. Her research examines how typological differences across languages and modalities intersect with semantic structure. Most of her work has focused on the nominal domain, including bare nouns, kind reference, cross-linguistic universals and variation in definiteness and anaphoricity across typologically diverse languages. In her current work, she uses experimental and quantitative methods to investigate how definite descriptions and demonstratives behave in anaphoric contexts, both in human languages and computational models of language (LLMs). She is also interested in how different modalities carve up the space of anaphora—for example, ASL through loci and spatial structure versus spoken languages through morphosyntactic strategies. | ankana.jpeg | alt=Indian woman with glasses and brown curly hair wearing a hooded coat, smiling | site=https://sites.google.com/g.harvard.edu/ankanasaha
 
-current | Ankana Saha | Graduate student, Harvard Linguistics; Lab manager, Meaning & Modality Lab | Ankana Saha is a final-year doctoral candidate in Linguistics. Her research examines how typological differences across languages and modalities intersect with semantic structure. Most of her work has focused on the nominal domain, including bare nouns, kind reference, cross-linguistic universals and variation in definiteness and anaphoricity across typologically diverse languages. In her current work, she uses experimental and quantitative methods to investigate how definite descriptions and demonstratives behave in anaphoric contexts, both in human languages and computational models of language (LLMs). She is also interested in how different modalities carve up the space of anaphora—for example, ASL through loci and spatial structure versus spoken languages through morphosyntactic strategies. | ankana.jpeg | alt=Indian woman with glasses and brown curly hair wearing a hooded coat, smiling
+current | Hande Sevgi | Graduate student, Harvard Linguistics | Hande is a graduate student in the Linguistics Department. Her research investigates how humans construct meaning across modalities, with a special focus on the representation of manner in speech, sign, and gesture. She is particularly interested in how negation, information structure, and iconicity shape the interpretation of event modifiers across languages and modalities. Bridging spoken and signed languages, her work combines formal approaches with experimental methods. Beyond her current projects, she has investigated the effects of age of acquisition in Turkish Sign Language. | hande.jpg | alt=Woman with long brown hair wearing a ruffled pink shirt, smiling on the Brooklyn bridge | site=https://sites.google.com/view/handesevgi
 
-current | Hande Sevgi | Graduate student, Harvard Linguistics | Hande is a graduate student in the Linguistics Department. Her research investigates how humans construct meaning across modalities, with a special focus on the representation of manner in speech, sign, and gesture. She is particularly interested in how negation, information structure, and iconicity shape the interpretation of event modifiers across languages and modalities. Bridging spoken and signed languages, her work combines formal approaches with experimental methods. Beyond her current projects, she has investigated the effects of age of acquisition in Turkish Sign Language. | hande.jpg | alt=Woman with long brown hair wearing a ruffled pink shirt, smiling on the Brooklyn bridge
+current | Jack Rabinovitch | Graduate student, Harvard Linguistics | Jack is a PhD candidate in the Department of Linguistics. His work focuses on the semantics of attitude and speech reports, including how the morphology and syntax of subordinate clauses affects their meaning, pragmatic effects driven by material in the left periphery of clauses, and the nature of quotation. His work combines formal theory, fieldwork, and corpus work, with contributions driven by typologically diverse data from both well-resourced and under-resourced languages. | jack.jpeg | alt=Man with long hair in a low ponytail, glasses, and a beard, wearing a grey hoodie and smiling in front of a bush | site=https://jackisaacrabinovitch.github.io/pages/
 
-current | Jack Rabinovitch | Graduate student, Harvard Linguistics | Jack Rabinovitch is a PhD candidate in the Department of Linguistics. His work focuses on the semantics of attitude and speech reports, including how the morphology and syntax of subordinate clauses affects their meaning, pragmatic effects driven by material in the left periphery of clauses, and the nature of quotation. His work combines formal theory, fieldwork, and corpus work, with contributions driven by typologically diverse data from both well-resourced and under-resourced languages. | jack.jpeg | alt=Man with long hair in a low ponytail, glasses, and a beard, wearing a grey hoodie and smiling in front of a bush
-
-current | Daria Bikina | Graduate student, Harvard Linguistics | Daria (Dasha) is a PhD candidate in the Linguistics Department. Her research interests are in experimental semantics and the syntax-semantics interface. She is currently working on the interpretation of bare nouns in Russian and its interaction with information structure. Coming from a linguistic fieldwork background, she is particularly interested in methodology of linguistic experimental research. | daria.jpg | alt=Smiling woman wearing a purple coat and a winter hat
+current | Daria Bikina | Graduate student, Harvard Linguistics | Daria (Dasha) is a PhD candidate in the Linguistics Department. Her research interests are in experimental semantics and the syntax-semantics interface. She is currently working on the interpretation of bare nouns in Russian and its interaction with information structure. Coming from a linguistic fieldwork background, she is particularly interested in methodology of linguistic experimental research. | daria.jpg | alt=Smiling woman wearing a purple coat and a winter hat | site=https://dariabikina.github.io/
 
 current | Natasha Thalluri | Graduate student, Harvard Linguistics | Natasha is a graduate student in the Department of Linguistics. She is primarily interested in semantics and the syntax-semantics interface. Her current project focuses on expressions of gradability in sign languages and their interaction with iconicity. | natasha.jpg | alt=Woman with long dark hair in a braid and glasses wearing a pink shirt and green sweater, smiling
 
@@ -24,18 +23,75 @@ current | Nayantara Das | Graduate student, Harvard Linguistics | Nayantara is a
 
 current | Yiqian Wang | Graduate student, Harvard Linguistics | Yiqian is a graduate student in the Linguistics Department at Harvard, specializing in semantics, pragmatics, and their interfaces. Her research interests center on the typology of inferences—how they are represented and how they arise. She is currently working on projects investigating presuppositions, focusing on how they project across disjunction and how they are triggered by certain types of words. She approaches these questions through a combination of formal linguistic theory and behavioral experimentation, and is increasingly incorporating methods from information theory and computational modeling. | yiqian.jpg | alt=Woman with glasses and short black hair wearing a black shirt in front of a body of water and trees
 
-current | Nozomi Tomita | Postdoctoral fellow in Linguistics | Nozomi is a postdoctoral researcher at the Meaning and Modality Lab at Harvard. Her primary interests revolve around the interplay between form and meaning, with emphasis on multimodalities in signed and spoken languages. One of her recent research endeavors explores polysemous handshapes in the Japanese metaphor “Argument Is War.” | nozomi.jpg | alt=Japanese woman with shoulder-length black hair and a purple shirt smiles in front of a green background
+current | Nozomi Tomita | Postdoctoral fellow in Linguistics | Nozomi is a postdoctoral researcher at the Meaning and Modality Lab at Harvard. Her primary interests revolve around the interplay between form and meaning, with emphasis on multimodalities in signed and spoken languages. One of her recent research endeavors explores polysemous handshapes in the Japanese metaphor “Argument Is War.” | nozomi.jpg | alt=Japanese woman with shoulder-length black hair and a purple shirt smiles in front of a green background | site=https://nozomitomita.wordpress.com/
 
-current | Tory Sampson | Postdoctoral fellow in Linguistics | Tory Sampson is a postdoctoral fellow whose research focuses on language change and grammaticalization in the world’s sign languages. | tory.jpg | alt=Smiling person with short brown hair
+current | Tory Sampson | Postdoctoral fellow in Linguistics | Tory is a postdoctoral fellow whose research focuses on language change and grammaticalization in the world’s sign languages from both diachronic and synchronic perspectives. | tory.jpg | alt=Person smiling while signing, wearing a blue shirt | site=https://sites.google.com/ucsd.edu/torysampson
 
 current | Masashi Tamura | Graduate student, Gallaudet Linguistics | Masashi is a PhD student in linguistics specializing in multimodality, with a focus on both sign languages and spoken languages. His research explores multiple structures of syntactic language and the interactions among various linguistic forms. | masashi.jpg | alt=Japanese man with dark hair and a beard standing in front of a lake and green mountains
 
-current | Anastasia Tsilia | Graduate student, MIT | Anastasia is a PhD student of Linguistics at MIT, who is interested in the semantics and pragmatics of co-speech gestures. She is currently working on a project with Kathryn Davidson, focusing on whether co-speech gestures can license complement anaphora with positive quantifiers like “most.” | anastasia.jpeg | alt=White woman with long brown hair, smiling
+current | Anastasia Tsilia | Graduate student, MIT | Anastasia is a PhD student of Linguistics at MIT, who is interested in the semantics and pragmatics of co-speech gestures. She is currently working on a project with Kathryn Davidson, focusing on whether co-speech gestures can license complement anaphora with positive quantifiers like “most.” | anastasia.jpeg | alt=White woman with long brown hair, smiling | site=https://www.anastasiatsilia.com/
 
-current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Linguistics at MIT. Her interests are in semantics and pragmatics. She has worked on topics such as tense and aspect, degrees, modality, and attitude reports, through fieldwork and experiments. | yurika.jpg | alt=Asian woman with long dark hair, smiling
+current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Linguistics at MIT. Her interests are in semantics and pragmatics. She has worked on topics such as tense and aspect, degrees, modality, and attitude reports, through fieldwork and experiments. | yurika.png |alt=A woman with short black hair wearing a white t-shirt and a necklace, smiling| site=https://yurikaaonuki.github.io/
 
 current | Avi Zimmerman | Undergraduate student, Harvard Linguistics | Avi is an undergraduate student working on several projects in the lab with Ankana Saha, Natasha Thalluri, Nozomi Tomita, and Kate Davidson. Avi is interested in loci in signed languages. | avi.jpeg | alt=Young white person with red-tinted glasses and shoulder-length wavy hair, smiling
 
+alumni | Dorothy Ahn | Assistant Professor, Rutgers University | Former Harvard Linguistics PhD student | site=https://dorothyahn.com/ | doc=https://ling.auf.net/lingbuzz/004742
 
+alumni | Johanna Alstott | PhD student in Linguistics, MIT | Former Harvard undergraduate student | site=https://www.johannaalstott.com/
 
+alumni | Anna Alsop | Graduate student, New York University | Former Harvard undergraduate student | site=https://wp.nyu.edu/annaalsop/
 
+alumni | Antara Raaghavi Bhattacharya | Graduate student, University of Cambridge (UK) | Former Harvard undergraduate student
+
+alumni | Shannon Bryant | Postdoctoral Associate, Rutgers Center for Cognitive Science | Former Harvard Linguistics PhD student | site=https://sites.google.com/view/shannonbryant/about | doc=Shannon-diss_2022.pdf
+
+alumni | Irene Canudas |  | Former Postdoctoral fellow at Harvard
+
+alumni | Jian Cui | Graduate student, Harvard Linguistics | | site=https://cuicuiyou.github.io/
+
+alumni | Chloe Frey | Educator, The Learning Center for the Deaf | Former Co-op student, Northeastern University
+
+alumni | Aurore Gonzalez | Postdoctoral Researcher, University of Milano-Bicocca | Former Harvard Linguistics PhD student | site=https://auroregonzalez.github.io/ | doc=aurore-diss.pdf
+
+alumni | Kate Henninger | PhD student in Linguistics, University of Chicago
+
+alumni | Masoud Jasbi | Assistant Professor, University of California, Davis | Former Postdoctoral fellow at Harvard | site=https://jasbi.github.io/
+alumni | Taylor Joyce | Graduate student, University of Texas at Austin | Former Harvard undergraduate student | site=https://taylorreneejoyce.com/
+
+alumni | Maggie Kandel | Postdoctoral fellow, Penn MindCORE | Former Harvard Psychology PhD student | site=https://margaretkandel.wixsite.com/langsci/about | doc=Maggie-diss.pdf
+
+alumni | Annemarie Kocab | Assistant Professor, Johns Hopkins University | Former Postdoctoral fellow at Harvard | site=https://annemarie-kocab.com/
+
+alumni | Hao Lin | Associate Professor, Institute of Linguistics, Shanghai International Studies University | Former Visiting Scholar at Harvard | site=https://scholar.google.com/citations?user=hvS4Yw0AAAAJ&hl=en
+
+alumni | Gunnar Lund | Analytical Linguist, Grammarly | Former Harvard Linguistics PhD student | site=https://gunnarnl.github.io/ | doc=Gunnar-diss_2021.pdf
+
+alumni | Richard Luo | PhD student in Linguistics, Yale University | Former Harvard undergraduate student
+
+alumni | Sara Manning | Mathematics Faculty, Waltham High School | Former Harvard undergraduate student
+
+alumni | Joshua Martin | UX Researcher, Spotify | Former Harvard Linguistics PhD student | doc=Josh-diss_2022.pdf
+
+alumni | Mikaela Belle Martin | PhD student in Linguistics, University of Pennsylvania | Former Harvard undergraduate student
+
+alumni | Teodora Mihoc | Technical Author, Canonical | Former Harvard Linguistics PhD student | site=https://tmihoc.github.io/ | doc=dora-diss.pdf
+
+alumni | Tess Monks | Business Intelligence Analyst, ClassPass | Former Harvard Linguistics MA student
+
+alumni | Giuseppe Ricciardi | Commissioning Editor, Springer Nature | Former Harvard Linguistics PhD student | doc=Giuseppe_Thesis_2022.pdf
+
+alumni | Hayley Ross | Senior Deep Learning Scientist (LLMs), NVIDIA | Former Harvard Linguistics PhD student| site=https://rossh2.github.io/ | doc=Ross-diss.pdf
+
+alumni | Yağmur Sağ | Visiting Assistant Professor, Swarthmore College | Former College Fellow at Harvard | site=https://www.yagmursag.com/
+
+alumni | Ethan Wilcox | Assistant Professor of Computational Linguistics, Georgetown University | Former Harvard Linguistics PhD student | site=https://wilcoxeg.github.io/ | doc=Ethan-diss_2022.pdf
+
+alumni | Xiaotian Wang | PhD student, Harvard Linguistics
+
+alumni | Anthony Yacovone | Assistant Professor, Boston University | Former Harvard Psychology PhD student | site=https://www.anthonyyacovone.com/ | doc=anthony-diss.pdf
+
+alumni | Yuhan Zhang | Postdoctoral Scholar, CLiMB Lab, Stanford University | Former Harvard Linguistics PhD student| site=https://sites.google.com/view/yhzhang/home | doc=Yuhan-dissertation_2024.pdf
+
+alumni | Christina Zlogar |  | Former Harvard Linguistics PhD student | doc=Chrissy-dissertation_2019.pdf
+
+# END OF FILE
