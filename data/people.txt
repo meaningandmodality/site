@@ -49,13 +49,14 @@ alumni | Irene Canudas |  | Former Postdoctoral fellow at Harvard
 
 alumni | Jian Cui | Graduate student, Harvard Linguistics | | site=https://cuicuiyou.github.io/
 
-alumni | Chloe Frey | Educator, The Learning Center for the Deaf | Former Co-op student, Northeastern University
+alumni | Chloe Frey | Educator, The Learning Center for the Deaf | Former Co-op student, Northeastern University |
 
 alumni | Aurore Gonzalez | Postdoctoral Researcher, University of Milano-Bicocca | Former Harvard Linguistics PhD student | site=https://auroregonzalez.github.io/ | doc=aurore-diss.pdf
 
 alumni | Kate Henninger | PhD student in Linguistics, University of Chicago
 
 alumni | Masoud Jasbi | Assistant Professor, University of California, Davis | Former Postdoctoral fellow at Harvard | site=https://jasbi.github.io/
+
 alumni | Taylor Joyce | Graduate student, University of Texas at Austin | Former Harvard undergraduate student | site=https://taylorreneejoyce.com/
 
 alumni | Maggie Kandel | Postdoctoral fellow, Penn MindCORE | Former Harvard Psychology PhD student | site=https://margaretkandel.wixsite.com/langsci/about | doc=Maggie-diss.pdf
@@ -63,6 +64,7 @@ alumni | Maggie Kandel | Postdoctoral fellow, Penn MindCORE | Former Harvard Psy
 alumni | Annemarie Kocab | Assistant Professor, Johns Hopkins University | Former Postdoctoral fellow at Harvard | site=https://annemarie-kocab.com/
 
 alumni | Marianthi Koraka | PhD student in Linguistics, University of Göttingen | Former visiting graduate student at Harvard | site=https://www.uni-goettingen.de/en/koraka%2C+marianthi/647968.html
+
 alumni | Hao Lin | Associate Professor, Institute of Linguistics, Shanghai International Studies University | Former Visiting Scholar at Harvard | site=https://scholar.google.com/citations?user=hvS4Yw0AAAAJ&hl=en
 
 alumni | Gunnar Lund | Analytical Linguist, Grammarly | Former Harvard Linguistics PhD student | site=https://gunnarnl.github.io/ | doc=Gunnar-diss_2021.pdf
