@@ -1,10 +1,6 @@
-(for avi :)
-
 add pdfs and links to publications section
 make people, news, pubs, sortable and collapsable
 add more accessibility features
 improve aria setup for better keyboard accessibility
 add simpler explanation versions of lab content for ESL readers (target audience- Deaf community with English as second language)
-make pdfs open in new tab
 add links to news tab
-search by author or title (pubs)
