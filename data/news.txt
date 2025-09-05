@@ -13,7 +13,7 @@
 
 Welcome Tory! | 08/20/2025 | We’re thrilled to officially welcome Tory Sampson to the lab as a postdoctoral researcher! Tory’s work studies language change and grammaticalization in the world’s sign languages from both diachronic and synchronic perspectives. She joins us from Boston University where she has been a postdoctoral scholar in the Speech, Language & Hearing Sciences program, and before that from her PhD in Linguistics at UC San Diego. Welcome, Tory!| tory.jpg | alt=
 
-Paper accepted at COLM 2025 | 07/25/2025 | We’re excited to share that paper “The or That? Evaluating language models’ sensitivity to discourse structure in anaphora” by Jennifer Hu (Johns Hopkins University), Ankana Saha, and Kate Davidson has been accepted to the Pragmatic Reasoning in Language Models Workshop at the Conference on Language Modeling (COLM 2025), which will take place in Montreal on October 10, 2025. Congratulations to the authors! | - | alt=
+Paper accepted at PragLM @ COLM 2025 | 07/25/2025 | We’re excited to share that paper “The or That? Evaluating language models’ sensitivity to discourse structure in anaphora” by Jennifer Hu (Johns Hopkins University), Ankana Saha, and Kate Davidson has been accepted to the Pragmatic Reasoning in Language Models Workshop at the Conference on Language Modeling (COLM 2025), which will take place in Montreal on October 10, 2025. Congratulations to the authors! | - | alt=
 
 Xiaotian at ISB15 | 06/14/2025 | PhD student Xiaotian Wang presented a poster “The Expression of Strong Definiteness in Code-switched Context”, co-authored with Ankana Saha and Kate Davidson, at the 15th International Symposium on Bilingualism (ISB15), held on June 9–13, 2025 in Donostia-San Sebastián. | - | alt=
 
