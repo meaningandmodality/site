@@ -111,7 +111,7 @@ function updatePageTitle(page) {
     home: 'Home | Meaning & Modality Lab',
     people: 'People | Meaning & Modality Lab',
     publications: 'Publications | Meaning & Modality Lab',
-    research: 'Research | Meaning & Modality Lab',
+    research: 'Ongoing Projects | Meaning & Modality Lab',
     contact: 'Contact | Meaning & Modality Lab',
   };
 
@@ -673,7 +673,7 @@ function loadResearch() {
         }).join('');
 
       mount.innerHTML = `
-        <h2>Research</h2>
+        <h2>Ongoing Projects</h2>
         <div class="tabs" role="tablist">${tabs}</div>
         ${panels}
       `;
