@@ -97,7 +97,6 @@ function handleRouting() {
   } else if (page === 'publications') {
     loadPublications();
   } else if (page === 'contact') {
-    // loadStructuredContent('data/contact.txt');
     loadContacts();
   } else {
     loadPage(`partials/${page}.html`);
