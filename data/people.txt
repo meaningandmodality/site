@@ -35,6 +35,8 @@ current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Lin
 
 current | Avi Zimmerman | Undergraduate student, Harvard Linguistics | Avi is an undergraduate student working on several projects in the lab with Ankana Saha, Natasha Thalluri, Nozomi Tomita, and Kate Davidson. Avi is interested in loci in signed languages. | avi.jpeg | alt=Young white person with red-tinted glasses and shoulder-length wavy hair, smiling
 
+current | Simon Ma | Undergraduate student, Harvard Statistics & Linguistics | Simon is a 4th year undergraduate student studying statistics and linguistics. He is interested in the statistical analysis of Large Language Models responses to user prompts. | simon.jpg | alt =
+
 alumni | Dorothy Ahn | Assistant Professor, Rutgers University | Former Harvard Linguistics PhD student | site=https://dorothyahn.com/ | doc=https://ling.auf.net/lingbuzz/004742
 
 alumni | Johanna Alstott | PhD student in Linguistics, MIT | Former Harvard undergraduate student | site=https://www.johannaalstott.com/
