@@ -17,7 +17,7 @@
 Publications
 2025
 Antara Raaghavi Bhattacharya, Isabel Papadimitriou, Kathryn Davidson, David Alvarez-Melis | Investigating the interaction of linguistic and mathematical reasoning in language models using multilingual number puzzles | Presentation at the main conference of Empirical Methods in Natural Language Processing (EMNLP), Suzhou, China, November 5-9 | https://www.arxiv.org/abs/2506.13886
-Jennifer Hu, Ankana Saha,  & Kathryn Davidson | The or That? Evaluating language models’ sensitivity to discourse structure in anaphora | Paper at Pragmatic Reasoning in Language Models workshop at Conference on Language Modeling (COLM), Montreal, October 7-10 |
+Jennifer Hu, Ankana Saha,  & Kathryn Davidson | The or That? Evaluating language models’ sensitivity to discourse structure in anaphora | Paper at Pragmatic Reasoning in Language Models workshop at Conference on Language Modeling (COLM), Montreal, October 7-10 | colm2025-paper.pdf
 Yiqian Wang & Kathryn Davidson | Presupposition filtering in disjunction: What role does exclusive interpretation play? | Talk at Sinn und Bedeutung 30 (SuB 30), Frankfurt, September 23-27 |
 Yurika Anouki & Kathryn Davidson | On the QUD sensitivity of a third reading | Poster at Sinn und Bedeutung 30 (SuB 30), Frankfurt, September 23-27 |
 Hayley Ross, Kathryn Davidson, Najoung Kim | Is analogy enough to draw novel adjective-noun inferences? | Paper at Society for Computation in Linguistics (SCiL), July 18-20 | https://arxiv.org/abs/2503.24293
