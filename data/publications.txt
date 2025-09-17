@@ -16,8 +16,7 @@
 
 Publications
 
-2026
-Xiaotian Wang, Ankana Saha, Kathryn Davidson (upcoming)| Code-switching in Mandarin and English Definite Noun Phrases | Talk at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026 | lsa2026-abstract.pdf
+#Xiaotian Wang, Ankana Saha, Kathryn Davidson (upcoming)| Code-switching in Mandarin and English Definite Noun Phrases | Talk at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026 | lsa2026-abstract.pdf
 
 2025
 Antara Raaghavi Bhattacharya, Isabel Papadimitriou, Kathryn Davidson, David Alvarez-Melis | Investigating the interaction of linguistic and mathematical reasoning in language models using multilingual number puzzles | Presentation at the main conference of Empirical Methods in Natural Language Processing (EMNLP), Suzhou, China, November 5-9 | https://www.arxiv.org/abs/2506.13886
