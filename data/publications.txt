@@ -16,13 +16,18 @@
 
 Publications
 
-#Xiaotian Wang, Ankana Saha, Kathryn Davidson (upcoming)| Code-switching in Mandarin and English Definite Noun Phrases | Talk at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026 | lsa2026-abstract.pdf
+2026
+
+Xiaotian Wang, Ankana Saha, Kathryn Davidson (upcoming)| Code-switching in Mandarin and English Definite Noun Phrases | Talk at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026 | lsa2026-abstract.pdf
+Natasha Thalluri (upcoming)| Ghosts and shadows – evidential contrafactives in Georgian | Talk at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026 |
+Nozomi Tomita, Masashi Tamura, Yutaka Osugi (upcoming)| From Gestural Handshapes MAN & WOMAN to Agreement: Derivational Pathways in Japanese Sign Language | Talk at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026 |
+Tory Sampson (upcoming)| The constructionalization of movement repetition: Explaining noun-verb pairs in sign languages | Poster  at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026|
 
 2025
 Antara Raaghavi Bhattacharya, Isabel Papadimitriou, Kathryn Davidson, David Alvarez-Melis | Investigating the interaction of linguistic and mathematical reasoning in language models using multilingual number puzzles | Presentation at the main conference of Empirical Methods in Natural Language Processing (EMNLP), Suzhou, China, November 5-9 | https://www.arxiv.org/abs/2506.13886
 Jennifer Hu, Ankana Saha,  & Kathryn Davidson | The or That? Evaluating language models’ sensitivity to discourse structure in anaphora | Spotlight talk at Pragmatic Reasoning in Language Models workshop at Conference on Language Modeling (COLM), Montreal, October 7-10 | colm2025-paper.pdf
 Yiqian Wang & Kathryn Davidson | Presupposition filtering in disjunction: What role does exclusive interpretation play? | Talk at Sinn und Bedeutung 30 (SuB 30), Frankfurt, September 23-27 | Wang-Davidson2025-abstract.pdf
-Yurika Aonuki & Kathryn Davidson | On the QUD sensitivity of a third reading | Poster at Sinn und Bedeutung 30 (SuB 30), Frankfurt, September 23-27 | documents/Aonuki-Davidson2025-abstract.pdf
+Yurika Aonuki & Kathryn Davidson | On the QUD sensitivity of a third reading | Poster at Sinn und Bedeutung 30 (SuB 30), Frankfurt, September 23-27 | documents/Aonuki-Davidson2025-abstract.pdf | Aonuki-Davidson2025_poster.pdf
 Hayley Ross, Kathryn Davidson, Najoung Kim | Is analogy enough to draw novel adjective-noun inferences? | Paper at Society for Computation in Linguistics (SCiL), July 18-20 | https://arxiv.org/abs/2503.24293
 Xiaotian Wang, Ankana Saha, Kathryn Davidson | The Expression of Strong Definiteness in Code-switched Context | Poster at International Symposium on Bilingualism (ISB), San Sebastian, Spain, June 9-13 | ISB15-abstract.pdf
 Ankana Saha| Demonstrative descriptions and anti-uniqueness| Proceedings of Sinn und Bedeutung (SuB) 29| https://lingbuzz.net/lingbuzz/009091
