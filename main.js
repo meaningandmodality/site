@@ -39,7 +39,11 @@ function boldNamesInHTML(html, names) {
 
   // 2) single alternation pattern with word-ish boundaries
   // Using \b works well for ASCII; for broader alphabets consider \p{L}\p{N} with the 'u' flag.
-  const pattern = new RegExp(`\\b(?:${sorted.map(escRe).join('|')})\\b`, 'g');
+  const pattern = new RegExp(
+    `(?<!\\p{L})(?:${sorted.map(escRe).join('|')})(?!\\p{L})`,
+    'gu'
+  );
+
 
   const container = document.createElement('div');
   container.innerHTML = html;
