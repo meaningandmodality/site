@@ -24,6 +24,8 @@ Nozomi Tomita, Masashi Tamura, Yutaka Osugi (upcoming)| From Gestural Handshapes
 Tory Sampson (upcoming)| The constructionalization of movement repetition: Explaining noun-verb pairs in sign languages | Poster  at the 2026 LSA Annual Meeting, New Orleans, Louisiana, January 8-11, 2026|
 
 2025
+
+Caitlin Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson, Roman Feiman | When the syntactic bootstrap breaks: Some children think any means no  | Glossa |  https://doi.org/10.16995/glossa.18974
 Antara Raaghavi Bhattacharya, Isabel Papadimitriou, Kathryn Davidson, David Alvarez-Melis | Investigating the interaction of linguistic and mathematical reasoning in language models using multilingual number puzzles | Presentation at the main conference of Empirical Methods in Natural Language Processing (EMNLP), Suzhou, China, November 5-9 | https://www.arxiv.org/abs/2506.13886
 Jennifer Hu, Ankana Saha,  & Kathryn Davidson | The or That? Evaluating language models’ sensitivity to discourse structure in anaphora | Spotlight talk at Pragmatic Reasoning in Language Models workshop at Conference on Language Modeling (COLM), Montreal, October 7-10 | colm2025-paper.pdf
 Yiqian Wang & Kathryn Davidson | Presupposition filtering in disjunction: What role does exclusive interpretation play? | Talk at Sinn und Bedeutung 30 (SuB 30), Frankfurt, September 23-27 | Wang-Davidson2025-abstract.pdf
