@@ -35,7 +35,7 @@ current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Lin
 
 current | Avi Zimmerman | Undergraduate student, Harvard Linguistics | Avi is an undergraduate student working on several projects in the lab with Ankana Saha, Natasha Thalluri, Nozomi Tomita, and Kate Davidson. Avi is interested in loci in signed languages. | avi.jpeg | alt=Young white person with red-tinted glasses and shoulder-length wavy hair, smiling
 
-current | Simon Ma | Undergraduate student, Harvard Statistics & Linguistics | Simon is a 4th year undergraduate student studying statistics and linguistics. He is interested in the statistical analysis of Large Language Models responses to user prompts. | simon.jpg | alt =
+current | Simon Ma | Undergraduate student, Harvard Statistics & Linguistics | Simon is a final year undergraduate student studying statistics and linguistics. He is interested in the statistical analysis of Large Language Models responses to user prompts. | simon.jpg | alt =
 
 current | Moeka Koyama | Undergraduate student, Harvard Linguistics & Molecular & Cellular Biology | Moeka is an undergraduate concentrating in Linguistics and Molecular & Cellular Biology at Harvard. Her interests include Japanese semantics and probabilistic language understanding. | moeka.png | alt =
 
