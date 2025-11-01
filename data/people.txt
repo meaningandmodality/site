@@ -37,7 +37,7 @@ current | Avi Zimmerman | Undergraduate student, Harvard Linguistics | Avi is an
 
 current | Simon Ma | Undergraduate student, Harvard Statistics & Linguistics | Simon is an undergraduate student studying statistics and linguistics. He is interested in the statistical analysis of Large Language Models responses to user prompts. | simon.jpg | alt =
 
-current | Moeka Koyama | Undergraduate student, Harvard Linguistics & Molecular & Cellular Biology | Moeka is an undergraduate concentrating in Linguistics and Molecular & Cellular Biology at Harvard. Her interests include Japanese semantics and probabilistic language understanding. | moeka.png | alt =
+current | Moeka Koyama | Undergraduate student, Harvard Linguistics & Molecular & Cellular Biology | Moeka is an undergraduate student concentrating in Linguistics and Molecular & Cellular Biology at Harvard. Her interests include Japanese semantics and probabilistic language understanding. | moeka.png | alt =
 
 alumni | Dorothy Ahn | Assistant Professor, Rutgers University | Former Harvard Linguistics PhD student | site=https://dorothyahn.com/ | doc=https://ling.auf.net/lingbuzz/004742
 
