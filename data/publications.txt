@@ -28,7 +28,7 @@ Tory Sampson| The constructionalization of movement repetition: Explaining noun-
 
 2025
 
-Caitlin Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson, Roman Feiman | When the syntactic bootstrap breaks: Some children think any means no  | Glossa |  https://doi.org/10.16995/glossa.18974
+Caitlin Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson, Roman Feiman | When the syntactic bootstrap breaks: Some children think any means no  | Glossa | https://doi.org/10.16995/glossa.18974
 Antara Raaghavi Bhattacharya, Isabel Papadimitriou, Kathryn Davidson, David Alvarez-Melis | Investigating the interaction of linguistic and mathematical reasoning in language models using multilingual number puzzles | Presentation at the main conference of Empirical Methods in Natural Language Processing (EMNLP), Suzhou, China, November 5-9 | https://www.arxiv.org/abs/2506.13886
 Jennifer Hu, Ankana Saha,  & Kathryn Davidson | The or That? Evaluating language models’ sensitivity to discourse structure in anaphora | Spotlight talk at Pragmatic Reasoning in Language Models workshop at Conference on Language Modeling (COLM), Montreal, October 7-10 | colm2025-paper.pdf
 Yiqian Wang & Kathryn Davidson | Presupposition filtering in disjunction: What role does exclusive interpretation play? | Talk at Sinn und Bedeutung 30 (SuB 30), Goethe University Frankfurt, September 23-27 | Wang-Davidson2025-abstract.pdf | SuB30-Wang-Davidson-slides.pdf
@@ -75,8 +75,7 @@ Hande Sevgi & Kadir Gökgöz | Classifiers, Argument Expression, and Age of Acqu
 
 2022
 Annemarie Kocab, Kathryn Davidson, Jesse Snedeker | The emergence of natural language quantification | Cognitive Science 46(2). | 220103_quantifiers.pdf | https://doi.org/10.1111/cogs.13097
-Kathryn Davidson & Deanna Gagne | “More is up” for domain restriction in ASL | Semantics and Pragmatics. | | https://doi.org/10.3765/sp.15.1
-#updated up to here
+Kathryn Davidson & Deanna Gagne | “More is up” for domain restriction in ASL | Semantics and Pragmatics. | https://doi.org/10.3765/sp.15.1
 Caitlin H | Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson and Roman Feiman | Negative polarity or negative concord? Some children think ’any’ means ’no’. Poster at Boston University Conference on Language Development (BUCLD), Nov. 3-6. | poster.pdf
 Nozomi Tomita | A pointing sign like fillers: One JSL user's discourse journey over time | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1. | 
 Kathryn Davidson, Annemarie Kocab, Dorothy Ahn | Embracing optionality: pragmatic constraints on loci | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1. [abstract] | poster.pdf
@@ -113,12 +112,12 @@ Teodora Mihoc & Kathryn Davidson | Superlative-modified numerals and negation: A
 Kate Henninger & Kathryn Davidson | Manual and Nonmanual Negation in American Sign Language: A Corpus Study | Poster at the Penn Linguistics Colloquium, March 27-29. (Conference cancelled, paper available) | 
 
 2019
-Kathryn Davidson, Annemarie Kocab, Andrea D Sims, Laura Wagner | The relationship between verbal form and event structure in sign languages. Glossa: A Journal of General Linguistics, 4(1), 123. | https://www.glossa-journal.org/article/id/5230/
+Kathryn Davidson, Annemarie Kocab, Andrea D Sims, Laura Wagner | The relationship between verbal form and event structure in sign languages. Glossa: A Journal of General Linguistics, 4(1), 123. | https://www.glossa-journal.org/article/id/5230
 Kathryn Davidson | Alternatives: The view from sign language loci | Invited talk at the Amsterdam Colloquium, Dec. 18-20. | 
-Kathryn Davidson | Is "experimental" a gradable predicate? | Invited talk at NELS, MIT, October 25-27. |
+Kathryn Davidson | Is "experimental" a gradable predicate? | Invited talk at NELS, MIT, October 25-27. | 2020_Davidson_NELS.pdf
 Dorothy Ahn | ASL IX to locus as a modifier | Talk at NELS, MIT, October 25-27. | 
 Kathryn Davidson | Negation in Flux: a negative concord stage in child English | Talk at the Meaning in Flux workshop, Yale, Oct. 10-12. | 
-Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, Karen Emmorey | Code-blending with Depicting Signs | Linguistic Approaches to Bilingualism. [publisher download] | pdf.pdf
+Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, Karen Emmorey | Code-blending with Depicting Signs | Linguistic Approaches to Bilingualism. | pdf.pdf
 Jessica Sullivan, Kathryn Davidson, Shirlene Wade, David Barner | Differentiating scalar implicature from exclusion inferences in language acquisition | Journal of Child Language 46(4), 733-759. | publisher_download.pdf
 Dorothy Ahn, Annemarie Kocab, Kathryn Davidson | The role of contrast in anaphoric expressions in ASL | Proceedings of GLOW-in-Asia XII, Seoul Korea. 6-9 August. | 
 Annemarie Kocab, Dorothy Ahn, Gunnar Lund, Kathryn Davidson | Reconsidering agreement in sign languages | Poster at GLOW 42, Oslo, Norway. May 7-11, | poster.pdf
