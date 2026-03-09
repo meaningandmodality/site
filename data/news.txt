@@ -4,10 +4,8 @@
 # News shows up in the same order as this file (line 6 is the top of the site)
 
 # Formatting for Description:
-# **bold text**
-# *italicized text*
 # [link-text](link-url)
-# <br> inserts a newline/linebreak
+
 
 # top of site, newest
 
