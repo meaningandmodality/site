@@ -57,7 +57,7 @@ Yuhan Zhang & Kathryn Davidson | Interpreting referential noun phrases in belief
 Natasha Thalluri & Kathryn Davidson | Degrees and depiction-gradability in sign languages | Proceedings of Sinn und Bedeutung (SuB) 28. | thalluri_davidson_2024.pdf
 Anastasia Tsilia & Kathryn Davidson | Effects of iconicity and monotonicity on licensing complement anaphora | Proceedings of Sinn und Bedeutung (SuB) 28. | tsilia_davidson_2024.pdf |
 Laura Wagner, Carlo Geraci, Jeremy Kuhn, Kathryn Davidson, Brent Strickland | Non-signing childrens assessment of telicity in sign language | Cognition, v249 | |https://www.sciencedirect.com/science/article/pii/S0010027724000970
-Kathryn Davidson | Formal semantics and pragmatics in sign languages | | https://projects.iq.harvard.edu/files/meaningandmodality/files/sempraginsls-davidson2022.pdf
+Kathryn Davidson | Formal semantics and pragmatics in sign languages | | sempraginsls-davidson2022.pdf
 Yağmur Sağ | Fake mass nouns and associative plurality | Talk at NELS 54, MIT, Jan 26-27 | ​|
 # 3 above
 
