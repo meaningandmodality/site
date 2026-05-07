@@ -35,7 +35,7 @@ Welcome Tory! | 08/20/2025 | We’re thrilled to officially welcome Tory Sampson
 
 Paper accepted at PragLM @ COLM 2025 | 07/25/2025 | We’re excited to share that paper “The or That? Evaluating language models’ sensitivity to discourse structure in anaphora” by Jennifer Hu (Johns Hopkins University), Ankana Saha, and Kathryn Davidson has been accepted to the Pragmatic Reasoning in Language Models Workshop at the Conference on Language Modeling (COLM 2025), which will take place in Montreal on October 10, 2025. Congratulations to the authors! | PragLM2025.png | alt=
 
-Xiaotian at ISB15 | 06/14/2025 | PhD student Xiaotian Wang presented a poster “The Expression of Strong Definiteness in Code-switched Context”, co-authored with Ankana Saha and Kathryn Davidson, at the 15th International Symposium on Bilingualism (ISB15), held on June 9–13, 2025 in Donostia-San Sebastián. | - | alt=
+Xiaotian at ISB15 | 06/14/2025 | PhD student Xiaotian Wang presented a poster “The Expression of Strong Definiteness in Code-switched Context”, co-authored with Ankana Saha and Kathryn Davidson, at the 15th International Symposium on Bilingualism (ISB15), held on June 9–13, 2025 in Donostia-San Sebastián. | ISB2025.png | alt=
 
 Commencement 2025 | 05/29/2025 | We were excited to welcome Yuhan Zhang back from her postdoc position at Stanford University (at the Laboratory for Computation & Language in Minds & Brains) to celebrate graduation here at Harvard Yard with this year’s graduate Hayley Ross. | commencement2025.png| alt=
 
@@ -55,7 +55,7 @@ Hayley at EMNPL | 11/18/2024 | Our 5th year PhD student Hayley Ross presented he
 
 Open house for new lab space | 10/03/2024 | The Meaning & Modality Lab and the Program in American Sign Language co-hosted an open house in our beautiful new work space at 1100 Mass Ave, where we welcomed the rest of our department, and the wider Harvard/local community, to learn more about what we do and how we combine the educational and research sides of understanding the incredible capacity of human language, spoken and signed. | openhouse.jpg | alt=a series of photos of people in the lab common area sitting and standing around, decorating pumpkins and signing to each other.
 
-Ankana at XPRAG.it | 09/28/2024 | PhD student Ankana Saha presented her poster "Distinctions in anaphoricity: German strong definites vs. demonstratives”, co-authored with Kate Davidson, at the 5th Experimental Pragmatics in Italy Conference (XPRAG.it 2024) held on September 26–27, 2024 in Venice. | - | alt=
+Ankana at XPRAG.it | 09/28/2024 | PhD student Ankana Saha presented her poster "Distinctions in anaphoricity: German strong definites vs. demonstratives”, co-authored with Kate Davidson, at the 5th Experimental Pragmatics in Italy Conference (XPRAG.it 2024) held on September 26–27, 2024 in Venice. | XPrag2024.png | alt=
 
 Harvard at SuB29 | 09/20/2024 | This year Sinn und Bedeutung (SuB 29) was held on September 16-20, 2024 in Noto, Sicily, with several Harvard semanticists participating. Faculty Gennaro Chierchia gave an invited talk on At the frontier of quantification: correlatives, movement and scope. PhD student Natasha Thalluri presented a poster on "A return to a functional dependency approach to correlatives". PhD student Ankana Saha had a talk on "Demonstratives and alternatives". | sub29.jpeg | alt=
 
