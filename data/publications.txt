@@ -103,12 +103,12 @@ Joshua Martin | D-linking and the semantics of wh-in-situ | Poster at the LSA An
 Kathryn Davidson | Implicatures - Theoretical and experimental perspectives | In Josep Quer, Roland Pfau & Annika Herrmann (eds.), Theoretical and Experimental Sign Language Research. Routledge - Taylor and Francis Group. | https://www.routledge.com/The-Routledge-Handbook-of-Theoretical-and-Experimental-Sign-Language-Research/Quer-Pfau-Herrmann/p/book/9780367640996
 
 2020
-Masoud Jasbi, Annika McDermott-Hinman, Kathryn Davidson and Susan Carey | Parents’ and Children’s Production of English Negation | Talk at the 45th Boston University Conference on Language Development (BUCLD), November 5-8. | proceedings_paper.pdf
-Kathryn Davidson | A negative concord stage in the acquistion of negative polarity items | Poster at the 45th Boston University Conference on Language Development (BUCLD), November 5-8. | poster.pdf
+Masoud Jasbi, Annika McDermott-Hinman, Kathryn Davidson and Susan Carey | Parents’ and Children’s Production of English Negation | Talk at the 45th Boston University Conference on Language Development (BUCLD), November 5-8. | https://annika-mcdermott-hinman.com/Publications/BUCLD45-28.pdf
+Kathryn Davidson | A negative concord stage in the acquistion of negative polarity items | Poster at the 45th Boston University Conference on Language Development (BUCLD), November 5-8. |
 Johanna Alstott & Masoud Jasbi | Lexicalization of quantificational forces in adverbial and determiner domains | Poster at the 42nd Annual Meeting of the Cognitive Science Society, July 29-Aug 1. | 
 Annemarie Kocab, Kathryn Davidson, and Jesse Snedeker | The emergence of natural language quantification | Talk at the Formal and Experimental Advances in Sign language Theory (FEAST) conference, June 23-25. | 
 Hande Sevgi & Kadir Gökgöz | To what extent does age of acquisition matter: Evidence from Turkish Sign Language (TİD) | Poster at Formal and Experimental Advances in Sign Language Theory (FEAST) conference, June 23-25. | https://drive.google.com/file/d/1fz-wsMFNDsmCQOIdy0Y8p776avJzISVW/view
-Teodora Mihoc & Kathryn Davidson | Superlative-modified numerals and negation: A negotiable cost | Talk at the 1st ELM (Experiments in Linguistic Meaning) conference, September 16-18. | proceedings_paper.pdf
+Teodora Mihoc & Kathryn Davidson | Superlative-modified numerals and negation: A negotiable cost | Talk at the 1st ELM (Experiments in Linguistic Meaning) conference, September 16-18. | https://journals.linguisticsociety.org/proceedings/index.php/ELM/article/view/4860/4708
 Kate Henninger & Kathryn Davidson | Manual and Nonmanual Negation in American Sign Language: A Corpus Study | Poster at the Penn Linguistics Colloquium, March 27-29. (Conference cancelled, paper available) | 
 
 2019
@@ -117,16 +117,16 @@ Kathryn Davidson | Alternatives: The view from sign language loci | Invited talk
 Kathryn Davidson | Is "experimental" a gradable predicate? | Invited talk at NELS, MIT, October 25-27. | 2020_Davidson_NELS.pdf
 Dorothy Ahn | ASL IX to locus as a modifier | Talk at NELS, MIT, October 25-27. | 
 Kathryn Davidson | Negation in Flux: a negative concord stage in child English | Talk at the Meaning in Flux workshop, Yale, Oct. 10-12. | 
-Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, Karen Emmorey | Code-blending with Depicting Signs | Linguistic Approaches to Bilingualism. | pdf.pdf
-Jessica Sullivan, Kathryn Davidson, Shirlene Wade, David Barner | Differentiating scalar implicature from exclusion inferences in language acquisition | Journal of Child Language 46(4), 733-759. | publisher_download.pdf
+Ronice Quadros, Kathryn Davidson, Diane Lillo-Martin, Karen Emmorey | Code-blending with Depicting Signs | Linguistic Approaches to Bilingualism. | https://pmc.ncbi.nlm.nih.gov/articles/PMC7486006/
+Jessica Sullivan, Kathryn Davidson, Shirlene Wade, David Barner | Differentiating scalar implicature from exclusion inferences in language acquisition | Journal of Child Language 46(4), 733-759. | https://osf.io/we98g/overview | https://www.cambridge.org/core/journals/journal-of-child-language/article/abs/differentiating-scalar-implicature-from-exclusion-inferences-in-language-acquisition/6D6F3922CFEB48C448A1857D96E52DAB
 Dorothy Ahn, Annemarie Kocab, Kathryn Davidson | The role of contrast in anaphoric expressions in ASL | Proceedings of GLOW-in-Asia XII, Seoul Korea. 6-9 August. | 
-Annemarie Kocab, Dorothy Ahn, Gunnar Lund, Kathryn Davidson | Reconsidering agreement in sign languages | Poster at GLOW 42, Oslo, Norway. May 7-11, | poster.pdf
+Annemarie Kocab, Dorothy Ahn, Gunnar Lund, Kathryn Davidson | Do we agree? Reconsidering agreement in sign languages | Poster at GLOW 42, Oslo, Norway. May 7-11, | https://glowlinguistics.org/42/wp-content/uploads/sites/4/2019/05/Kocab_Ahn_Lund_Davidson_ASL-agreement.pdf
 Dorothy Ahn | The blocking of anaphoric bare nouns | Talk at GLOW 42, Oslo, Norway. May 7-11. | 
 Aurore Gonzalez | Question-Answer Clauses: relation to focus | Invited talk at NYU Semantics Group, NYU, April 26. | 
 Alexander Klapheke & Kathryn Davidson | NPI Intervention: Crosslinguistic Data | Proceedings of the Tubingen conference on Linguistic Evidence. | https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/91248/06.%20Klapheke_Davidson_LE2018.pdf?sequence=1&isAllowed=y
 Christina Zlogar, Kate Henninger, Kathryn Davidson | Negating depictive modifiers in sign language and in co-speech gesture | Poster at LSA Annual Meeting, New York, NY. January 3-6. | 
 Taylor Joyce | A unified contrastive analysis of lateral shift in American Sign Language | Poster at LSA Annual Meeting, New York, NY. January 3-6. | 
-Christina Zlogar & Kathryn Davidson | Effects of linguistic context on the acceptability of co-speech gestures | Glossa 3(1), 73. | free_publisher_download.pdf
+Christina Zlogar & Kathryn Davidson | Effects of linguistic context on the acceptability of co-speech gestures | Glossa 3(1), 73. | https://www.glossa-journal.org/article/id/5041/ |
 Dorothy Ahn  &  Kathryn Davidson | Where pointing matters: English and Korean demonstratives | Proceedings of the 48th meeting of the North East Linguistic Society, University of Iceland. | paper.pdf
 Christina Zlogar, Anna Alsop, Kathryn Davidson | Description and depiction in a reference game | Talk at XPrag: Experimental Pragmatics, Pavia Italy, May 30-June 1, | 
 
