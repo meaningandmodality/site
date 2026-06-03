@@ -76,14 +76,14 @@ Hande Sevgi & Kadir Gökgöz | Classifiers, Argument Expression, and Age of Acqu
 2022
 Annemarie Kocab, Kathryn Davidson, Jesse Snedeker | The emergence of natural language quantification | Cognitive Science 46(2). | 220103_quantifiers.pdf | https://doi.org/10.1111/cogs.13097
 Kathryn Davidson & Deanna Gagne | “More is up” for domain restriction in ASL | Semantics and Pragmatics. | https://doi.org/10.3765/sp.15.1
-Caitlin H | Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson and Roman Feiman | Negative polarity or negative concord? Some children think ’any’ means ’no’. Poster at Boston University Conference on Language Development (BUCLD), Nov. 3-6. |
+Caitlin Illingworth, Jee Won Diane Kang, Haley Gibbs, Kathryn Davidson and Roman Feiman | Negative polarity or negative concord? Some children think ’any’ means ’no’. Poster at Boston University Conference on Language Development (BUCLD), Nov. 3-6. |
 Nozomi Tomita | A pointing sign like fillers: One JSL user's discourse journey over time | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1. | 
 Kathryn Davidson, Annemarie Kocab, Dorothy Ahn | Embracing optionality: pragmatic constraints on loci | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1|
-Kathryn Davidson | The value of abstraction for compositionality | Keynote at the Joint meeting of the SPP/ESPP in Milan. July 19-22. | virtual_talk.pdf
+Kathryn Davidson | The value of abstraction for compositionality | Keynote at the Joint meeting of the SPP/ESPP in Milan. July 19-22. |
 Yuhan Zhang & Kathryn Davidson | Competing de dicto terms reduce de re acceptability | Talk at Chicago Linguistic Society conference, April 22-24. | 
 Shannon Bryant | Expectation as a predictor of pronoun acceptability in English prepositional phrases | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. | 
-Ethan Wilcox, Roger Levy, Kathryn Davidson | How anaphoric are presupposition triggers? Evidence from cataphora | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. | poster.pdf
-Jack Rabinovitch | Narrow Scoping Content Question Items in Shifty Contexts: A Case of Surprising Non-Quotation in Uyghur | Presentation at the LSA Annual Meeting, Jan 5-8. | virtual_talk.pdf
+Ethan Wilcox, Roger Levy, Kathryn Davidson | How anaphoric are presupposition triggers? Evidence from cataphora | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. |
+Jack Rabinovitch | Narrow Scoping Content Question Items in Shifty Contexts: A Case of Surprising Non-Quotation in Uyghur | Presentation at the LSA Annual Meeting, Jan 5-8. | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/5235
 Giuseppe Ricciardi & Joshua Martin | Accounting for variability in the truth-evaluation of bare epistemic possibility statements | Presentation at the LSA Annual Meeting, Jan 5-8. | 
 Shannon Bryant | Location, Location, Location: Anaphora selection in English locative prepositional phrases | Presentation at the LSA Annual Meeting, Jan 5-8. | 
 Joshua Martin | Privatives across phases: disambiguating the sources of adnominal modification | Presentation at the LSA Annual Meeting, Jan 5-8. | 
