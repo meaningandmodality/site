@@ -17,8 +17,6 @@ current | Daria Bikina | Associate of the Department of Linguistics | Daria (Das
 
 current | Jack Rabinovitch | Graduate student, Harvard Linguistics | Jack is a PhD candidate in the Department of Linguistics. His work focuses on the semantics of attitude and speech reports, including how the morphology and syntax of subordinate clauses affects their meaning, pragmatic effects driven by material in the left periphery of clauses, and the nature of quotation. His work combines formal theory, fieldwork, and corpus work, with contributions driven by typologically diverse data from both well-resourced and under-resourced languages. | jack.jpeg | alt=Man with long hair in a low ponytail, glasses, and a beard, wearing a grey hoodie and smiling in front of a bush | site=https://jackisaacrabinovitch.github.io/pages/
 
-
-
 current | Natasha Thalluri | Graduate student, Harvard Linguistics | Natasha is a graduate student in the Department of Linguistics. She is primarily interested in semantics and the syntax-semantics interface. Her current project focuses on expressions of gradability in sign languages and their interaction with iconicity. | natasha.jpg | alt=Woman with long dark hair in a braid and glasses wearing a pink shirt and green sweater, smiling
 
 current | James Lee | Graduate student, Harvard Linguistics | James is a graduate student in Linguistics, studying semantics and the syntax-semantics interface. | james.png | alt=Man with black hair and glasses wearing a leather jacket standing in front of a painted mural
