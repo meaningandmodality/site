@@ -39,7 +39,6 @@ current | Simon Ma | Undergraduate student, Harvard Statistics & Linguistics | S
 
 current | Moeka Koyama | Undergraduate student, Harvard Linguistics & Molecular & Cellular Biology | Moeka is an undergraduate student concentrating in Linguistics and Molecular & Cellular Biology at Harvard. Her interests include Japanese semantics and probabilistic language understanding. | moeka.png | alt =
 
-alumni | Hande Sevgi | | Former Harvard Linguistics PhD student | site=hande-sevgi.github.io| doc=https://ling.auf.net/lingbuzz/009993
 
 alumni | Dorothy Ahn | Assistant Professor, Rutgers University | Former Harvard Linguistics PhD student | site=https://dorothyahn.com/ | doc=https://ling.auf.net/lingbuzz/004742
 
@@ -92,6 +91,8 @@ alumni | Giuseppe Ricciardi | Commissioning Editor, Springer Nature | Former Har
 alumni | Hayley Ross | Senior Deep Learning Scientist (LLMs), NVIDIA | Former Harvard Linguistics PhD student| site=https://rossh2.github.io/ | doc=Ross-diss.pdf
 
 alumni | Yağmur Sağ | Visiting Assistant Professor, Swarthmore College | Former College Fellow at Harvard | site=https://www.yagmursag.com/
+
+alumni | Hande Sevgi | | Former Harvard Linguistics PhD student | site=hande-sevgi.github.io| doc=https://ling.auf.net/lingbuzz/009993
 
 alumni | Ethan Wilcox | Assistant Professor of Computational Linguistics, Georgetown University | Former Harvard Linguistics PhD student | site=https://wilcoxeg.github.io/ | doc=Ethan-diss_2022.pdf
 
