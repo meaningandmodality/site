@@ -77,13 +77,13 @@ alumni | Simon Ma | | Former Harvard undergraduate student
 
 alumni | Sara Manning | Mathematics Faculty, Waltham High School | Former Harvard undergraduate student
 
-alumni | Joshua Martin | UX Researcher, Spotify | Former Harvard Linguistics PhD student | doc=Josh-diss_2022.pdf
+alumni | Joshua Martin | UX Researcher, Spotify | Former Harvard Linguistics PhD student | site=https://sites.google.com/view/joshua-martin/home| doc=Josh-diss_2022.pdf
 
-alumni | Mikaela Belle Martin | PhD student in Linguistics, University of Pennsylvania | Former Harvard undergraduate student
+alumni | Mikaela Belle Martin | PhD student in Linguistics, University of Pennsylvania | Former Harvard undergraduate student | site=https://mbellemartin.com/
 
 alumni | Teodora Mihoc | Technical Author, Canonical | Former Harvard Linguistics PhD student | site=https://tmihoc.github.io/ | doc=dora-diss.pdf
 
-alumni | Tess Monks | Business Intelligence Analyst, ClassPass | Former Harvard Linguistics MA student
+alumni | Tess Monks | Business Intelligence Analyst, ClassPass | Former Harvard Linguistics MA student | site=https://tessmonks.github.io/
 
 alumni | Giuseppe Ricciardi | Commissioning Editor, Springer Nature | Former Harvard Linguistics PhD student | doc=Giuseppe_Thesis_2022.pdf
 
