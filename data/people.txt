@@ -91,7 +91,7 @@ alumni | Hayley Ross | Senior Deep Learning Scientist (LLMs), NVIDIA | Former Ha
 
 alumni | Yağmur Sağ | Visiting Assistant Professor, Swarthmore College | Former College Fellow at Harvard | site=https://www.yagmursag.com/
 
-alumni | Hande Sevgi | | Former Harvard Linguistics PhD student | site=hande-sevgi.github.io| doc=https://ling.auf.net/lingbuzz/009993
+alumni | Hande Sevgi | | Former Harvard Linguistics PhD student | site=https://hande-sevgi.github.io/| doc=https://ling.auf.net/lingbuzz/009993
 
 alumni | Ethan Wilcox | Assistant Professor of Computational Linguistics, Georgetown University | Former Harvard Linguistics PhD student | site=https://wilcoxeg.github.io/ | doc=Ethan-diss_2022.pdf
 
