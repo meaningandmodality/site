@@ -82,11 +82,11 @@ Nozomi Tomita | A pointing sign like fillers: One JSL user's discourse journey o
 Kathryn Davidson, Annemarie Kocab, Dorothy Ahn | Embracing optionality: pragmatic constraints on loci | Poster at Theoretical Issues in Sign Language Research (TISLR), September 26-October 1|
 Kathryn Davidson | The value of abstraction for compositionality | Keynote at the Joint meeting of the SPP/ESPP in Milan. July 19-22. |
 Yuhan Zhang & Kathryn Davidson | Competing de dicto terms reduce de re acceptability | Talk at Chicago Linguistic Society conference, April 22-24. | 
-Shannon Bryant | Expectation as a predictor of pronoun acceptability in English prepositional phrases | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. | 
+Shannon Bryant | Expectation as a predictor of pronoun acceptability in English prepositional phrases | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. | https://drive.google.com/file/d/1SyN2NHS3153tMOfdAUcvLOMp2AMLEzVr/view
 Ethan Wilcox, Roger Levy, Kathryn Davidson | How anaphoric are presupposition triggers? Evidence from cataphora | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. |
 Jack Rabinovitch | Narrow Scoping Content Question Items in Shifty Contexts: A Case of Surprising Non-Quotation in Uyghur | Presentation at the LSA Annual Meeting, Jan 5-8. | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/5235
 Giuseppe Ricciardi & Joshua Martin | Accounting for variability in the truth-evaluation of bare epistemic possibility statements | Presentation at the LSA Annual Meeting, Jan 5-8. | 
-Shannon Bryant | Location, Location, Location: Anaphora selection in English locative prepositional phrases | Presentation at the LSA Annual Meeting, Jan 5-8. | 
+Shannon Bryant | Location, Location, Location: Anaphora selection in English locative prepositional phrases | Presentation at the LSA Annual Meeting, Jan 5-8. | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/5263
 Joshua Martin | Privatives across phases: disambiguating the sources of adnominal modification | Presentation at the LSA Annual Meeting, Jan 5-8. | 
 Kathryn Davidson | Depictive versus patterned iconicity and dual semantic representations | Presentation at the LSA Annual Meeting, Jan 5-8. | 
 Tess Monks & Kathryn Davidson | Demonstrative Shift and Proximal Markedness | Poster at the LSA Annual Meeting, Jan 5-8. | Demonstrative Shift LSA Abstract 2021.pdf
@@ -100,7 +100,7 @@ Ethan Wilcox, Roger Levy and Kathryn Davidson | Which Presuppositions are Subjec
 Hande Sevgi | One root to build them all: Classifier constructions in sign languages | Poster at the 39th meeting of the West Coast Conference on Formal Linguistics (WCCFL), April 8-11. | https://drive.google.com/file/d/1MKv8LfgWe_jyLShoArBR_1pyvd_achEA/view
 Dorothy Ahn, Ankana Saha, Uli Sauerland| Positively polar plurals: Theory and predictions| Proceedings of Semantics and Linguistic Theory (SALT) 30| https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/30.450
 Yuhan Zhang,  Giuseppe Ricciardi,  and Kathryn Davidson | How many response options in a TVJT? It  depends | Short talk  at  the  34th  annual CUNY Conference on Human Sentence Processing, March 4-6. | https://www.cuny2021.io/wp-content/uploads/2021/02/CUNY_2021_abstract_316.pdf
-Joshua Martin | D-linking and the semantics of wh-in-situ | Poster at the LSA Annual Meeting, Jan 7-10. | 
+Joshua Martin | D-linking and the semantics of wh-in-situ | Poster at the LSA Annual Meeting, Jan 7-10. | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/4981
 Kathryn Davidson | Implicatures - Theoretical and experimental perspectives | In Josep Quer, Roland Pfau & Annika Herrmann (eds.), Theoretical and Experimental Sign Language Research. Routledge - Taylor and Francis Group. | https://www.routledge.com/The-Routledge-Handbook-of-Theoretical-and-Experimental-Sign-Language-Research/Quer-Pfau-Herrmann/p/book/9780367640996
 
 2020
