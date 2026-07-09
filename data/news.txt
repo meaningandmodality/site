@@ -25,7 +25,7 @@ Whatmough Lecture by Diane Lillo-Martin | 04/14/2026 | The Nineteenth Annual Jos
 
 Daria Bikina presents at the Harvard Language & Cognition Seminar | 03/13/2026 | Daria Bikina gave an invited talk titled “Uniqueness without articles: what Russian bare singulars tell us about (in)definiteness” at the Language & Cognition (LangCog) Seminar at Harvard University on March 10, 2026. | | alt=
 
-Ankana Saha presents at the UPenn Experimental Study of Meaning Lab | 02/05/2026 | Ankana Saha gave an invited talk titled “Discourse-Pragmatic Sensitivity in Large Language Models” at the Experimental Study of Meaning Lab at the University of Pennsylvania on February 3, 2026. | | alt=
+Ankana Saha presents at the UPenn Experimental Study of Meaning Lab | 02/06/2026 | Ankana Saha gave an invited talk titled “Discourse-Pragmatic Sensitivity in Large Language Models” at the Experimental Study of Meaning Lab at the University of Pennsylvania on February 3, 2026. | | alt=
 
 New paper published in Sinn und Bedeutung 30 | 01/21/2026 | We’re excited to share that the paper “On the QUD sensitivity of a Third reading” by Yurika Aonuki and Kathryn Davidson has been published in the Proceedings of Sinn und Bedeutung 30. The paper presents the first experimental evidence that transparent third readings in attitude reports are sensitive to the Question Under Discussion, with implications for theories of transparent readings and the discourse mechanisms that license QUDs about mental states. Congratulations to the authors! | SuB30.png | alt= | news_link=https://lingbuzz.net/lingbuzz/009686
 
