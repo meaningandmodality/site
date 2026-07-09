@@ -23,7 +23,7 @@ Dr. Daria Bikina!| 04/23/2026 | Warm congratulations to final-year student Daria
 
 Whatmough Lecture by Diane Lillo-Martin | 04/14/2026 | The Nineteenth Annual Joshua and Verona Whatmough Lecture was held on April 13, 2026, with Diane Lillo-Martin, Board of Trustees Distinguished Professor of Linguistics at the University of Connecticut, as this year’s speaker. Prof. Lillo-Martin gave a talk titled “Sign Language Acquisition: A Linguistic Right,” reviewing evidence that sign languages such as ASL are acquired in the same ways as spoken languages when children have access to fluent input, and discussing how bimodal bilingualism supports a strong case for the linguistic right to sign. Many thanks to Prof. Lillo-Martin for a wonderful lecture and an engaging discussion! | whatmough-lillo-martin.jpg | alt=
 
-Daria Bikina presents at the Harvard Language & Cognition Seminar | 03/12/2026 | Daria Bikina gave an invited talk titled “Uniqueness without articles: what Russian bare singulars tell us about (in)definiteness” at the Language & Cognition (LangCog) Seminar at Harvard University on March 10, 2026. | | alt=
+Daria Bikina presents at the Harvard Language & Cognition Seminar | 03/13/2026 | Daria Bikina gave an invited talk titled “Uniqueness without articles: what Russian bare singulars tell us about (in)definiteness” at the Language & Cognition (LangCog) Seminar at Harvard University on March 10, 2026. | | alt=
 
 Ankana Saha presents at the UPenn Experimental Study of Meaning Lab | 02/05/2026 | Ankana Saha gave an invited talk titled “Discourse-Pragmatic Sensitivity in Large Language Models” at the Experimental Study of Meaning Lab at the University of Pennsylvania on February 3, 2026. | | alt=
 
@@ -41,7 +41,7 @@ Ankana Saha presents at the Harvard Language & Cognition Seminar | 11/13/2025 | 
 
 Tory Sampson to deliver keynote at FEAST 2026 | 10/25/2025 | Tory Sampson will be giving a keynote talk at Formal and Experimental Advances in Sign Language Theory (FEAST 2026). The conference will take place at the University of Amsterdam from July 6 to 8, 2026. | FEAST2026.png | alt=
 
-Ankana Saha presents at Cornell Linguistic Meaning Lab | 10/12/2025 | Ankana Saha gave an invited talk titled “Bridging Modalities: Tracking Reference in Discourse Across Spoken and Sign Language” at the Linguistic Meaning (LiMe) Lab at Cornell University on October 10, 2025. | | alt=
+Ankana Saha presents at Cornell Linguistic Meaning Lab | 10/13/2025 | Ankana Saha gave an invited talk titled “Bridging Modalities: Tracking Reference in Discourse Across Spoken and Sign Language” at the Linguistic Meaning (LiMe) Lab at Cornell University on October 10, 2025. | | alt=
 
 M&M lab members at SuB30 and XPrag 2025 | 09/28/2025 | This September, M&M lab members presented at two major conferences in semantics and pragmatics. At Sinn und Bedeutung 30, held at Goethe University Frankfurt,  Yiqian Wang presented a talk on “Presupposition filtering in disjunction: What role does exclusive interpretation play?” (co-authored with Kate Davidson), and Yurika Aonuki presented a poster on “On the QUD sensitivity of a third reading” (co-authored with Kate Davidson). Yiqian also gave a talk on “Presupposition filtering in disjunction: What role does exclusive interpretation play?” at XPrag 2025, held at the University of Cambridge, UK.| - | alt=
 
