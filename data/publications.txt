@@ -42,7 +42,7 @@ Masashi Tamura & Kathryn Davidson | Quantification and depicting predicates in A
 Marianthi Koraka, Markus Steinbach, Kathryn Davidson | Negative imperative speech acts in two sign languages | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 | https://gwdg-my.sharepoint.com/:p:/g/personal/marianthi_koraka_uni-goettingen_de/IQA9Dbi491vnS4u9MWSIErcCAcBZ1FPwXA9W87RwUvji-D8?e=NmPTG1
 Masashi Tamura, Nozomi Tomita, Kathryn Davidson | Negative possessive and existential sentences in Japanese Sign Language (JSL) | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 |
 Natasha Thalluri & Kathryn Davidson | Universality and variation in sign language comparatives | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 | Natasha_TISLR_abstract.pdf |thalluri-tislr-poster.pdf
-
+Emily Noschese, Matthew Higgins, Nozomi Tomita | Word order in American Sign Language: A grammatical judgment task | Poster at the 2025 Annual Meeting of the Linguistic Society of America (LSA), Philadelphia, PA | poster Revision LSA Word Order in ASL|
 
 2024
 Hayley Ross, Kathryn Davidson, Najoung Kim | Is artificial intelligence still intelligence? LLMs generalize to novel adjective-noun pairs, but don’t mimic the full human distribution | Paper at GenBench Workshop at EMNLP, November 16. | https://arxiv.org/abs/2410.17482
