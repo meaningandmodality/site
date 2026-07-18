@@ -38,8 +38,8 @@ Yiqian Wang | Presupposition filtering in disjunction: What role does exclusive 
 Hayley Ross, Kathryn Davidson, Najoung Kim | Is analogy enough to draw novel adjective-noun inferences? | Paper at Society for Computation in Linguistics (SCiL), July 18-20 | https://arxiv.org/abs/2503.24293
 Xiaotian Wang, Ankana Saha, Kathryn Davidson | The Expression of Strong Definiteness in Code-switched Context | Poster at International Symposium on Bilingualism (ISB), San Sebastian, Spain, June 9-13 | ISB15-abstract.pdf
 Ankana Saha| Demonstrative descriptions and anti-uniqueness| Proceedings of Sinn und Bedeutung (SuB) 29| https://lingbuzz.net/lingbuzz/009091
-Masashi Tamura & Kathryn Davidson | Quantification and depicting predicates in ASL | Invited talk at West Coast Conference on Formal Linguistics 43 (WCCFL 43), University of Washington, Seattle, April 25-27 |
-Marianthi Koraka, Markus Steinbach, Kathryn Davidson | Negative imperative speech acts in two sign languages | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 |
+Masashi Tamura & Kathryn Davidson | Quantification and depicting predicates in ASL | Invited talk at West Coast Conference on Formal Linguistics 43 (WCCFL 43), University of Washington, Seattle, April 25-27 | WCCFL_2025_proceedings_paper.pdf
+Marianthi Koraka, Markus Steinbach, Kathryn Davidson | Negative imperative speech acts in two sign languages | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 | https://gwdg-my.sharepoint.com/:p:/g/personal/marianthi_koraka_uni-goettingen_de/IQA9Dbi491vnS4u9MWSIErcCAcBZ1FPwXA9W87RwUvji-D8?e=NmPTG1
 Masashi Tamura, Nozomi Tomita, Kathryn Davidson | Negative possessive and existential sentences in Japanese Sign Language (JSL) | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 |
 Natasha Thalluri & Kathryn Davidson | Universality and variation in sign language comparatives | Poster at Theoretical Issues in Sign Language Research 15 (TISLR 15), Addis Ababa University, January 14-17 | Natasha_TISLR_abstract.pdf |thalluri-tislr-poster.pdf
 
@@ -85,7 +85,7 @@ Yuhan Zhang & Kathryn Davidson | Competing de dicto terms reduce de re acceptabi
 Shannon Bryant | Expectation as a predictor of pronoun acceptability in English prepositional phrases | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. | https://oxford-abstracts.s3.amazonaws.com/d5be4171-b608-41f4-837a-f2bfa461b144.pdf | https://drive.google.com/file/d/1SyN2NHS3153tMOfdAUcvLOMp2AMLEzVr/view
 Ethan Wilcox, Roger Levy, Kathryn Davidson | How anaphoric are presupposition triggers? Evidence from cataphora | Poster at the 35th Annual Conference on Human Sentence Processing, March 24-26. |
 Jack Rabinovitch | Narrow Scoping Content Question Items in Shifty Contexts: A Case of Surprising Non-Quotation in Uyghur | Presentation at the LSA Annual Meeting, Jan 5-8. | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/5235
-Giuseppe Ricciardi & Joshua Martin | Accounting for variability in the truth-evaluation of bare epistemic possibility statements | Presentation at the LSA Annual Meeting, Jan 5-8. | 
+Giuseppe Ricciardi & Joshua Martin | Accounting for variability in the truth-evaluation of bare epistemic possibility statements | Presentation at the LSA Annual Meeting, Jan 5-8. | Talk at LSA 2022 Slides.pdf
 Shannon Bryant | Location, Location, Location: Anaphora selection in English locative prepositional phrases | Presentation at the LSA Annual Meeting, Jan 5-8. | https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/5263
 Joshua Martin | Privatives across phases: disambiguating the sources of adnominal modification | Presentation at the LSA Annual Meeting, Jan 5-8. | 
 Kathryn Davidson | Depictive versus patterned iconicity and dual semantic representations | Presentation at the LSA Annual Meeting, Jan 5-8. | 
@@ -94,7 +94,7 @@ Tess Monks & Kathryn Davidson | Demonstrative Shift and Proximal Markedness | Po
 2021
 Tess Monks & Kathryn Davidson | Demonstrative Shift and Proximal Markedness | Talk at Formal Diachronic Semantics (FODS) 6, Sept 6-7. | https://www.lukasz-jedrzejowski.eu/conferences/FoDS6/Monks_Davidosn.pdf| FoDS 6 slides.pdf|
 Yuhan Zhang & Kathryn Davidson | De re interpretation in belief reports -An experimental investigation | Proceedings of 1st ELM (Experiments in Linguistic Meaning)| https://journals.linguisticsociety.org/proceedings/index.php/ELM/article/view/4874
-Giuseppe Ricciardi & Joshua Martin | Epistemic modality and the true nature of eavesdropping judgments | Poster at the 47th Meeting of the Society for Philosophy and Psychology (SPP), June 28-July 2 |
+Giuseppe Ricciardi & Joshua Martin | Epistemic modality and the true nature of eavesdropping judgments | Poster at the 47th Meeting of the Society for Philosophy and Psychology (SPP), June 28-July 2 | SPP_Poster.pdf
 Hande Sevgi | Syntax on its own is not enough: Sign language classifiers | Poster at the 57th meeting of the Chicago Linguistic Society, May 6-8. | https://drive.google.com/file/d/11dZ5-hXsUsf6-DXKojzM08aulvoa3Ian/view
 Ethan Wilcox, Roger Levy and Kathryn Davidson | Which Presuppositions are Subject to Contextual Felicity Constraints? | Semantics and Linguistic Theory (SALT) 31, May 7-9. | https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/31.018/4819
 Hande Sevgi | One root to build them all: Classifier constructions in sign languages | Poster at the 39th meeting of the West Coast Conference on Formal Linguistics (WCCFL), April 8-11. | https://drive.google.com/file/d/1MKv8LfgWe_jyLShoArBR_1pyvd_achEA/view
