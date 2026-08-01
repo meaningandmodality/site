@@ -25,8 +25,6 @@ current | Yiqian Wang | Graduate student, Harvard Linguistics | Yiqian is a grad
 
 current | Masashi Tamura | Graduate student, Gallaudet Linguistics | Masashi is a PhD student in linguistics specializing in multimodality, with a focus on both sign languages and spoken languages. His research explores multiple structures of syntactic language and the interactions among various linguistic forms. | masashi.jpg | alt=Japanese man with dark hair and a beard standing in front of a lake and green mountains
 
-current | Anastasia Tsilia | Graduate student, MIT | Anastasia is a PhD student of Linguistics at MIT, who is interested in the semantics and pragmatics of co-speech gestures. She is currently working on a project with Kathryn Davidson, focusing on whether co-speech gestures can license complement anaphora with positive quantifiers like “most.” | anastasia.jpeg | alt=White woman with long brown hair, smiling | site=https://www.anastasiatsilia.com/
-
 current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Linguistics at MIT. Her interests are in semantics and pragmatics. She has worked on topics such as tense and aspect, degrees, modality, and attitude reports, through fieldwork and experiments. | yurika.png |alt=A woman with short black hair wearing a white t-shirt and a necklace, smiling| site=https://yurikaaonuki.github.io/
 
 current | Avi Zimmerman | Undergraduate student, Harvard Linguistics | Avi is an undergraduate student working on several projects in the lab with Ankana Saha, Natasha Thalluri, Nozomi Tomita, and Kate Davidson. Avi is interested in loci in signed languages. | avi.jpeg | alt=Young white person with red-tinted glasses and shoulder-length wavy hair, smiling
@@ -91,6 +89,8 @@ alumni | Yağmur Sağ | Visiting Assistant Professor, Swarthmore College | Forme
 alumni | Ankana Saha | AIML Resident - Responsible AI & Human Evaluation, Apple| Former Harvard Linguistics PhD student | site=https://ankana-saha.github.io/
 
 alumni | Hande Sevgi | | Former Harvard Linguistics PhD student | site=https://hande-sevgi.github.io/| doc=https://ling.auf.net/lingbuzz/009993
+
+alumni | Anastasia Tsilia | Assistant Professor, University of Illinois Urbana-Champaign | Former MIT Linguistics PhD student | site=https://www.anastasiatsilia.com/
 
 alumni | Ethan Wilcox | Assistant Professor of Computational Linguistics, Georgetown University | Former Harvard Linguistics PhD student | site=https://wilcoxeg.github.io/ | doc=Ethan-diss_2022.pdf
 
