@@ -98,7 +98,7 @@ alumni | Xiaotian Wang | PhD student, Harvard Linguistics
 
 alumni | Anthony Yacovone | Assistant Professor, Boston University | Former Harvard Psychology PhD student | site=https://www.anthonyyacovone.com/ | doc=anthony-diss.pdf
 
-alumni | Yuhan Zhang | Postdoctoral Scholar, CLiMB Lab, Stanford University | Former Harvard Linguistics PhD student| site=https://sites.google.com/view/yhzhang/home | doc=Yuhan-dissertation_2024.pdf
+alumni | Yuhan Zhang | Postdoctoral Scholar, CLiMB Lab, Stanford University | Former Harvard Linguistics PhD student| site=https://yuhanczhang.github.io/ | doc=Yuhan-dissertation_2024.pdf
 
 alumni | Christina Zlogar |  | Former Harvard Linguistics PhD student | doc=Chrissy-dissertation_2019.pdf
 
