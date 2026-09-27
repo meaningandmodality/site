@@ -34,9 +34,9 @@ alumni | Johanna Alstott | PhD student in Linguistics, MIT | Former Harvard unde
 
 alumni | Anna Alsop | Graduate student, New York University | Former Harvard undergraduate student | site=https://wp.nyu.edu/annaalsop/
 
-alumni | Antara Raaghavi Bhattacharya | Graduate student, University of Cambridge (UK) | Former Harvard undergraduate student
+alumni | Antara Raaghavi Bhattacharya | PhD student in Linguistics, UC Berkeley | Former Harvard undergraduate student
 
-alumni | Shannon Bryant | Postdoctoral Associate, Rutgers Center for Cognitive Science | Former Harvard Linguistics PhD student | site=https://sites.google.com/view/shannonbryant/about | doc=Shannon-diss_2022.pdf
+alumni | Shannon Bryant | Assistant Teaching Professor, Rutgers Center for Cognitive Science | Former Harvard Linguistics PhD student | site=https://sites.google.com/view/shannonbryant/about | doc=Shannon-diss_2022.pdf
 
 alumni | Irene Canudas |  | Former Postdoctoral fellow at Harvard
 
@@ -86,7 +86,7 @@ alumni | Yağmur Sağ | Visiting Assistant Professor, Swarthmore College | Forme
 
 alumni | Ankana Saha | AIML Resident - Responsible AI & Human Evaluation, Apple| Former Harvard Linguistics PhD student | site=https://ankana-saha.github.io/
 
-alumni | Hande Sevgi | | Former Harvard Linguistics PhD student | site=https://hande-sevgi.github.io/| doc=https://ling.auf.net/lingbuzz/009993
+alumni | Hande Sevgi | Visiting Assistant Professor, Swarthmore College | Former Harvard Linguistics PhD student | site=https://hande-sevgi.github.io/| doc=https://ling.auf.net/lingbuzz/009993
 
 alumni | Anastasia Tsilia | Assistant Professor, University of Illinois Urbana-Champaign | Former MIT Linguistics PhD student | site=https://www.anastasiatsilia.com/
 
