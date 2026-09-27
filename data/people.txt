@@ -13,8 +13,6 @@ current | Tory Sampson | Postdoctoral fellow in Linguistics | Tory is a postdoct
 
 current | Daria Bikina | Associate of the Department of Linguistics | Daria (Dasha) is an associate of the Department of Linguistics and a former Harvard Linguistics PhD student. Her research interests are in experimental semantics and the syntax-semantics interface. She is currently working on the interpretation of bare nouns in Russian and its interaction with information structure. Coming from a linguistic fieldwork background, she is particularly interested in methodology of linguistic experimental research. | daria.jpg | alt=Smiling woman wearing a purple coat and a winter hat | site=https://dariabikina.github.io/ | alias=Dasha Bikina
 
-current | Jack Rabinovitch | Graduate student, Harvard Linguistics | Jack is a PhD candidate in the Department of Linguistics. His work focuses on the semantics of attitude and speech reports, including how the morphology and syntax of subordinate clauses affects their meaning, pragmatic effects driven by material in the left periphery of clauses, and the nature of quotation. His work combines formal theory, fieldwork, and corpus work, with contributions driven by typologically diverse data from both well-resourced and under-resourced languages. | jack.jpeg | alt=Man with long hair in a low ponytail, glasses, and a beard, wearing a grey hoodie and smiling in front of a bush | site=https://jackisaacrabinovitch.github.io/pages/
-
 current | Natasha Thalluri | Graduate student, Harvard Linguistics | Natasha is a graduate student in the Department of Linguistics. She is primarily interested in semantics and the syntax-semantics interface. Her current project focuses on expressions of gradability in sign languages and their interaction with iconicity. | natasha.jpg | alt=Woman with long dark hair in a braid and glasses wearing a pink shirt and green sweater, smiling | site=https://sites.harvard.edu/natasha-thalluri/
 
 current | James Lee | Graduate student, Harvard Linguistics | James is a graduate student in Linguistics, studying semantics and the syntax-semantics interface. | james.png | alt=Man with black hair and glasses wearing a leather jacket standing in front of a painted mural
@@ -26,8 +24,6 @@ current | Yiqian Wang | Graduate student, Harvard Linguistics | Yiqian is a grad
 current | Masashi Tamura | Graduate student, Gallaudet Linguistics | Masashi is a PhD student in linguistics specializing in multimodality, with a focus on both sign languages and spoken languages. His research explores multiple structures of syntactic language and the interactions among various linguistic forms. | masashi.jpg | alt=Japanese man with dark hair and a beard standing in front of a lake and green mountains
 
 current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Linguistics at MIT. Her interests are in semantics and pragmatics. She has worked on topics such as tense and aspect, degrees, modality, and attitude reports, through fieldwork and experiments. | yurika.png |alt=A woman with short black hair wearing a white t-shirt and a necklace, smiling| site=https://yurikaaonuki.github.io/
-
-current | Avi Zimmerman | Undergraduate student, Harvard Linguistics | Avi is an undergraduate student working on several projects in the lab with Ankana Saha, Natasha Thalluri, Nozomi Tomita, and Kate Davidson. Avi is interested in loci in signed languages. | avi.jpeg | alt=Young white person with red-tinted glasses and shoulder-length wavy hair, smiling
 
 current | Moeka Koyama | Undergraduate student, Harvard Linguistics & Molecular & Cellular Biology | Moeka is an undergraduate student concentrating in Linguistics and Molecular & Cellular Biology at Harvard. Her interests include Japanese semantics and probabilistic language understanding. | moeka.png | alt =
 
@@ -80,6 +76,8 @@ alumni | Teodora Mihoc | Technical Author, Canonical | Former Harvard Linguistic
 
 alumni | Tess Monks | Business Intelligence Analyst, ClassPass | Former Harvard Linguistics MA student | site=https://tessmonks.github.io/
 
+alumni | Jack Rabinovitch | Language engineer, Amazon | Former Harvard Linguistics PhD student | site=https://jackisaacrabinovitch.github.io/pages/ 
+
 alumni | Giuseppe Ricciardi | Commissioning Editor, Springer Nature | Former Harvard Linguistics PhD student | doc=Giuseppe_Thesis_2022.pdf
 
 alumni | Hayley Ross | Senior Deep Learning Scientist (LLMs), NVIDIA | Former Harvard Linguistics PhD student| site=https://rossh2.github.io/ | doc=Ross-diss.pdf
@@ -99,6 +97,8 @@ alumni | Xiaotian Wang | PhD student, Harvard Linguistics
 alumni | Anthony Yacovone | Assistant Professor, Boston University | Former Harvard Psychology PhD student | site=https://www.anthonyyacovone.com/ | doc=anthony-diss.pdf
 
 alumni | Yuhan Zhang | Postdoctoral Scholar, CLiMB Lab, Stanford University | Former Harvard Linguistics PhD student| site=https://yuhanczhang.github.io/ | doc=Yuhan-dissertation_2024.pdf
+
+alumni | Avi Zimmerman | Undergraduate student, Harvard Linguistics 
 
 alumni | Christina Zlogar |  | Former Harvard Linguistics PhD student | doc=Chrissy-dissertation_2019.pdf
 
