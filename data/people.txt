@@ -25,9 +25,9 @@ current | Yurika Aonuki | Graduate student, MIT | Yurika is a PhD student in Lin
 
 current | Masashi Tamura | Graduate student, Gallaudet Linguistics | Masashi is a PhD student in linguistics specializing in multimodality, with a focus on both sign languages and spoken languages. His research explores multiple structures of syntactic language and the interactions among various linguistic forms. | masashi.jpg | alt=Japanese man with dark hair and a beard standing in front of a lake and green mountains
 
-current | Briony Waite | Graduate student, Harvard Psychology | Masashi is a PhD student in Psychology at the Laboratory for Developmental Studies. Her research in the Snedeker Lab focuses on sentence processing and language acquisition, especially how we understand prediction and how it develops. | 
+current | Briony Waite | Graduate student, Harvard Psychology | Briony is a PhD student in Psychology at the Laboratory for Developmental Studies. Her research in the Snedeker Lab focuses on sentence processing and language acquisition, especially how we understand prediction and how it develops. | 
 
-current | Margot Cerbone | Undergraduate student, Harvard Linguistics & Statistics | Moeka is an undergraduate student concentrating in Linguistics and Statistics at Harvard. Her interests include formal semantics and its interfaces with syntax and pragmatics. 
+current | Margot Cerbone | Undergraduate student, Harvard Linguistics & Statistics | Margot is an undergraduate student concentrating in Linguistics and Statistics at Harvard. Her interests include formal semantics and its interfaces with syntax and pragmatics. 
 
 current | Moeka Koyama | Undergraduate student, Harvard Linguistics & Molecular & Cellular Biology | Moeka is an undergraduate student concentrating in Linguistics and Molecular & Cellular Biology at Harvard. Her interests include Japanese semantics and probabilistic language understanding. | moeka.png | alt =
 
